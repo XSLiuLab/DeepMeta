@@ -1,0 +1,612 @@
+Cell Line ID,Category,Type,Diagnosis,Culture type,Site of origin,Sex,Age When Diagnosed (years)
+RAB130318,Brain/CNS,Tumour of the sellar region,Craniopharyngioma,无数据,Brain,Female,14
+PB22SH098,Brain/CNS,Tumour of the sellar region,Craniopharyngioma,无数据,无数据,Male,17
+PB22SH106,Brain/CNS,Paed low grade glioma,Low grade Neoplasm,无数据,无数据,Female,9
+OPBG-GBM-008,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,无数据,无数据
+OPBG-GBM-001,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Male,12.5
+PB22SH109,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,Male,5
+OPBG-GBM-006,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,无数据,无数据
+OPBG-DIPG-017_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,5
+OPBG-DIPG-017_A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,5
+PB23SH101,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+PB23SH028,Brain/CNS,Paed high grade glioma,Glioma,无数据,无数据,无数据,无数据
+OPBG-DIPG-015_A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,4
+OPBG-DIPG-013,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,6
+OPBG-DIPG-011_A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,7
+HSJD-DIPG-007,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,6
+HSJD-GBM-002,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Male,14
+KNS-42,Brain/CNS,Paed high grade glioma,Glioma,Adherent,Brain,Male,16
+UON-JUMP4,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,2.83
+041911 GBM P1,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,无数据,无数据
+GLIO 021111 P12,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,无数据,无数据
+PB23SH002,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,5
+SF188,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Male,8
+SF7761,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Female,6
+SF8628,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Female,3
+LRL,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+H3.1KP,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+H3.1KACVPIK,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KP,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPP,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPAP,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPD,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPAD,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KN,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KF,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPF,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KNF,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPC,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KPPMPIK,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+GE,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+GPAP,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+GPAD,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+GPAC,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+EZHIP/p53LOF,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+FOXR2/p53LOF,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+KG-1-C,Brain/CNS,Paed high grade glioma,Mixed glioma,无数据,Brain,Male,13
+HGG080318,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,8
+HGG040618,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,4
+OPBG-DIPG-009 B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,4
+ICR-CXJ051-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,无数据,无数据
+SU-DIPG 13 par (H3.3 K27M parental),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,6
+BT245 C5KO (H3.3 K27M KO),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,8
+SU-DIPG 13 C5KO (H3.3 K27M KO),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,6
+BT237,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Female (inferred),无数据
+BT245 par (H3.3 K27M parental),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,8
+QCTB1912,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Male,无数据
+QCTB2427,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+QCTB2330,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+"VUMC G ",Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,无数据,无数据
+QCTB2312,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+VUMC-DIPG-10,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,12
+VUMC-DIPG-11,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,15
+VUMC-DIPG-8,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,无数据
+VUMC-DIPG-A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent & Suspension,Brain,Female,4
+SJGBM2 (SJ-GBM2),Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Female,4.17
+SJ-HGGX2c,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+SJ-DIPGX29c,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+SJ-HGGX42c,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,无数据,无数据
+SJ-DIPGX9c,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,无数据,无数据
+SJ-HGGX39c,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,无数据,无数据
+SJ-DIPGX37c,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,无数据,无数据
+SJ-HGGX6c,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,无数据,无数据
+SU-DIPG 51,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,无数据,无数据
+SU-DIPG 58,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,无数据,无数据
+SU-DIPG 38,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,12
+SU-DIPG13Pstar,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,6
+SU-DIPG 13,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,6
+SU-DIPG 17,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,8
+SU-DIPG 19,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,2
+SU-DIPG 21,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,7
+SU-DIPG 24,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Female,6
+SU-DIPG 25,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,4
+SU-DIPG 27,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,5
+SU-DIPG 29,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,6
+SU-DIPG 33,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Male,8
+SU-DIPG 35,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent & Suspension,Brain,Female,8
+SU-DIPG 36,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Female,3
+SU-DIPG 4,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent & Suspension,Brain,Female,2
+SU-DIPG 6,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,7
+SUPSCG1 (SU-pSCG-1),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,12
+SUPSCGBM2 (SU-pcGBM2),Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Male,15
+SJ-DIPGX7c,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,无数据,无数据
+SM-2240:C (aka BT-215),Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,9
+SM4019:X,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,9
+SM4021:X,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Female,1
+SM4058:X,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,15
+SM4063:X,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,15
+OPBG-DIPG-008 A_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,14
+JHH-DIPG-16A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,无数据,无数据
+"T98G ",Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,无数据,无数据
+JHH-DIPG-1 (JHH-1-J),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,8
+JHH-DIPG-2J,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,8
+OPBG-DIPG-008 A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,14
+OPBG-DIPG_011_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,7
+OPBG-DIPG 004 A_A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,5.4
+OPBG-DIPG 004,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,5.4
+OPBG-DIPG 002,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,5.6
+"OPBG-DIPG-009 A ",Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,4
+OPBG-DIPG-015_B LAMININ,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,4
+ICR-CXJ051-3D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,无数据,无数据,无数据
+ICR-CXJ062-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Male (inferred),无数据
+ICR-CXJ-028-3D,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,11
+ICR-B257-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,7.9
+ICR-B193-3D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,5.8
+ICR-B193-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Male,5.8
+PBT-05FHTC,Brain/CNS,Paed high grade glioma,Glioblastoma,Adherent,Brain,Female,9.1
+PBT-04FHTC,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Male,2
+GBM-511FHTC,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Female,9
+PBT-27FHTC,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Female (inferred),6
+GBM-110FHTC,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,无数据,Female,无数据
+PBT-29FHTC,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,10
+PBT-22FHTC,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,5
+GBM-109-FHTC,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,无数据,无数据
+PBT-24FHTC,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent & Suspension,Brain,无数据,13
+GBM-611FH,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,无数据,无数据
+GBM-311FH,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Female,无数据
+ASTRO-111FHTC,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,无数据,无数据,无数据
+7316-913 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Female,21
+7316-6349 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Female,9.9
+7316-388 A,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Female,5
+7316-3058 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Male,8
+7316-3058 A,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Male,8
+7316-195 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Male,9
+7316-1763 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Female,10
+7316-1769 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,17.07
+7316-5317 S14,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,17.9
+7316-24 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent & Suspension,Brain,Female,15
+7316-158 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,17
+7316-1746 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Female,6
+7316-5335 S2,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,无数据
+7316-5335 S1,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,无数据
+100MNU4934,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,13
+88MNU9550,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,15
+95FNV2166,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Female,5
+7316-6475 S1,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Female,无数据
+ICR-B128-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,9
+ICR-B117-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,7.9
+DUB-D003_2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,4
+OPBG-DIPG-004-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,5.4
+ICR-B169-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,9.2
+ICR-B181-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,4.9
+ICR-CXJ008-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,14
+ICR-CXJ008-3D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,14
+RCH4065,Brain/CNS,Paed high grade glioma,Glioblastoma,Adherent & Suspension,Brain,Male,8
+ICR-CXJ015-3D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,无数据,Male,14
+ICR-CXJ016-3D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,无数据,Male,13
+ICR-CXJ017-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Male,22
+ICR-CXJ024-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Male,7
+ICR-CXJ026B-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Male,17
+ICR-CXJ030-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Male,13
+ICR-CXJ064 (core A)-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Male (inferred),无数据
+ICR-CXJ074-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Female (inferred),无数据
+ICR-CXJ076-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,Female (inferred),无数据
+OPBG-DIPG-018_B,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Male,13
+OPBG-DIPG-023_ A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,15
+"OPBG-DIPG-018_A ",Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,13
+OPBG-DIPG-015_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,4
+OPBG-GBM-004,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Male,10
+PPMP059 130322,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,8
+OPBG-GBM-003,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Female,无数据
+OPBG-DIPG-019_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,8
+OPBG-GBM-005,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Male,9.4
+PPMP014 020120 AAC,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent,Brain,Male,1.66
+PPMP015 300120 AAC,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent,Brain,Male,2
+PPMP055 051021,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,Brain,Female,12.59
+ICR-B184-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,6.8
+ICR-B194-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Female,9
+7316-9433 S14,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,无数据,无数据,无数据
+7316-9433 S1,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,无数据,无数据,无数据
+7316-9253 S10,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent,无数据,无数据,无数据
+7316-9253 S8,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent,无数据,无数据,无数据
+7316-8851 S13,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,无数据,无数据,无数据
+7316-8121 S2,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent & Suspension,无数据,无数据,无数据
+7316-8121 S1,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent & Suspension,无数据,无数据,无数据
+7316-6477 S2,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Suspension,无数据,无数据,无数据
+7316-5335 S3,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent & Suspension,无数据,Male,无数据
+7316-440 S4,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent & Suspension,无数据,无数据,无数据
+7316-388 S4,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent,无数据,Female,5
+7316-3058 A 569389,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,Male,8
+7316-85 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,2
+7316-5317 S,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Male,17.9
+7316-195 A,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Male,9
+ICR-B301-2D,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,6.4
+PB18SH118,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Female,17
+PB19SH056,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Male,8
+7316-913 A,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Female,21
+"PPMP058 140222. ",Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,8.59
+7316-2189 A,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Female,9
+RCH10880,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+"RCH6641 ",Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,Adherent,Brain,Male,3
+RCH3973-2,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Female,7
+FR05437454,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,Brain,Male,8
+FR05333553,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,13
+FR05332167,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,Brain,Female,17
+FF03591943,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,Brain,Male,16
+OPBG-GBM-002,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,无数据,Male,11.6
+PB19SH009,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Female,17
+PB19SH058,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Male,8
+FF02560161,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,Brain,Female,8
+FB00871650,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,Brain,Male,16
+FB00864838,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,7
+FB00792741,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,Brain,Male,13
+"CHLA-198  ",Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,无数据,无数据,无数据
+COG-G-407,Brain/CNS,Paed high grade glioma,Anaplastic astrocytoma,无数据,无数据,无数据,无数据
+FB00791870,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Male,10
+FB00788589 (H3 K27M-mutant),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,10
+RA055,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,7.58
+RA002,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Male,10.59
+P007401,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Suspension,Brain,Male,19.5
+CHLA-200,Brain/CNS,Paed high grade glioma,Glioblastoma,Adherent,Brain,Male,12
+CNMC-D 874,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,无数据
+CNMC-D-1008,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,3
+CNMC-D-1277,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,5
+CNMC-D-1352,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Female,6
+CNMC-D-1428,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,6
+CNMC-D-762 (CNMC-D-762-hTERT),Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,7
+CNMC 760 XD,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent & Suspension,Brain,Male,无数据
+P005401,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,3.9
+P005306,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,6.5
+P003302,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,2.5
+P002306,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Male,12
+P001401,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Adherent,Brain,Male,7.1
+RA028,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Female,15.4
+OPBG-DIPG-023_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,15
+P009406,Brain/CNS,Paed high grade glioma,Glioma,无数据,无数据,无数据,无数据
+P015702,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+R059-M,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Female,10.42
+P006507,Brain/CNS,Paed high grade glioma,Malignant peripheral nerve sheath tumour,无数据,无数据,无数据,无数据
+P001802,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+P012202,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+P017401,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+P014602,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+"P011601",Brain/CNS,Paed high grade glioma,High grade glioma (HGG),无数据,无数据,无数据,无数据
+P009801,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,无数据,无数据
+RA028-2,Brain/CNS,Paed high grade glioma,Glioblastoma,无数据,Brain,Female,15.4
+P001805,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,Brain,Male,8.3
+P000208,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),Suspension,Brain,Female,13
+P000901,Brain/CNS,Paed high grade glioma,High grade glioma (HGG),Adherent,Brain,Female,11.3
+OPBG-DIPG-15_B,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Female,4
+ICR-CXJ-001-3D,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Male,4
+ICR-CXJ046,Brain/CNS,Paed high grade glioma,Glioblastoma,Suspension,Brain,Female,10
+OPBG-DIPG-019_A,Brain/CNS,Paed high grade glioma,Diffuse midline glioma (DMG),无数据,无数据,Male,8
+RA027,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,Kidney,Male,10.59
+PB22SH080,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,12
+RCH3906,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Female,2.21
+RCH7382,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Female,3
+RCH8086,Neuroendocrine,Neuroendocrine,Ganglioneuroblastoma (Intermixed subtype),无数据,Brain,Female,3
+RCH8496T,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Male,0.833333333333333
+RCH9288,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,2
+"RCH9705 ",Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,5
+RCH10505,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+RCH10585,Neuroendocrine,Neuroendocrine,Ganglioneuroblastoma (GNB),无数据,无数据,无数据,无数据
+SK-N-BE(2)-C,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+COG-N-415x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-421x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-424x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-440x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-452x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-453x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+NB-SD,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Female,无数据
+PB22SH145,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,1
+COG-N-496x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-519x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+COG-N-426x,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+NB-1643,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+NB-1691,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,无数据,无数据,无数据
+RCH9454,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,13
+IMR-05,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+KELLY,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Female,无数据
+NB-69,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+NB-EBC1,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+PPMP042 040321,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Male,0.52
+PPMP037 241220 NBL,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Female,0.93
+PPMP037 161121,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Female,0.93
+PPMP029 270820 NBL,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Soft tissue,Male,0.22
+PB20SH116,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Male,1
+PB18SH041,Neuroendocrine,Neuroendocrine,Ganglioneuroblastoma (GNB),无数据,Abdomen,Male,1.66
+RCH5755,Neuroendocrine,Neuroendocrine,Neuroblastoma,Adherent,Brain,Female,3.08
+PB17SH061,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,Male,5
+RCH9412,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,1
+"PPMP048 070820 ",Neuroendocrine,Neuroendocrine,"Lung carcinoid tumour (Benign) ",无数据,Lung,Male,14.54
+PPMP024 030720 NBL,Neuroendocrine,Neuroendocrine,Neuroblastoma,Adherent & Suspension,Adrenal gland,Male,0.17
+NBL-S,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+NGP,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+NLF,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+SK-N-BE(2),Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+SK-N-AS,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Female,无数据
+SK-N-FI,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Male,无数据
+SK-N-SH,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Bone Marrow,Female,4
+SMS-KAN,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Female,无数据
+SMS-SAN,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,Female,无数据
+GI-ME-N,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+MHH-NB-11,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+"NMB ",Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+LAN-5,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+IMR-32,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,Kidney,无数据,无数据
+SK-N-MC,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+LAN-6,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+"LAN-2 ",Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+LAN-1,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+CHP-126,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+SIMA,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+"LS ",Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+CHP-134,Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+"NB5 ",Neuroendocrine,Neuroendocrine,Neuroblastoma,无数据,无数据,无数据,无数据
+PB22SH085,Neuroendocrine,Neuroendocrine,Ganglioneuroblastoma (GNB),无数据,无数据,Female,4
+RA039,Neuroendocrine,Neuroendocrine,Neuroblastoma (PDX),无数据,Kidney,Male,1.25
+PPMP020 280220 GG,Brain/CNS,Glioneuronal tumour,Ganglioglioma,Adherent,Brain,Female,11.8
+PPMP025 030820 DLGT,Brain/CNS,Glioneuronal tumour,Diffuse leptomeningeal glioneuronal tumour,无数据,Spinal cord,Male,5.5
+PPMP031 011020 GG,Brain/CNS,Glioneuronal tumour,Ganglioglioma,无数据,Brain,Male,2.78
+GCT17-1117,Other solid tumours,Germ cell tumour (Non-CNS),Germ cell tumour,无数据,Brain,Female,无数据
+"PPMP035 121120 DYS ",Other solid tumours,Germ cell tumour (Non-CNS),Dysgerminoma,无数据,Ovary,Female,14.82
+PB22SH091,Other solid tumours,Germ cell tumour (Non-CNS),Dysgerminoma,Adherent,无数据,Female,15
+P005702,Other solid tumours,Germ cell tumour (Non-CNS),Germ cell tumour,无数据,无数据,无数据,无数据
+"PPMP049 250521 ",Other solid tumours,Epithelial carcinoma,Adrenocortical carcinoma,无数据,Kidney,Male,8.12
+RCH5526,Other solid tumours,Epithelial carcinoma,Adrenocortical carcinoma,无数据,无数据,无数据,无数据
+P002106,Other solid tumours,Epithelial carcinoma,Adrenal carcinoma (mets),无数据,Kidney,Male,10.42
+PPMP011 261119 CHC,Other solid tumours,Epithelial carcinoma,Cholangiocarcinoma,Adherent,Liver,Female,13.02
+PB23SH031,Other solid tumours,Epithelial carcinoma,Adrenocortical carcinoma,无数据,无数据,Male,无数据
+PPMP040 210121,Other solid tumours,Epithelial carcinoma,Nasopharyngeal carcinoma,无数据,Nasal Cavity,Male,17.14
+PB18SH035,Other solid tumours,Epithelial carcinoma,Muco-epidermoid carcinoma,无数据,Parotid Gland,Female,9.25
+PPMP040 150121,Other solid tumours,Epithelial carcinoma,Nasopharyngeal carcinoma,无数据,Nasal Cavity,Male,17.14
+MAF928,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,无数据,无数据
+FR05333750,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Female,10
+PPMP009 020519 AEPD,Brain/CNS,Ependymal,Anaplastic ependymoma,Suspension,Brain,Male,1.62
+PPMP008 170918 EPD,Brain/CNS,Ependymal,Ependymoma,Suspension,Brain,Female,1.23
+PPMP002 260421,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Female,2.95
+87MN5781,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Male,2
+MAF811,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,无数据,无数据
+EPD-313 FHTC,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Female,1.16
+PPMP002 071122,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,Female,2.95
+EPD-210 FHTC,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Male,10
+COG-EP-271,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,无数据,无数据
+COG-EP-280,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,无数据,无数据
+SM-2461:C (aka BT-223),Brain/CNS,Ependymal,Anaplastic ependymoma,无数据,Brain,Female,8
+7316-7922 S1,Brain/CNS,Ependymal,Ependymoma,Adherent & Suspension,无数据,无数据,无数据
+7316-2666 S1,Brain/CNS,Ependymal,Ependymoma,Adherent,无数据,无数据,无数据
+"PB23SH090 ",Brain/CNS,Ependymal,Ependymoma,无数据,无数据,Female,无数据
+PB23SH045,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,无数据,无数据
+7316-4423 S,Brain/CNS,Ependymal,Ependymoma,Suspension,Brain,Female,8.93
+COG-EP-383,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,Female,无数据
+7316-4906 S,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Female,3
+EP1NS,Brain/CNS,Ependymal,Ependymoma,无数据,Brain,Female (inferred),无数据
+FF04749140,Brain/CNS,Ependymal,Anaplastic ependymoma,无数据,Brain,Male,0.583333333333333
+HGG020819,Brain/CNS,Ependymal,Ependymoma,Adherent,Brain,Male,无数据
+RCH10573,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,无数据,无数据
+FR05334292,Brain/CNS,Ependymal,Anaplastic ependymoma,无数据,Brain,Male,10
+P001001,Brain/CNS,Ependymal,Ependymoma,无数据,无数据,无数据,无数据
+R034-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Male,8.4
+7316-4509 S,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Female,5.7
+HGG2909217,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Male,0.67
+RCH6272,Brain/CNS,Embryonal,Desmoplastic small round cell tumour,无数据,Brain,Male,16
+FR05443127,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Male,6
+FB00795657,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Male,7
+HGG300519,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Male,2
+D341,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Male,3.5
+QCTB1593,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Female,2
+D283,Brain/CNS,Embryonal,Medulloblastoma,Adherent & Suspension,Brain,Male,6
+R060-M,Brain/CNS,Embryonal,Medulloblastoma,Suspension,Brain,Male,1.65
+R055-M,Brain/CNS,Embryonal,Medulloblastoma,Suspension,Brain,Female,11.26
+R052-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Male,2.95
+R026-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Female,6.89
+R001-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,无数据,5.24
+R185,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,无数据,无数据
+R184,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Male,2.73
+D425,Brain/CNS,Embryonal,Medulloblastoma,Suspension,Brain,Male,6
+VUMC-ATRT-04,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent & Suspension,Brain,Female,无数据
+HDMB03,Brain/CNS,Embryonal,Medulloblastoma,Adherent,Brain,Male,3
+R176,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,无数据,2
+R039-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Female,无数据
+P001003,Brain/CNS,Embryonal,Embryonal tumour with multilayered rosettes (ETMR),Adherent & Suspension,Brain,Female,2.8
+STM91-01,Brain/CNS,Embryonal,Malignant rhabdoid tumour (MRT),Adherent,Brain,Male,0.67
+PB22SH087,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,无数据,Female,0.0833333333333333
+R032-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Female,10.29
+R029-M,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Female,1.52
+R006-M,Brain/CNS,Embryonal,Primitive neuroectodermal tumour (PNET),无数据,Brain,无数据,无数据
+R005-M,Brain/CNS,Embryonal,Primitive neuroectodermal tumour (PNET),无数据,Brain,无数据,9.46
+CHLA-259,Brain/CNS,Embryonal,Anaplastic medulloblastoma,Adherent,Brain,Male,14
+RCH9850,Brain/CNS,Embryonal,Desmoplastic small round cell tumour,无数据,无数据,Male,2
+SM-2211:C (aka BT-183),Brain/CNS,Embryonal,Embryonal tumour with multilayered rosettes (ETMR),无数据,Brain,Female,17
+7316-10374,Brain/CNS,Embryonal,Medulloblastoma,Suspension,无数据,无数据,无数据
+7316-8421 S8,Brain/CNS,Embryonal,Embryonal tumour with multilayered rosettes (ETMR),Adherent,无数据,无数据,无数据
+PB23SH043,Brain/CNS,Embryonal,Medulloblastoma,无数据,无数据,Female,4
+SU-13808 (ATRT 13808),Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent & Suspension,Brain,Male,3
+SJSC,Brain/CNS,Embryonal,Malignant rhabdoid tumour (MRT),Adherent,Brain,Male,0.75
+PB17SH009 (BSC-ATRT),Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Male,3.5
+G401,Brain/CNS,Embryonal,Malignant rhabdoid tumour (MRT),Adherent,Brain,Male,0.25
+JC ATRT,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Female,1.5
+BT-16,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Male,2
+COG-AR-359,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,无数据,Male,无数据
+"CHLA-135 ",Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,无数据,无数据,无数据
+BT-37,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Female,无数据
+"DAOY ",Brain/CNS,Embryonal,Medulloblastoma,无数据,无数据,无数据,无数据
+CHLA-01R-MED,Brain/CNS,Embryonal,Medulloblastoma,无数据,无数据,无数据,无数据
+CHLA-01-MED,Brain/CNS,Embryonal,Medulloblastoma,无数据,无数据,无数据,无数据
+Med-411FHTC,Brain/CNS,Embryonal,Medulloblastoma,Suspension,Brain,Male,3
+Med-114FHTC,Brain/CNS,Embryonal,Medulloblastoma,Suspension,Brain,Female,6.6
+ATRT-311FHTC,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Male,无数据
+ATRT-310FHTC,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Female,6
+BT-12,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Female,0.16
+ONS-76,Brain/CNS,Embryonal,Medulloblastoma,无数据,无数据,Female,无数据
+MED-2112-FHTC,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Male,7
+PBT-17FHTC,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,无数据,无数据,无数据
+CHLA-02-ATRT,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Male,1.66
+7316-4149 S (O),Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Female,1.46
+7316-4149 S (C),Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Female,1.46
+113MMO5961,Brain/CNS,Embryonal,Medulloblastoma,无数据,Brain,Male,16
+114MNV370,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Male,0.9
+171FNU146,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Female,0.4
+79MNO1378,Brain/CNS,Embryonal,Anaplastic medulloblastoma,无数据,Brain,Male,3
+CHLA-04-ATRT,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Male,1.66
+168MNU1210,Brain/CNS,Embryonal,Embryonal tumour with multilayered rosettes (ETMR),Adherent,Brain,Male,3
+PPMP017 210220 MED,Brain/CNS,Embryonal,Medulloblastoma,Adherent & Suspension,Brain,Female,17.44
+PB19SH021,Brain/CNS,Embryonal,Primitive neuroectodermal tumour (PNET),Adherent,Brain,Male,1
+PPMP010 281119 PNET,Brain/CNS,Embryonal,Primitive neuroectodermal tumour (PNET),Suspension,Brain,Male,3.28
+"PPMP044 120321 ",Brain/CNS,Embryonal,Medulloblastoma (WHO Grade IV),无数据,Brain,Female,15.48
+CHLA-05-ATRT,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Suspension,Brain,Male,2.83
+CHLA-06-ATRT,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent & Suspension,Brain,Female,0.33
+CHLA-266,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent,Brain,Female,2.5
+7316-2187 S,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),无数据,Brain,Female,0.46
+7316-2141 S,Brain/CNS,Embryonal,Atypical teratoid rhabdoid tumour (ATRT),Adherent & Suspension,Brain,Male,1
+P008401,Brain/CNS,Embryonal,Embryonal tumour with multilayered rosettes (ETMR),无数据,无数据,无数据,无数据
+JJ09-2D,Brain/CNS,Diffuse glioma,Oligodendroglioma,Adherent,无数据,无数据,25
+FF05004439,Brain/CNS,Diffuse glioma,Oligodendroglioma,无数据,Brain,Male,14
+JJ09-3D,Brain/CNS,Diffuse glioma,Oligodendroglioma,Suspension,无数据,无数据,25
+JJ25-3D,Brain/CNS,Diffuse glioma,Oligodendroglioma,Suspension,无数据,Female,24
+JJ25-2D,Brain/CNS,Diffuse glioma,Oligodendroglioma,Adherent,无数据,Female,24
+DLD-1,Controls,Controls,"Carcinoma (adult), Colon",无数据,Colon,无数据,无数据
+7316-445 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Male,18
+7316-2151 S,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Male,6
+NSC,Controls,Controls,"No malignancy, Brain",Adherent,Brain,无数据,无数据
+PPMP002 250919,Controls,Controls,"No malignancy, Brain",Adherent & Suspension,Brain,Female,2.95
+PPMP007 110520,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,2.02
+PPMP007 181019,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,2.02
+PB19SH016,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,4.07
+PB18SH043-NOR,Controls,Controls,"No malignancy, Kidney",无数据,Kidney,Male,1
+RB355-LUC,Controls,Controls,Retinoblastoma,无数据,无数据,无数据,无数据
+RCH10072,Controls,Controls,Hepatoblastoma,无数据,无数据,Male,1
+HEK-293,Controls,Controls,"No malignancy, Kidney",Adherent,Kidney,Female,无数据
+RCH9930,Controls,Controls,Hepatoblastoma,无数据,无数据,Male,0.333333333333333
+P003201,Controls,Controls,"No malignancy, Kidney",Adherent,Kidney,Female,0.9
+HCT116,Controls,Controls,"Carcinoma (adult), Colon",Adherent,Colon,Male,无数据
+HT29,Controls,Controls,"Carcinoma (adult), Colon",Adherent,Colon,Female,无数据
+RKO,Controls,Controls,"Carcinoma (adult), Colon",Adherent,Colon,无数据,无数据
+SW480,Controls,Controls,"Carcinoma (adult), Colon",Adherent,Colon,Male,50
+7316-85 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Male,2
+7316-3045 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,无数据
+7316-2582 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,无数据
+7316-2187 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,0.46
+7316-2186 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,0.8
+7316-2176 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,16
+7316-2141 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Male,1
+7316-1781 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Male,2
+7316-1763 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,10
+7316-1746 A,Controls,Controls,"No malignancy, Brain",Adherent,Brain,Female,6
+PPMP021 211119 PAC,Brain/CNS,Circumscribed astrocytoma,Pilocytic astrocytoma,Adherent,Brain,Male,20
+PPMP053 270821,Brain/CNS,Circumscribed astrocytoma,Pilocytic astrocytoma,Adherent & Suspension,Brain,Male,6.32
+BT-40,Brain/CNS,Circumscribed astrocytoma,Pleomorphic xanthroastrocytoma,无数据,Brain,无数据,2
+PB22SH118,Brain/CNS,Circumscribed astrocytoma,Pilocytic astrocytoma,无数据,无数据,Male,0.166666666666666
+PPMP056 010421,Brain/CNS,Circumscribed astrocytoma,Pilocytic astrocytoma,无数据,Brain,Male,5.1
+PPMP054 300621,Brain/CNS,Circumscribed astrocytoma,Astrocytoma (pilomyxoid astrocytoma),无数据,Brain,Male,6.11
+PPMP057 040222,Brain/CNS,Circumscribed astrocytoma,Pilocytic astrocytoma,无数据,无数据,Female,10.72
+PPMP019 240220 SEGA,Brain/CNS,Circumscribed astrocytic glioma,Subependymal giant cell astrocytoma,Adherent,Brain,Female,16.57
+PPMP030 210121 CPC,Brain/CNS,Choroid plexus tumour,Choroid plexus carcinoma,无数据,Brain,Male,1.53
+PPMP032 101120 CPC,Brain/CNS,Choroid plexus tumour,Choroid plexus carcinoma,无数据,Brain (Rare),Female,1.09
+PPMP030 280820 CPC,Brain/CNS,Choroid plexus tumour,Choroid plexus carcinoma,无数据,Brain,Male,1.53
+7316-406 S1,Brain/CNS,Choroid plexus tumour,Choroid plexus carcinoma,Suspension,无数据,无数据,无数据
+CHLA-37,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+OST12-1120,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+7316-9440 A3,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,Adherent,无数据,无数据,无数据
+RCH6417,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,Adherent,Bone (Rare),Male,10.67
+SK-ES-1,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+MHH-ES-1,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+PB18SH074,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,Adherent,Lung,Male,20.55
+"CHP-100 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+"RH-41 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RH-30,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+A-204,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+PPMP022 120320 ANGIO,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Angiosarcoma,Adherent,Peritoneum,Female,17
+"PPMP051 200721 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,15.88
+PPMP052 040821 Left Bone Marrow,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,Adherent & Suspension,Bone Marrow,Male,7.59
+PPMP052 040821 Right Bone Marrow,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,Adherent & Suspension,Bone Marrow,Male,7.59
+CADO-ES1,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+RH-1,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+RD-ES,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+OS052,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,17
+OS186,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Male,13
+OS384,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,13
+OS526,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Male,13
+"PPMP050 010621 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,Bone (Rare),Male,14.29
+PPMP043 110321 ESARC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,Not Stated,Male,19.11
+7316-4062 S,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,Suspension,Spine,Female,4
+A673,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,Female,无数据
+PPMP038 290421,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,Bone,Female,3.72
+RCH10654,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,Female,无数据
+OS457,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,Bone,无数据,无数据
+PPMP036 091220 ESARC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma (met),无数据,Bone,Female,16
+PPMP033 041120 ERSARC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Embryonal rhabdomyosarcoma,无数据,Bone,Female,4.4
+OS152,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,无数据,无数据
+RCH9689,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Clear cell sarcoma,无数据,无数据,Female,1
+PB23SH114,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RCH9523,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+CHLA-33,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+B143,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,13
+HOS,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,13
+MG63,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Male,14
+OHS,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Male,14
+OS25,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,15
+Saos2,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,11
+SJSA-1,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Male,19
+U2OS,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,Female,15
+OS525,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,Adherent,Bone,无数据,无数据
+PPMP028 260820 RSARC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,Soft tissue,Female,6.99
+COG-R-466H,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+"Chor6   ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,无数据,无数据,无数据
+"U-CH18   ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,无数据,无数据,无数据
+"U-CH17PII   ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,无数据,无数据,无数据
+CF555,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,Clival Chrodoma,无数据,无数据
+CF539,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,Clival Chrodoma,无数据,无数据
+CF459,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,Clival Chrodoma,无数据,无数据
+CF365,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,Scalp,无数据,无数据
+ES-6-LUC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+"EW-8 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,Male,无数据
+ES-1 (NON-LUC),Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,Male,无数据
+PB20SH118,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Inflammatory myofibroblastic tumour (IMFT),无数据,Abdomen,Female,1
+PB20SH109,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Juvenile ossifying fibroma,无数据,Bone,Female,9
+P009802,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+CF359B,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,Pineal gland,无数据,无数据
+I070_004,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Inflammatory myofibroblastic tumour (IMFT),Adherent,无数据,Female,无数据
+P009302,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+P010501,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+TC-205,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+"TC-71 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+TC-106,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+PPMP061 200322,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,"Rhabdomyosarcoma (Embryonal, recurrent)",无数据,无数据,Female,16
+PB22SH092,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,Male,17
+7316-4062 A,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Chordoma,无数据,Spine,Female,4
+PPMP018 040320 ESARC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,Adherent,Soft tissue,Male,13.19
+PPMP026 310720 RSARC,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,Soft tissue,Male,13.99
+RCH10579,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+RCH10508,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+RCH10391,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+RCH10344,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,Fibular,无数据,无数据
+RCH9981,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Clear cell sarcoma,无数据,无数据,Male,12
+RCH9898,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Clear cell sarcoma,无数据,无数据,Female,8
+RCH9959,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Clear cell sarcoma,无数据,无数据,Male,10
+RCH8450,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,"Rhabdomyosarcoma (Embryonal, recurrent)",无数据,无数据,Male,7
+RCH8078,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,Brain,Male,7
+RCH7330,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,Male,15
+RCH4032,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,Soft tissue,Female,14
+RHB15-0623,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+PB18SH020,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,Pelvis,Male,1.33
+PPMP046 220121,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Anaplastic embryonal rhabdomyosarcoma,Adherent,Abdomen,Female,16.28
+REN27-1017,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Clear cell sarcoma,无数据,Kidney,无数据,无数据
+RAB24-0121,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RAB25-0122,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RHB09-0518,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RHB10-0119,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RHB23-1219,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RHB14-0120,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RHB27-1020,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+RHB13-0721,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Rhabdomyosarcoma,无数据,无数据,无数据,无数据
+OST07-0818,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+OST09-0816,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+OST13-0421,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+OST13-0122,Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Osteosarcoma,无数据,无数据,无数据,无数据
+"EWS28-0423 ",Bone & soft tissue sarcoma,Bone & soft tissue sarcoma,Ewing's sarcoma,无数据,无数据,无数据,无数据
+QIMR MN1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Female,无数据
+GBM6,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Female,无数据
+ABTB205,Brain/CNS,Adult HGG,High grade glioma (HGG) (adult),无数据,Brain,Male,65
+WK1,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Male,77
+ABTB201,Brain/CNS,Adult HGG,High grade glioma (HGG) (adult),Adherent,Brain,Female,45
+ABTB193,Brain/CNS,Adult HGG,High grade glioma (HGG) (adult),无数据,Brain,Female,70
+ABTB191,Brain/CNS,Adult HGG,Anaplastic astrocytoma (adult),无数据,Brain,Male,53
+RR2,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Female,无数据
+GBML1,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Female,无数据
+QIMRB PB1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+QIMRB MMK1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Female,无数据
+QIMR HW1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Female,无数据
+QIMR FPW1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+QIMRB SJH1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+BAH1,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Female,75
+QIMRB SB2b,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+QIMRB RN1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+QIMRB RKI1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Female,无数据
+QIMRB JK2,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+QIMRB BAH1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Female,无数据
+QIMR3 WK1,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,无数据
+MU35,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,无数据,无数据,61
+Pr1.1,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Male,75
+U87-MG,Brain/CNS,Adult HGG,Glioblastoma (adult),Adherent,Brain,Male,无数据
+U118-MG,Brain/CNS,Adult HGG,Glioblastoma (adult),Adherent,Brain,Male,50
+RN1,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Male,56
+JJ41-2D,Brain/CNS,Adult HGG,Glioblastoma (adult),Adherent,无数据,Male,41
+OSL1,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Male,无数据
+A-172,Brain/CNS,Adult HGG,Glioblastoma (adult),Adherent,Brain,Male,53
+MU4,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,无数据,无数据,58
+JJ50,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,无数据,无数据,24
+MU28,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,无数据,无数据,43
+GBM39,Brain/CNS,Adult HGG,Glioblastoma (adult),Suspension,Brain,Female,无数据
+ABTB210,Brain/CNS,Adult HGG,Glioblastoma (adult),无数据,Brain,Male,57
+PB23SH036,无数据,无数据,Mesothelioma,无数据,无数据,无数据,无数据
