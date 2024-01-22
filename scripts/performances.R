@@ -79,7 +79,8 @@ sanger <- sanger %>%
 pre <- read.csv("data/sanger_preV2.csv") %>% select(-X)
 pre_gene <-  data.frame(id = unique(c(pre$gene_name))) %>% 
   rowwise() %>% 
-  mutate(gene=ensg2name(id,enz_gene_mapping,NULL,cpg_gene)[[1]])
+  mutate(gene=ensg2name(id,enz_gene_mapping,NULL,cpg_gene)[[1]]) %>% 
+  ungroup()
 pre <- pre %>% 
   left_join(.,pre_gene %>% rename(gene_name=id)) %>% 
   tidyr::separate_longer_delim(cols = gene,delim = ",") %>% 

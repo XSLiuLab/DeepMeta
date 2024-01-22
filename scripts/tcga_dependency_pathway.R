@@ -206,7 +206,8 @@ all_genes_base <- data.frame(genes = rownames(tcga_pre_cor),
                              split_gene = rownames(tcga_pre_cor)) %>% 
   tidyr::separate_longer_delim(cols = "split_gene",delim = ",") %>% 
   rowwise() %>% 
-  mutate(pathway = paste(kegg$pathway[grep(split_gene,kegg$genes)],collapse = ";")) %>% 
+  mutate(pathway = paste(kegg$pathway[grep(split_gene,kegg$genes)],
+                         collapse = ";")) %>% 
   ungroup() %>% 
   tidyr::separate_longer_delim(cols = "pathway",delim = ";") %>% 
   select(genes,pathway) %>% distinct_all() %>% 

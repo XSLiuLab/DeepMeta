@@ -280,7 +280,7 @@ both %>% group_by(cancer_type,type) %>%
   filter(type == "normal") %>% 
   filter(counts > 10) -> tt
 
-###只选择癌症样本数量大于 10 
+###只选择正常样本数量大于 10 
 dt <- both_summ %>% 
   filter(cancer_type %in% tt$cancer_type) %>% 
   select(pathway, cancer_type, diff_or) %>% 
@@ -368,3 +368,53 @@ pdf(file="figs/permutation_tumor_vs_normal.pdf",width = 8,height = 10)
 draw(p1)
 dev.off()
 
+###
+cancer_res <- readRDS("data/tcga_pathway_permutation.rds")
+normal_res <- readRDS("data/tcga_pathway_permutation_normal.rds")
+both <- bind_rows(
+  cancer_res %>% mutate(type = "cancer"),
+  normal_res %>% mutate(type = "normal")
+)
+both$cancer_type <- EasyBioinfo::get_cancer_type(both$sample,cores = 50, 
+                                                 parallel = TRUE)
+cancer_summ2 <- both %>% 
+  group_by(cancer_type,type) %>% 
+  summarise(counts = length(unique(sample))) %>% 
+  filter(type == "normal") %>% 
+  filter(counts > 10)
+
+both_summ <- both %>% 
+  filter(cancer_type %in% cancer_summ2$cancer_type) %>% 
+  group_by(pathway,cancer_type,type) %>% 
+  summarise(sig_per = mean(p_value < 0.05)) %>% 
+  ungroup() %>% 
+  tidyr::pivot_wider(names_from = "type", values_from = "sig_per")
+
+both_summ <- both_summ %>% 
+  mutate(diff = cancer - normal) %>%
+  filter(pathway %in% rownames(dt))
+
+dt1 <- both_summ %>% 
+  select(pathway, cancer_type, diff) %>% 
+  tidyr::pivot_wider(names_from = cancer_type, values_from = diff) %>%
+  as.data.frame()
+rownames(dt1) <- dt1$pathway
+dt1$pathway <- NULL
+dt1 <- as.matrix(dt1)
+
+col_fun = colorRamp2(c(min(dt1,na.rm = T), max(dt1,na.rm = T)),
+                     c("white", "red"))
+p1 <- Heatmap(dt1,cluster_rows = F,cluster_columns = F,
+              rect_gp = gpar(col = "grey", lwd = 2),
+              row_names_side = "left",
+              show_heatmap_legend=T,row_names_gp = gpar(fontsize = 8),
+              name="Significant sample proportion \nCancer VS Normal",
+              na_col="black",
+              row_order = c(dt_p$pathway,
+                            rownames(dt1)[which(!(rownames(dt1) %in% dt_p$pathway))]))
+p1
+
+pdf("~/meta_target/figs/pancancer_pathway_proportion_cancertype_cancer_vs_normal.pdf",
+    height = 8,width = 8.5)
+draw(p1)
+dev.off()

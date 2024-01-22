@@ -1,0 +1,596 @@
+---
+title: "model_validation"
+author: "Tao Wu"
+date: "`r Sys.Date()`"
+output:   
+  rmdformats::readthedown:
+    highlight: kate
+    lightbox: false
+    toc_depth: 3
+    mathjax: true
+---
+
+```{r model_validation-setup, include=FALSE}
+options(max.print = "75")
+knitr::opts_chunk$set(echo = TRUE, comment = "#>", eval = TRUE, collapse = TRUE,cache = FALSE)
+knitr::opts_knit$set(width = 75)
+```
+
+```{r h1, eval=FALSE, include=TRUE}
+enz_gene_mapping <- readRDS("~/DeepMeta/data/enz_gene_mapping.rds")
+cpg_gene <- readRDS("~/DeepMeta/data/cpg_gene.rds")
+ensg2name <- function(ensg,mapping){
+  tt <- strsplit(ensg," and ")[[1]]
+  tt_gene <- mapping$symbol[which(mapping$ensembl_id %in% tt)] %>% 
+    unique() 
+  sym <- tt_gene %>% 
+    paste(.,collapse=",")
+  return(sym)
+}
+```
+
+
+In the test dataset (76 cell lines and 1010 genes), DeepMeta achieved the ROC of 0.94 (`Fig2a`), illustrating our model enables accurate prediction of metabolic dependencies:
+
+```{r Fig2a}
+pre <- read.csv("~/DeepMeta/data/test_preV2.csv") %>% select(-X)
+pre <- pre %>% 
+  mutate(truth = ifelse(label == 1, "Class1","Class2"),
+         pred_label = ifelse(preds == 1, "Class1","Class2"))
+pre$truth <- factor(pre$truth)
+pre$pred_label <- factor(pre$pred_label)
+
+pr <-  pr_auc(pre, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+roc <-  roc_auc(pre, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+
+p1 <- roc_curve(pre, truth, preds_raw) %>%
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  coord_fixed(xlim = 0:1, ylim = 0:1) +
+  theme_bw() +
+  annotate(geom="text", x=0.75, y=0.7, label=paste0("ROC-AUC: ",roc),
+           size=5)
+p1
+```
+
+We further validated DeepMeta performance using four independent datasets:
+- 1) Another CRISPR screen data conducted by the Sanger institute using a different CRISPR library8, containing 200 cell lines overlapped with training data and 25 unique cell lines; 
+- 2) RNAi screen data9, which apply DEMETER2 to the combination of three large-scale RNAi screening datasets: the Broad institute project Achilles, Novartis project DRIVE, and the Marcotte et al. breast cell line dataset. This dataset contain 417 overlapped cell lines and 160 unique cell lines; 
+- 3) The Childhood Cancer Model Atlas10 (CCMA) dataset which performs CRISPR-Cas9 screen in 110 paediatric solid tumour cell lines and reports Z scores; 
+- 4) Pemovska et.al11 drug screen dataset, which performs metabolic drug library (contains 243 compounds) screen in 15 cancer cell lines (14 cells with gene expression data) and reports AUC scores, larger AUC score indicates stronger killing effect on cell. 
+
+DeepMeta achieved high AUROC scores in Sanger and RNAi dataset, both for overlapped and unique cells (`Fig2b` and `Fig2c`):
+
+```{r eval=FALSE, include=TRUE}
+sanger <- data.table::fread("/home/data/sdc/wt/model_data/sanger_gene_dependency_chronos.csv",data.table = F)
+colnames(sanger)[2:ncol(sanger)] <- gsub("\\s*\\([^\\)]+\\)","",
+                                         colnames(sanger)[2:ncol(sanger)])
+sanger <- sanger %>% 
+  tidyr::pivot_longer(cols = colnames(sanger)[2:ncol(sanger)],names_to = "gene",
+                      values_to = "score")
+colnames(sanger)[1] <- "cell"
+
+sanger <- sanger %>%
+  filter(!is.na(score)) %>% 
+  mutate(type = case_when(
+    score>0.5 ~ 1,
+    score<=0.5 ~ 0
+  ))
+
+pre <- read.csv("~/DeepMeta/data/sanger_preV2.csv") %>% select(-X)
+pre_gene <-  data.frame(id = unique(c(pre$gene_name))) %>% 
+  rowwise() %>% 
+  mutate(gene=ensg2name(id,enz_gene_mapping)) %>% ungroup()
+pre <- pre %>% 
+  left_join(.,pre_gene %>% rename(gene_name=id)) %>% 
+  tidyr::separate_longer_delim(cols = gene,delim = ",") %>% 
+  left_join(.,sanger) %>% filter(!is.na(type)) %>%  
+  group_by(cell,gene_name) %>% 
+  summarise(preds = unique(preds),
+            preds_raw = unique(preds_raw),
+            label = max(type,na.rm = T)) %>% 
+  ungroup()
+saveRDS(pre,file = "~/DeepMeta/data/sanger_pre.rds")
+```
+The results of Sanger dataset:
+
+```{r Fig2b}
+pre <- readRDS("~/DeepMeta/data/sanger_pre.rds")
+pre <- pre %>% 
+  mutate(truth = ifelse(label == 1, "Class1","Class2"),
+         pred_label = ifelse(preds == 1, "Class1","Class2"))
+pre$truth <- factor(pre$truth)
+pre$pred_label <- factor(pre$pred_label)
+
+train_dt <- read.csv("/home/data/sdc/wt/model_data/new_model/cell_net_filter_exp/raw/train_cell_info.csv")
+common_cell <- pre %>% filter(cell %in% train_dt$cell)
+unique_cell <- pre %>% filter(!(cell %in% train_dt$cell))
+
+roc_comm <-  roc_auc(common_cell, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+roc_unique <-  roc_auc(unique_cell, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+
+
+p4 <- roc_curve(common_cell, truth, preds_raw) %>%
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  coord_fixed(xlim = 0:1, ylim = 0:1)+
+  theme_bw()+
+  annotate(geom="text", x=0.5, y=0.7, label=paste0("Seen Cells ROC-AUC: ",roc_comm),
+           size=4)
+
+p5 <- roc_curve(unique_cell, truth, preds_raw) %>%
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  coord_fixed(xlim = 0:1, ylim = 0:1)+
+  theme_bw()+
+  annotate(geom="text", x=0.5, y=0.7, label=paste0("Unseen Cell ROC-AUC: ",roc_unique),
+           size=4)
+p4+p5
+```
+
+The results of RNAi dataset:
+
+```{r Fig2c}
+pre <- read.csv("~/DeepMeta/data/rnai_preV2.csv") %>% select(-X)
+train_dt <- readRDS("~/DeepMeta/data/train_dtV2.rds")
+pre <- pre %>% 
+  mutate(truth = ifelse(label == 1, "Class1","Class2"))
+pre$truth <- factor(pre$truth)
+
+seen <- pre %>% filter(cell %in% train_dt$cell)
+unseen <- pre %>% filter(!(cell %in% train_dt$cell))
+
+seen_roc <-  roc_auc(seen, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+unseen_roc <-  roc_auc(unseen, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+
+p2 <- roc_curve(seen, truth, preds_raw) %>%
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  coord_fixed(xlim = 0:1, ylim = 0:1)+
+  theme_bw()+
+  annotate(geom="text", x=0.5, y=0.7, label=paste0("Seen Cells ROC-AUC: ",seen_roc),
+           size=4)
+p3 <- roc_curve(unseen, truth, preds_raw) %>%
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  coord_fixed(xlim = 0:1, ylim = 0:1)+
+  theme_bw()+
+  annotate(geom="text", x=0.5, y=0.7, label=paste0("Unseen Cells ROC-AUC: ",
+                                                   unseen_roc),
+           size=4)
+p2+p3
+```
+
+CCMA dataset uses Z score to quantify gene dependency, consistent with the original paper, we classified cell-gene pair with Z score less than -1.5 as positive class and others as negative class. Although the model only achieved a moderate AUROC score in this dataset, there is a significant difference in the Z scores between different predicted classes (`Fig2d`):
+
+```{r eval=FALSE, include=TRUE}
+ccma_dep <- data.table::fread("/home/data/sdc/wt/model_data/CCMA_CRISPRdependencyscore.csv", data.table = F)
+pre <- read.csv("~/DeepMeta/data/ccma_preV2.csv") %>% select(-X)
+pre_gene <-  data.frame(id = unique(c(pre$gene_name))) %>% 
+  rowwise() %>% 
+  mutate(gene=ensg2name(id,enz_gene_mapping)) %>% 
+  ungroup()
+pre <- pre %>% 
+  left_join(.,pre_gene %>% rename(gene_name=id)) %>% 
+  tidyr::separate_longer_delim(cols = gene,delim = ",") %>% 
+  left_join(.,
+            ccma_dep %>% select(sample,gene,z) %>% 
+              rename(cell=sample)) %>% 
+  filter(!is.na(z)) %>%  
+  group_by(cell,gene_name) %>% 
+  summarise(preds = unique(preds),
+            preds_raw = unique(preds_raw),
+            z_score = min(z,na.rm = T)) %>% 
+  ungroup() %>% 
+  mutate(label = ifelse(z_score < (-1.5),1,0))
+saveRDS(pre,file = "~/DeepMeta/data/ccma_pre.rds")
+```
+
+```{r Fig2d}
+pre <- readRDS("~/DeepMeta/data/ccma_pre.rds")
+pre <- pre %>% 
+  mutate(truth = ifelse(label == 1, "Class1","Class2"),
+         pred_label = ifelse(preds == 1, "Class1","Class2"))
+pre$truth <- factor(pre$truth)
+pre$pred_label <- factor(pre$pred_label)
+
+roc <-  roc_auc(pre, truth, preds_raw)[".estimate"] %>% 
+  unlist() %>% unname() %>% round(.,2)
+
+p6 <- roc_curve(pre, truth, preds_raw) %>%
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  coord_fixed(xlim = 0:1, ylim = 0:1)+
+  theme_bw()+
+  annotate(geom="text", x=0.4, y=0.85, label=paste0("ROC-AUC: ",roc),
+           size=5)
+p7 <- ggboxplot(data=pre,x="preds",y="z_score")+
+  stat_compare_means()+
+  labs(x="Model Prediction",y="Dependency Z scores")+
+  geom_hline(yintercept = (-1.5),color="red",linewidth=2,linetype=2)
+
+p6+p7
+```
+
+For each cell-gene pair in Pemovska dataset, we first obtain the maximum AUC value of all drugs targeting a specific gene, then rank the genes in each cell based on this AUC value and assign ranks. We showed the overlap of the top 5 genes predicted by DeepMeta and the genes with top 3 AUC rank in each cell (`Fig 2e`). 
+
+```{r eval=FALSE, include=TRUE}
+pre <- read.csv("~/DeepMeta/data/drug_preV2.csv") %>% select(-X)
+pre_gene <-  data.frame(id = unique(c(pre$gene_name))) %>% 
+  rowwise() %>% 
+  mutate(gene=ensg2name(id,enz_gene_mapping))
+pre <- pre %>% 
+  left_join(.,pre_gene %>% rename(gene_name=id))
+nc_drug <- readRDS("~/DeepMeta/data/nc_drug.rds")
+
+####get gene AUC of drugs
+get_auc <- function(cell,gene,drug_dt){
+  genes <- strsplit(gene,split = ",")[[1]]
+  res <- vector("list",length(genes))
+  for (i in 1:length(genes)){
+    drug_dt_t <- drug_dt %>% filter(grepl(genes[i],target_gene))
+    res[[i]] <- drug_dt_t
+  }
+  res <- bind_rows(res)
+  if (nrow(res)==0){
+    return(list(NA,NA))
+  }else{
+    res <- res %>% select(cell,drug_name)
+    return(list(max(res[,1]),
+                paste(res$drug_name[unlist(res[,1]==max(res[,1]))],
+                      collapse = ",")))
+  }
+}
+
+pre_drug <- pre %>% 
+  rowwise() %>% 
+  mutate(max_auc = get_auc(cell,gene,nc_drug)[[1]],
+         max_auc_drug = get_auc(cell,gene,nc_drug)[[2]]) %>% 
+  ungroup()
+pre_drug <- pre_drug %>% 
+  na.omit() %>% 
+  group_by(cell) %>% 
+  mutate(rank_auc = rank(-max_auc)) %>% 
+  ungroup()
+saveRDS(pre_drug,file = "~/DeepMeta/data/nc_pre_drug_V2.rds")
+```
+
+```{r}
+pre_drug <- readRDS("~/DeepMeta/data/nc_pre_drug_V2.rds")
+pre_drug_top <- pre_drug %>%
+  group_by(cell) %>% 
+  slice_max(order_by = preds_raw, n =5) %>% 
+  ungroup()
+###label rank = 1
+library(ggpubr)
+library(ggrepel)
+pre_drug_top <- pre_drug_top %>% 
+  mutate(ll = ifelse(rank_auc <= 3,
+                     paste0("Rank: ",rank_auc,", AUC: ",round(max_auc,2)),
+                     "")) %>% 
+  mutate(ll1 = ifelse(rank_auc <= 3,
+                     paste0("Rank: ",rank_auc),""))
+ggscatter(pre_drug_top, x = "cell", y = "preds_raw")+
+  geom_text_repel(aes(label = ll),box.padding = 0.5,min.segment.length = 0,
+                  max.overlaps = Inf) +
+  geom_point(color = ifelse(pre_drug_top$ll == "", "grey50", "red"),size=4)+
+  rotate_x_text(45)+
+  labs(x="Cell Lines",y="Model Prediction")
+```
+
+Interestingly, we found that 11 of the 14 cells contain overlap genes and the AUC rank of the most overlapped genes is 1 (8/11, median AUC value of these overlapped gene is 0.85). This result indicates that DeepMeta predictions can be recapitulated by actual drug screening experiments. In summary, DeepMeta shows good performance and generalization ability on different independent datasets.
+
+We also calculated other metrics in these validation dataset (`Extended Data Fig. 3`):
+
+```{r}
+get_roc <- function(dt,need="all"){
+  dt <- dt %>% 
+    mutate(truth = ifelse(label == 1, "Class1","Class2"),
+           pred_label = ifelse(preds == 1, "Class1","Class2"))
+  dt$truth <- factor(dt$truth)
+  dt$pred_label <- factor(dt$pred_label)
+  
+  f1 <- try(f_meas(dt,truth,pred_label)[".estimate"] %>%
+              unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  kappa <- try(kap(dt,truth,pred_label)[".estimate"] %>%
+                 unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  f1 <- ifelse('try-error' %in% class(f1),NA,f1)
+  kappa <- ifelse('try-error' %in% class(kappa),NA,kappa)
+  if (need == "all"){
+    roc <-  roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+      unlist() %>% unname() %>% round(.,2)
+    pr <-  pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+      unlist() %>% unname() %>% round(.,2)
+    return(c(roc,pr,f1,kappa))
+  }else{
+    res <- switch(
+      need,
+      "roc" = roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+        unlist() %>% unname() %>% round(.,2),
+      "pr" = pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+        unlist() %>% unname() %>% round(.,2),
+      "f1" = f1,
+      "kappa" = kappa
+    )
+    return(res)
+  }
+  
+}
+get_gene_metric <- function(dt,gene_name,need){
+  dt <- dt %>% 
+    mutate(truth = ifelse(label == 1, "Class1","Class2"),
+           pred_label = ifelse(preds == 1, "Class1","Class2")) %>% 
+    filter(genes == gene_name)
+  dt$truth <- factor(dt$truth)
+  dt$pred_label <- factor(dt$pred_label)
+  
+  f1 <- try(f_meas(dt,truth,pred_label)[".estimate"] %>%
+              unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  kappa <- try(kap(dt,truth,pred_label)[".estimate"] %>%
+                 unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  f1 <- ifelse('try-error' %in% class(f1),NA,f1)
+  kappa <- ifelse('try-error' %in% class(kappa),NA,kappa)
+  
+  res <- switch(
+    need,
+    "roc" = roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+      unlist() %>% unname() %>% round(.,2),
+    "pr" = pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+      unlist() %>% unname() %>% round(.,2),
+    "f1" = f1,
+    "kappa" = kappa
+  )
+  return(res)
+}
+
+train_dt <- readRDS("~/DeepMeta/data/train_dtV2.rds")
+
+test <- read.csv("~/DeepMeta/data/test_preV2.csv") %>% select(-X)
+test_m <- get_roc(test)
+
+sanger <- readRDS("~/DeepMeta/data/sanger_pre.rds")
+sanger_common_cell <- sanger %>% filter(cell %in% train_dt$cell)
+sanger_unique_cell <- sanger %>% filter(!(cell %in% train_dt$cell))
+sanger_seen_m <- get_roc(sanger_common_cell)
+sanger_unseen_m <- get_roc(sanger_unique_cell)
+
+rnai <- read.csv("~/DeepMeta/data/rnai_preV2.csv") %>% select(-X)
+rnai_seen <- rnai %>% filter(cell %in% train_dt$cell)
+rnai_unseen <- rnai %>% filter(!(cell %in% train_dt$cell))
+rnai_seen_m <- get_roc(rnai_seen)
+rnai_unseen_m <- get_roc(rnai_unseen)
+
+ccma <- readRDS("~/DeepMeta/data/ccma_pre.rds")
+ccma_m <- get_roc(ccma)
+
+dt <- data.frame(
+  CCMA = ccma_m,
+  `RNAi-Seen` = rnai_seen_m,
+  `Sanger-Seen` = sanger_seen_m,
+  `RNAi-Unseen` = rnai_unseen_m,
+  `Sanger-Unseen` = sanger_unseen_m,
+  Test = test_m,
+  Metrics = c("AUROC","AUPRC","F1","Kappa") 
+  ,check.names = FALSE) %>% 
+  tidyr::pivot_longer(cols = 1:6,names_to = "Type",values_to = "Value")
+
+ggbarplot(dt, x = "Type", y = "Value",fill="Metrics",
+          label = TRUE, 
+          lab.vjust = -0.5,position = position_dodge(0.9),
+          order = c("Test","RNAi-Seen","RNAi-Unseen","Sanger-Seen",
+                    "Sanger-Unseen","CCMA"),
+          palette = c("#2B4F7D","#3B77B0","#EEDC96","#637951"),
+          lab.nb.digits = 2, xlab=F)
+```
+
+The slightly low metrics in RNAi dataset (`Extended Data Fig. 4`) is partly due to the low correlation between the RNAi and the CRISPR dataset:
+
+```{r}
+rnai <- data.table::fread("/home/data/sdc/wt/model_data/rnai_gene_dependency.csv",
+                          data.table = F)
+colnames(rnai)[2:ncol(rnai)] <- gsub("\\s*\\([^\\)]+\\)","",
+                                     colnames(rnai)[2:ncol(rnai)])
+rnai <- rnai %>% 
+  tidyr::pivot_longer(cols = colnames(rnai)[2:ncol(rnai)],names_to = "gene",
+                      values_to = "score")
+colnames(rnai)[1] <- "cell"
+
+dep_dt <- readRDS("/home/data/sdb/wt/model_data/dep_dt.rds")
+merge_dt <- inner_join(
+  dep_dt %>% rename(cell = ModelID, cri_score = score),
+  rnai %>% rename(rnai_score = score),
+  by = c("cell","gene")
+) %>% na.omit(.)
+merge_dt %>% group_by(gene) %>%
+  summarise(cor=cor(cri_score,rnai_score)) -> tt
+
+p1 <- gghistogram(tt, x = "cor", 
+                  fill = "#00AFBB",
+                  add = "median", rug = TRUE, 
+                  title = "Correlation of dependency score")+
+  labs(y="Gene Counts",x="Correlation")
+
+merge_dt <- merge_dt %>% 
+  mutate(cri_type = case_when(
+    cri_score > 0.5 ~ "Positive",
+    cri_score <= 0.5 ~ "Negative",
+    TRUE ~ "None"
+  )) %>% 
+  mutate(rnai_type = case_when(
+    rnai_score > 0.5 ~ "Positive",
+    rnai_score <= 0.5 ~ "Negative",
+    TRUE ~ "None"
+  ))
+
+library(ggalluvial)
+merge_summ <- merge_dt %>% 
+  group_by(cri_type) %>% 
+  summarise(Negative = sum(rnai_type == "Negative"),
+            Positive = sum(rnai_type == "Positive"),
+            None = sum(rnai_type == "None")) %>% 
+  ungroup() %>% 
+  tidyr::pivot_longer(cols = c("Negative","Positive","None"),names_to = "Rnai",
+                      values_to = "freq")
+p2 <- ggplot(data = merge_summ,
+             aes(axis1 = cri_type, axis2 = Rnai, y = freq)) +
+  geom_alluvium(aes(fill = Rnai),show.legend=T) +
+  geom_stratum() +
+  geom_text(stat = "stratum",
+            aes(label = after_stat(stratum))) +
+  theme_void()+
+  labs(title = "Change of label between CRISPR and RNAi")
+p1 + p2
+```
+
+Explaining complex deep learning model helps us to understand its learning capabilities. The GAT model, due to its utilization of attention mechanisms during model training, is a naturally interpretable model. Thus, we extracted attention weights from the GAT model to determine the importance of a gene's neighbor genes for its prediction and defined the neighbor importance score:
+
+![](https://picgo-wutao.oss-cn-shanghai.aliyuncs.com/image-20240122091735364.png)
+
+```{r eval=FALSE, include=TRUE}
+train_dtV2 <- readRDS("~/DeepMeta/data/train_dtV2.rds") 
+train_dtV2 <- train_dtV2 %>% 
+  mutate(index = paste(cell,id,sep = "-"))
+
+##atten weight
+files <- list.files("/home/data/sdc/wt/model_data/autodl_143/autodl-tmp/atten/",full.names = T)
+res <- lapply(
+  files,
+  function(x){data.table::fread(x,data.table = F)}
+)
+res <- bind_rows(res)
+
+res <- res %>% 
+  mutate(index = paste(cell,genes_x,sep = "-")) %>% 
+  filter(index %in% train_dtV2$index) %>% 
+  left_join(.,
+            train_dtV2 %>% select(index,gene,is_dep),
+            by = "index")
+res$weight <- rowMeans(res[,c("w1","w2","w3")])
+
+enz_gene_mapping <- readRDS("~/DeepMeta/data/enz_gene_mapping.rds")
+ensg2name <- function(ensg,mapping){
+  tt <- strsplit(ensg," and ")[[1]]
+  tt_gene <- mapping$symbol[which(mapping$ensembl_id %in% tt)] %>% 
+    unique() 
+  sym <- tt_gene %>% 
+    paste(.,collapse=",")
+  return(sym)
+}
+all_genes <- data.frame(genes_y = unique(res$genes_y))
+
+all_genes <- all_genes %>% 
+  rowwise() %>% 
+  mutate(gene_y = ensg2name(genes_y, enz_gene_mapping)) %>% 
+  ungroup()
+res <- left_join(res,all_genes)
+res_filter <- res %>% filter(preds_x == is_dep) ##提取预测正确的样本
+saveRDS(res_filter,file = "/home/data/sdc/wt/model_data/atten_weightV2.rds")
+rm(list = ls())
+
+atten_weight <- readRDS("/home/data/sdc/wt/model_data/atten_weightV2.rds")
+weight <- atten_weight %>% 
+  select(cell,gene,gene_y,weight) %>% distinct_all() %>% 
+  group_by(gene,cell) %>%
+  slice_max(order_by = weight,n = 3) %>% ungroup()
+cell_counts <- atten_weight %>% 
+  select(cell,gene,gene_y,weight) %>% 
+  group_by(gene) %>% 
+  summarise(counts = length(unique(cell))) %>% ungroup()
+gene_attr <- weight %>% 
+  filter(weight > 0) %>% 
+  group_by(gene,gene_y) %>% 
+  summarise(occour_counts = n()) %>% 
+  ungroup() %>% 
+  left_join(.,cell_counts) %>% 
+  mutate(imp = occour_counts/counts)
+saveRDS(gene_attr,file = "data/local_imp.rds")
+```
+
+For each pair of gene, we computed the correlation of their DepMap dependency scores and compared them with the neighbor importance scores. In comparison to groups with low dependency correlation (R < 0.2), those with higher dependency correlation (R > 0.8) exhibited significantly elevated neighbor importance scores:
+
+```{r}
+###cor
+local_imp <- readRDS("~/DeepMeta/data/local_imp.rds")
+all_genes <- strsplit(paste(paste(local_imp$gene,collapse = ","),
+                            paste(local_imp$gene_y,collapse = ","),
+                            collapse = ","), split = ",")[[1]] %>% unique()
+
+dep_dt <- readRDS("/home/data/sdb/wt/model_data/dep_dt.rds")
+dep_dt <- dep_dt %>% filter(gene %in% all_genes)
+dep_dt <- dep_dt %>%
+  tidyr::pivot_wider(names_from = "gene",values_from = "score") %>%
+  as.data.frame()
+cor_res <- WGCNA::cor(as.matrix(dep_dt), use = "pairwise.complete.obs")
+cor_res <- as.data.frame(cor_res)
+cor_res$gene <- rownames(cor_res)
+cor_res <- cor_res %>%
+  tidyr::pivot_longer(cols = 1:2438,
+                      names_to = "targt_genes",values_to = "cor")
+cor_res <- cor_res %>% mutate(index = paste(gene,targt_genes,sep = "-"))
+
+gene_attr_split <- local_imp %>%
+  tidyr::separate_longer_delim(cols = c("gene"),delim = ",") %>%
+  tidyr::separate_longer_delim(cols = c("gene_y"),delim = ",")
+cor_res_all <- inner_join(
+  cor_res,
+  gene_attr_split %>% mutate(index = paste(gene,gene_y,sep = "-")) %>%
+    select(index,imp)
+) %>% 
+  mutate(cor_type = case_when(
+    cor > 0.8 ~ "High Dependency Cor \n(>0.8)",
+    cor < 0.2 ~ "Low Dependency Cor \n(<0.2)",
+    TRUE ~ "others"
+  )) %>% filter(cor_type != "others")
+
+ggboxplot(data=cor_res_all,x="cor_type",y="imp",xlab = FALSE,
+          ylab = "Local importance score",
+          order = c("Low Dependency Cor \n(<0.2)","High Dependency Cor \n(>0.8)"))+
+  stat_compare_means()
+```
+
+This demonstrates that our model could utilize attention mechanism to learn the metabolic dependency associations between genes. We show the genes that are crucial for predicting the metabolic dependency of the GPX4 as an example:
+
+```{r}
+library(igraph)
+get_atten_plot <- function(pre_dt,gene_name){
+  test <- pre_dt %>% dplyr::filter(gene == gene_name)
+  ##选择权重大于0的top3基因
+  test_summ <- test %>%
+    dplyr::group_by(cell) %>%
+    dplyr::slice_max(order_by = weight, n = 3) %>% dplyr::ungroup() %>% 
+    dplyr::filter(weight > 0)
+  all_cell_counts <- length(unique(test_summ$cell))
+  gene_summ <- test_summ %>% 
+    dplyr::group_by(gene_y) %>% 
+    dplyr::summarise(cell_counts = length(unique(cell))) %>% 
+    dplyr::ungroup() %>% 
+    dplyr::mutate(weight = cell_counts/all_cell_counts) %>% 
+    dplyr::mutate(source = gene_name) %>% 
+    dplyr::rename(target = gene_y) %>% 
+    dplyr::select(source, target, weight) %>% 
+    dplyr::filter(target != gene_name)
+  gene_g <- graph_from_data_frame(gene_summ,directed = F)
+  V(gene_g)[gene_summ$target]$color <- "#11325D"
+  V(gene_g)[gene_summ$source]$color <- "#F5A673"
+  par(mar=c(0,0,0,0)+.2)
+  plot(gene_g,vertex.size=8, edge.arrow.size=0.3,
+       vertex.label.dist=1.5, vertex.label.cex = 0.8,
+       edge.width = E(gene_g)$weight*20,layout=layout.circle)
+  return(gene_summ)
+}
+
+atten_weight <- readRDS("/home/data/sdc/wt/model_data/atten_weightV2.rds")
+get_atten_plot(atten_weight, gene_name = "GPX4")
+```
+
+The model reveales that the most essential gene for predicting GPX4's metabolic dependency is GSR, which aligns with existing study (Paper: Metabolic determinants of cancer cell sensitivity to canonical ferroptosis inducers, Figure1):
+
+![](https://picgo-wutao.oss-cn-shanghai.aliyuncs.com/image-20240122141436842.png)
+
+Soula et al. used CRISPR-Cas9 genetic screens to target 2,998 metabolic genes under GPX4 inhibition by RSL3 and GSR was among top negative scoring genes under RSL3 treatment, indicting loss of GSR strongly potentiates RSL3 toxicity.

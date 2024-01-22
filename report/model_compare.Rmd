@@ -1,0 +1,235 @@
+---
+title: "model_compare"
+author: "Tao Wu"
+date: "`r Sys.Date()`"
+output:   
+  rmdformats::readthedown:
+    highlight: kate
+    lightbox: false
+    toc_depth: 3
+    mathjax: true
+---
+
+```{r model_compare-setup, include=FALSE}
+options(max.print = "75")
+knitr::opts_chunk$set(echo = TRUE, comment = "#>", eval = TRUE, collapse = TRUE,cache = FALSE)
+knitr::opts_knit$set(width = 75)
+```
+
+The metabolic vulnerability of each specific sample is dependent on the sample status and the metabolic network context. Here, we present the DeepMeta framework to predict the metabolic gene dependence based on the metabolic pathway information characterized by enzyme networks and sample status information defined by gene expression profile. Thus, DeepMeta has two inputs, the sample-specific enzyme network and the gene expression information (`Fig 1a`). 
+
+![](https://picgo-wutao.oss-cn-shanghai.aliyuncs.com/image-20240122090715501.png)
+
+We used the graph attention network (GAT) module to extract information from the sample-specific enzyme network to obtain the embedding of the metabolic enzyme gene node, and used the fully connected neuron network module to extract information from the expression profiles of cells to get the sample state embedding (see Methods). Here, the features of gene node in metabolic enzyme network was implemented by binary vector which denotes the involvement of the gene in chemical and genetic perturbation (CPG) gene sets5. These two parts of information are then merged to predict metabolic dependencies for each specific samples (`Fig 1a`). DeepMeta was trained on cell line CRISPR-Cas9 screening data of DepMap6 (23Q2 version). We used the post-Chronos7 gene dependency probability score to set up a classification problem for our model. The dependency probabilities value is between 0 and 1. Sample-gene pair with dependency score >0.5 were defined as the positive class and the sample-gene pair with dependency score <=0.5 were defined as the negative class. We choose cancer cell lines with matched cancer type or tissue-specific Genome-Scale Metabolic Models (GSMs) and genes existing in corresponding enzyme network and positive in at least 3 cell lines. In together, 343,029 (760 cell lines and 1063 genes) labeled samples were available. We randomly partitioned cell lines into training (90%) and testing (10%) sets, and in the training set, we randomly sampled 70% of data for training, 30% to monitor training process and tune hyper-parameters.
+
+To access the impact of different parts on the performance of the model, we conducted ablation experiments, and train new models using random metabolic node features, without the enzyme network or random sample expression as input, then compared the performance of these model with DeepMeta using ten-folds cross validation. First, we calculated metrics in every CV fold:
+
+```{r save_cv, eval=FALSE, include=TRUE}
+get_roc <- function(dt,need="all"){
+  dt <- dt %>% 
+    mutate(truth = ifelse(label == 1, "Class1","Class2"),
+           pred_label = ifelse(preds == 1, "Class1","Class2"))
+  dt$truth <- factor(dt$truth)
+  dt$pred_label <- factor(dt$pred_label)
+  
+  f1 <- try(f_meas(dt,truth,pred_label)[".estimate"] %>%
+              unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  kappa <- try(kap(dt,truth,pred_label)[".estimate"] %>%
+                 unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  f1 <- ifelse('try-error' %in% class(f1),NA,f1)
+  kappa <- ifelse('try-error' %in% class(kappa),NA,kappa)
+  if (need == "all"){
+    roc <-  roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+      unlist() %>% unname() %>% round(.,2)
+    pr <-  pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+      unlist() %>% unname() %>% round(.,2)
+    return(c(roc,pr,f1,kappa))
+  }else{
+    res <- switch(
+      need,
+      "roc" = roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+        unlist() %>% unname() %>% round(.,2),
+      "pr" = pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+        unlist() %>% unname() %>% round(.,2),
+      "f1" = f1,
+      "kappa" = kappa
+    )
+    return(res)
+  }
+  
+}
+
+get_gene_metric <- function(dt,gene_name,need){
+  dt <- dt %>% 
+    mutate(truth = ifelse(label == 1, "Class1","Class2"),
+           pred_label = ifelse(preds == 1, "Class1","Class2")) %>% 
+    filter(genes == gene_name)
+  dt$truth <- factor(dt$truth)
+  dt$pred_label <- factor(dt$pred_label)
+  
+  f1 <- try(f_meas(dt,truth,pred_label)[".estimate"] %>%
+              unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  kappa <- try(kap(dt,truth,pred_label)[".estimate"] %>%
+                 unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  f1 <- ifelse('try-error' %in% class(f1),NA,f1)
+  kappa <- ifelse('try-error' %in% class(kappa),NA,kappa)
+  
+  res <- switch(
+    need,
+    "roc" = roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+      unlist() %>% unname() %>% round(.,2),
+    "pr" = pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+      unlist() %>% unname() %>% round(.,2),
+    "f1" = f1,
+    "kappa" = kappa
+  )
+  return(res)
+}
+
+test_dtV2 <- readRDS("~/DeepMeta/data/test_dtV2.rds")
+train_dtV2 <- readRDS("~/DeepMeta/data/train_dtV2.rds")
+all_dt <- bind_rows(test_dtV2,train_dtV2)
+all_dt_summ <- all_dt %>% 
+  group_by(gene) %>% 
+  summarise(pos_counts = mean(is_dep == 1)) %>% 
+  ungroup() %>% 
+  filter(pos_counts < 0.9 & pos_counts > 0.1)
+all_dt_summ <- left_join(
+  all_dt_summ,
+  all_dt %>% select(id,gene) %>% distinct_all()
+)
+
+all_cv <- c("own_model","random_feat","random_exp",
+            "no_gnn","gnn_model_random_y",
+            "ml_logistic","ml_rf","ml_svm")
+cv_res <- vector("list",8)
+for (i in 1:8){
+  sub_res <- vector("list",10)
+  for (j in 1:10){
+    pre <- read.csv(paste0("~/DeepMeta/data/cv/",
+                           all_cv[i],"/fold_",j-1,".csv")) %>% select(-X)
+    pre_roc <- ifelse(i %in% c(1:7),get_roc(pre,need = "roc"),NA)
+    pre_pr <- ifelse(i %in% c(1:7),get_roc(pre,need = "pr"),NA)
+    pre_f1 <- get_roc(pre,need = "f1")
+    pre_kap <- get_roc(pre,need = "kappa")
+    dt <- pre %>% 
+      filter(genes %in% all_dt_summ$id) %>% 
+      group_by(genes) %>%
+      summarise(pos_counts = sum(label == 1),
+                neg_counts = sum(label == 0)) %>%
+      ungroup() %>% filter(pos_counts>0 & neg_counts > 0)
+    pre_gene_roc <- data.frame(gene = unique(dt$genes)) %>%
+      rowwise() %>% 
+      mutate(roc = ifelse(i == 8,NA,
+                          get_gene_metric(pre,gene_name = gene,"roc"))) %>% 
+      ungroup()
+    
+    sub_res[[j]] <- data.frame(
+      fold = paste0("Fold-",j),
+      ROC = pre_roc,
+      PR = pre_pr,
+      F1 = pre_f1,
+      Kappa = pre_kap,
+      per_roc = mean(pre_gene_roc$roc,na.rm=T)
+    ) 
+  }
+  sub_res <- bind_rows(sub_res)
+  sub_res$type <- all_cv[i]
+  cv_res[[i]] <- sub_res
+}
+cv_res <- bind_rows(cv_res)
+cv_res <- cv_res %>% 
+  tidyr::pivot_longer(cols = c("ROC","PR","F1","Kappa","per_roc"),
+                      names_to = "Metric",values_to = "Value")
+cv_res <- na.omit(cv_res)
+saveRDS(cv_res,file = "data/cv_res.rds")
+```
+
+Plot results for ablation experiments (`Fig1b`):
+
+```{r fig1b}
+cv_res <- readRDS("~/DeepMeta/data/cv_res.rds")
+cv_res <- cv_res %>% 
+  filter(Metric != "per_f1") %>% 
+  mutate(Metric = ifelse(Metric == "per_roc","Per-ROC",Metric))
+cv_1 <- cv_res %>% 
+  filter(!(type %in% c("ml_logistic","ml_rf","ml_svm")))
+
+ggbarplot(cv_1, x = "type", y = "Value",fill="Metric",
+          add = "mean_se", label = TRUE, 
+          lab.vjust = -0.5,position = position_dodge(0.9),
+          order = c("own_model","random_feat","random_exp","no_gnn",
+                    "gnn_model_random_y"),
+          palette = c("#2B4F7D","#3B77B0","#7BC5E3","#EEDC96","#637951"),
+          lab.nb.digits = 2, xlab=F)+
+  scale_x_discrete(labels=c("DeepMeta","Random Feature",
+                            "Random Expression",
+                            "Without GNN","Scrambled label"))+
+  labs(x="Type",y='Value')
+```
+
+We also performed scrambling label experiment as negative control to verify that the achieved performance was not by chance. Besides, our model achieved an average ten-fold per-ROC (ROC of individual gene) of 0.61, much higher than expected by random chance using the scrambled-label method (average per-ROC of 0.49).
+
+```{r save_per_roc, eval=FALSE, include=TRUE}
+res <- vector("list",10)
+for (j in 1:10){
+  pre <- read.csv(paste0("~/DeepMeta/data/cv/own_model",
+                         "/fold_",j-1,".csv")) %>% select(-X)
+  dt <- pre %>% 
+    filter(genes %in% all_dt_summ$id) %>% 
+    group_by(genes) %>%
+    summarise(pos_counts = sum(label == 1),neg_counts = sum(label == 0)) %>%
+    ungroup() %>% filter(pos_counts>0 & neg_counts > 0)
+  pre_gene_roc <- data.frame(gene = unique(dt$genes)) %>%
+    rowwise() %>% 
+    mutate(roc = get_gene_metric(pre,gene_name = gene,"roc")) %>% 
+    ungroup()
+  pre_gene_roc$fold <- j
+  pre_gene_roc <- left_join(
+    pre_gene_roc %>% rename(id = gene),
+    all_dt_summ
+  )
+  res[[j]] <- pre_gene_roc
+}
+res <- bind_rows(res)
+
+res_gene_summ <- res %>% 
+  group_by(gene) %>% 
+  summarise(ave_per_roc = mean(roc)) %>% 
+  ungroup()
+saveRDS(res_gene_summ,file = "data/per_roc.rds")
+```
+
+Among these genes, the proportion of genes with an ROC exceeding 0.5 is about 85% (`Extended Data Fig. 1`), indicating that our model has good predictive performance for most genes:
+
+```{r figs1}
+res_gene_summ <- readRDS("~/DeepMeta/data/per_roc.rds")
+res_gene_summ$tt <- ""
+ggboxplot(res_gene_summ,x="tt",y="ave_per_roc",xlab = FALSE,
+          ylab = "Average ROC")
+```
+
+We compared the model performance with three machine learning (ML) models (see Methods). Since the machine learning model cannot handle high-dimensional input features (3247 metabolic node features plus 7993-dimensional sample gene expression features), these ML models used dimension-reduced inputs obtained by principal component analysis (PCA) and were trained and validated in ten-fold cross-validation (`Fig1c`): 
+
+```{r Fig1c}
+cv_res <- readRDS("~/DeepMeta/data/cv_res.rds")
+cv_res <- cv_res %>% 
+  filter(Metric != "per_f1") %>% 
+  mutate(Metric = ifelse(Metric == "per_roc","Per-ROC",Metric))
+cv_2 <- cv_res %>% 
+  filter(type %in% c("own_model","ml_logistic","ml_rf","ml_svm"))
+
+ggbarplot(cv_2, x = "type", y = "Value",fill="Metric",
+          add = "mean_se", label = TRUE, 
+          lab.vjust = -0.5,position = position_dodge(0.9),
+          order = c("own_model","ml_logistic","ml_rf","ml_svm"),
+          palette = c("#2B4F7D","#3B77B0","#7BC5E3","#EEDC96","#637951"),
+          lab.nb.digits = 2, xlab=F)+
+  scale_x_discrete(labels=c("DeepMeta","Logistic","RF","SVM"))+
+  labs(x="Type",y='Value')
+```
+
+
+
+
+

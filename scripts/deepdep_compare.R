@@ -117,7 +117,6 @@ ggboxplot(dt,x="types",y="aucs",xlab = FALSE,ylab = "AUC",
   stat_compare_means()
 ggsave("figs/nc_drug_val_V2_compare_box.pdf",width = 5,height = 5)
 
-####
 ####CCMA
 ccma_exp <- readRDS("/home/data/sdc/wt/model_data/ccma_all_exp.rds") %>% 
   as.data.frame()

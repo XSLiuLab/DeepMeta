@@ -1,0 +1,53 @@
+---
+title: "Precise metabolic dependencies of cancer through deep learning and validations"
+author: ["Tao Wu","Xue-Song Liu (Corresponding author)"]
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+    toc_depth: 3
+    self_contained: false
+---
+
+
+```{r knitr_init, echo=FALSE,warning=FALSE}
+library(knitr)
+library(rmdformats)
+## Global options
+options(max.print = "75")
+opts_chunk$set(
+  echo = TRUE,
+  comment = "#>",
+  dpi = 300,
+  cache = FALSE
+)
+opts_knit$set(width = 75)
+Sys.setenv("LANGUAGE"="EN")
+```
+
+# Dependencies
+
+```{r lib3, eval=TRUE, include=TRUE, message=FALSE}
+library(yardstick)
+library(dplyr)
+library(ggplot2)
+library(ggprism)
+library(patchwork)
+library(ggpubr)
+library(parallel)
+```
+
+# The DeepMeta framework 
+
+```{r child = 'model_compare.Rmd'}
+```
+
+# Model performance evaluation
+
+```{r child = 'model_validation.Rmd'}
+```
+
+# TCGA analysis
+
+```{r child = 'tcga_analysis.Rmd'}
+```

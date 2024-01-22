@@ -264,12 +264,22 @@ for (i in 1:3){
     pre_pr <- get_roc(pre,need = "pr")
     pre_f1 <- get_roc(pre,need = "f1")
     pre_kap <- get_roc(pre,need = "kappa")
+    dt <- pre %>% 
+      filter(genes %in% all_dt_summ$id) %>% 
+      group_by(genes) %>%
+      summarise(pos_counts = sum(label == 1),neg_counts = sum(label == 0)) %>%
+      ungroup() %>% filter(pos_counts>0 & neg_counts > 0)
+    pre_gene_roc <- data.frame(gene = unique(dt$genes)) %>%
+      rowwise() %>% 
+      mutate(roc = get_gene_metric(pre,gene_name = gene,"roc")) %>% 
+      ungroup()
     sub_res[[j]] <- data.frame(
       fold = paste0("Fold-",j),
       ROC = pre_roc,
       PR = pre_pr,
       F1 = pre_f1,
-      Kappa = pre_kap
+      Kappa = pre_kap,
+      per_roc = mean(pre_gene_roc$roc,na.rm=T)
     ) 
   }
   sub_res <- bind_rows(sub_res)
@@ -278,9 +288,12 @@ for (i in 1:3){
 }
 cv_res <- bind_rows(cv_res)
 cv_res <- cv_res %>% 
-  tidyr::pivot_longer(cols = c("ROC","PR","F1","Kappa"),
+  tidyr::pivot_longer(cols = c("ROC","PR","F1","Kappa","per_roc"),
                       names_to = "Metric",values_to = "Value")
 cv_res <- na.omit(cv_res)
+cv_res <- cv_res %>% 
+  mutate(Metric = ifelse(Metric == "per_roc","Per-ROC",Metric))
+
 ###plot
 library(ggpubr)
 ggbarplot(cv_res, x = "type", y = "Value",fill="Metric",
@@ -292,6 +305,47 @@ ggbarplot(cv_res, x = "type", y = "Value",fill="Metric",
   scale_x_discrete(labels=c("DeepMeta","Mutation Model","CNV Model"))+
   labs(x="Type",y='Value')
 ggsave("figs/model_compare_omics.pdf",width = 16,height = 6)
+
+####
+rownames(cnv) <- cnv$cell
+cnv$cell <- NULL
+all_genes <- intersect(colnames(cnv),colnames(gene_exp))
+all_cells <- intersect(rownames(cnv),rownames(gene_exp))
+cnv <- cnv[all_cells,all_genes]
+gene_exp <- gene_exp[all_cells,all_genes]
+cor_res <- data.frame(genes = all_genes, cor =NA)
+for (i in 1:nrow(cor_res)){
+  cor_res$cor[i] <- cor(cnv[,cor_res$genes[i]],gene_exp[,cor_res$genes[i]])
+}
+cor_res <- na.omit(cor_res)
+# sum(cor_res$abs_cor > 0.5)
+# [1] 1555
+# median(cor_res$abs_cor)
+# [1] 0.1899026
+
+####
+mut <- as.data.frame(mut)
+rownames(mut) <- mut$cell
+mut$cell <- NULL
+all_genes <- intersect(colnames(mut),colnames(gene_exp))
+all_cells <- intersect(rownames(mut),rownames(gene_exp))
+mut <- mut[all_cells,all_genes]
+gene_exp <- gene_exp[all_cells,all_genes]
+cor_res <- data.frame(genes = all_genes, p =NA)
+for (i in 1:nrow(cor_res)){
+  dt <- data.frame(status = mut[,cor_res$genes[i]], 
+                   exp = gene_exp[,cor_res$genes[i]])
+  tt <- wilcox.test(exp ~ status, data = dt)
+  cor_res$p[i] <- tt$p.value
+}
+cor_res <- na.omit(cor_res)
+cor_res$padj <- p.adjust(cor_res$p,method = "fdr")
+# > sum(cor_res$padj<0.05)
+# [1] 27
+# > sum(cor_res$padj<0.1)
+# [1] 56
+# > sum(cor_res$p < 0.05)
+# [1] 844
 
 ####RF test
 pre <- read.csv("data/rf_pred_test.csv") %>% select(-X)
