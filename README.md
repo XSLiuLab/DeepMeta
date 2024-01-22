@@ -1,5 +1,3 @@
-# DeepMeta Readme
-
 ### Predicting metabolic dependency using DeepMeta
 
 We used `PreDeepMeta`​ package to prepare input data needed for DeepMeta:
