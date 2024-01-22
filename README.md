@@ -109,7 +109,15 @@ PreDiffExp(tumor_exp = gene_exp, normal_exp = gtex,
 Then we can use python script `pred_enzyme.py`​ (which in `scripts/model`​ fold) to predict metabolic dependency:
 
 ```R
-python ~/DeepMeta/scripts/model/pred_enzyme.py -e /home/data/sdb/wt/model_data/test_diff_exp.csv -g /home/data/sdb/wt/model_data/tmp/example_test/ -c /home/wt/DeepMeta/data/test_cell_info.csv -n /home/data/sdb/wt/model_data/enzyme_net_test/ -t 30 -m /home/data/sdc/wt/model_data/new_model/enzyme_model_filterV2.pt -o /home/wt/DeepMeta/data/example_test.csv -d val -b 1
+python ~/DeepMeta/scripts/model/pred_enzyme.py 
+  -e /home/data/sdb/wt/model_data/test_diff_exp.csv 
+  -g /home/data/sdb/wt/model_data/tmp/example_test/ 
+  -c /home/wt/DeepMeta/data/test_cell_info.csv 
+  -n /home/data/sdb/wt/model_data/enzyme_net_test/ 
+  -t 30 
+  -m /home/data/sdc/wt/model_data/new_model/enzyme_model_filterV2.pt 
+  -o /home/wt/DeepMeta/data/example_test.csv 
+  -d val -b 1
 ```
 
 The arguments are :
@@ -119,7 +127,7 @@ The arguments are :
 * `-c`: file name of predicted cell (csv), with columns of `cell`​ and `cell_index`​
 * `-n`: dir path of sample enzyme net and gene node features, output of `PreEnzymeNet`​
 * `-t`: multiprocess cores for creating pyg data
-* `-m`: file path of model `.pt`​ file
+* `-m`: file path of model `.pt`​ file, users can download the DeepMeta model from [google drive](https://drive.google.com/file/d/1ZQAaSeOgmgBy-dE23i5qu5pieaAdCCUd/view?usp=drive_link)  
 * `-o`: output file name
 * `-d`: datatype, test or val; test mean you have the dependency data, while val mean not have the dependency data
 * `-b`: batch size
@@ -135,4 +143,6 @@ View(dt)
 
 ### Reproducible analysis report
 
-‍
+The code for training sample pre-processing and generation of auxiliary data can be found in `scripts`. The code for analysis and figures have been integrate into Rmarkdown and can be view online. Data for analysis can be found in `data`.    
+
+
