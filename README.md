@@ -11,7 +11,7 @@ library(PreDeepMeta)
 
 Here, we present the **DeepMeta** framework to predict the metabolic gene dependence based on the metabolic pathway information characterized by enzyme networks and sample status information defined by gene expression profile. Thus, DeepMeta has two inputs, the sample-specific enzyme network and the gene expression information (**Figure 1a**). We used the graph attention network (GAT) module to extract information from the sample-specific enzyme network to obtain the embedding of the metabolic enzyme gene node, and used the fully connected neuron network module to extract information from the expression profiles of cells to get the sample state embedding. Here, the features of gene node in enzyme network was implemented by binary vector which denotes the involvement of the gene in CPG (chemical and genetic perturbation) signature. These two parts of information are then merged to predict metabolic dependencies
 
-![](https://picgo-wutao.oss-cn-shanghai.aliyuncs.com/image-20240118105406-fuurffy.png)​
+![](https://picgo-wutao.oss-cn-shanghai.aliyuncs.com/image-20240122090715501.png)
 
 Two functions `PreEnzymeNet`​ and `PreDiffExp`​ can be used for preparing DeepMeta inputs.
 
