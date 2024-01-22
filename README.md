@@ -143,4 +143,10 @@ View(dt)
 
 The code for training sample pre-processing and generation of auxiliary data can be found in `scripts`. The code for analysis and figures have been integrate into Rmarkdown and can be view online. Data for analysis can be found in `data`.    
 
+### Acknowledgement
+
+We thank ShanghaiTech University High Performance Computing Public Service Platform for computing services. We thank multi-omics facility, molecular and cell biology core facility of ShanghaiTech University for technical help. This work is supported by cross disciplinary Research Fund of Shanghai Ninth People's Hospital, Shanghai JiaoTong University School of Medicine (JYJC202227). Shanghai Science and Technology Commission (21ZR1442400), National Natural Science Foundation of China (82373149), and startup funding from ShanghaiTech University.
+
+### Citation
+
 
