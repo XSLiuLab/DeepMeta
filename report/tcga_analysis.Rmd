@@ -205,7 +205,8 @@ res <- foreach(
 ) %dopar% {
   all_genes_sample <- all_genes_base %>% 
     rowwise() %>% 
-    mutate(p = kegg_enricher(kegg,                    sample(rownames(tcga_pre_cor)[which(rownames(tcga_pre_cor) != genes)],
+    mutate(p = kegg_enricher(kegg,                
+                             sample(rownames(tcga_pre_cor)[which(rownames(tcga_pre_cor) != genes)],
                                     cor_counts,
                                     replace=FALSE),
                              pathway)[[1]]) %>% 

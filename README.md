@@ -141,7 +141,7 @@ View(dt)
 
 ### Reproducible analysis report
 
-The code for training sample pre-processing and generation of auxiliary data can be found in `scripts`. The code for analysis and figures have been integrate into Rmarkdown and can be view online. Data for analysis can be found in `data`.    
+The code for training sample pre-processing and generation of auxiliary data can be found in `scripts`. The code for analysis and figures have been integrate into Rmarkdown and can be view [online](https://xsliulab.github.io/DeepMeta/). Data for analysis can be found in `data`.    
 
 ### Acknowledgement
 
