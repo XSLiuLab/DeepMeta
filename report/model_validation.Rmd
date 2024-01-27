@@ -29,7 +29,6 @@ ensg2name <- function(ensg,mapping){
 }
 ```
 
-
 In the test dataset (76 cell lines and 1010 genes), DeepMeta achieved the ROC of 0.94 (`Fig2a`), illustrating our model enables accurate prediction of metabolic dependencies:
 
 ```{r Fig2a}
@@ -56,10 +55,14 @@ p1
 ```
 
 We further validated DeepMeta performance using four independent datasets:
-- 1) Another CRISPR screen data conducted by the Sanger institute using a different CRISPR library8, containing 200 cell lines overlapped with training data and 25 unique cell lines; 
-- 2) RNAi screen data9, which apply DEMETER2 to the combination of three large-scale RNAi screening datasets: the Broad institute project Achilles, Novartis project DRIVE, and the Marcotte et al. breast cell line dataset. This dataset contain 417 overlapped cell lines and 160 unique cell lines; 
-- 3) The Childhood Cancer Model Atlas10 (CCMA) dataset which performs CRISPR-Cas9 screen in 110 paediatric solid tumour cell lines and reports Z scores; 
-- 4) Pemovska et.al11 drug screen dataset, which performs metabolic drug library (contains 243 compounds) screen in 15 cancer cell lines (14 cells with gene expression data) and reports AUC scores, larger AUC score indicates stronger killing effect on cell. 
+
+-    1) Another CRISPR screen data conducted by the Sanger institute using a different CRISPR library8, containing 200 cell lines overlapped with training data and 25 unique cell lines;
+
+-   2) RNAi screen data9, which apply DEMETER2 to the combination of three large-scale RNAi screening datasets: the Broad institute project Achilles, Novartis project DRIVE, and the Marcotte et al. breast cell line dataset. This dataset contain 417 overlapped cell lines and 160 unique cell lines;
+
+-   3) The Childhood Cancer Model Atlas10 (CCMA) dataset which performs CRISPR-Cas9 screen in 110 paediatric solid tumour cell lines and reports Z scores;
+
+-   4) Pemovska et.al11 drug screen dataset, which performs metabolic drug library (contains 243 compounds) screen in 15 cancer cell lines (14 cells with gene expression data) and reports AUC scores, larger AUC score indicates stronger killing effect on cell.
 
 DeepMeta achieved high AUROC scores in Sanger and RNAi dataset, both for overlapped and unique cells (`Fig2b` and `Fig2c`):
 
@@ -94,6 +97,7 @@ pre <- pre %>%
   ungroup()
 saveRDS(pre,file = "~/DeepMeta/data/sanger_pre.rds")
 ```
+
 The results of Sanger dataset:
 
 ```{r Fig2b}
@@ -218,7 +222,7 @@ p7 <- ggboxplot(data=pre,x="preds",y="z_score")+
 p6+p7
 ```
 
-For each cell-gene pair in Pemovska dataset, we first obtain the maximum AUC value of all drugs targeting a specific gene, then rank the genes in each cell based on this AUC value and assign ranks. We showed the overlap of the top 5 genes predicted by DeepMeta and the genes with top 3 AUC rank in each cell (`Fig 2e`). 
+For each cell-gene pair in Pemovska dataset, we first obtain the maximum AUC value of all drugs targeting a specific gene, then rank the genes in each cell based on this AUC value and assign ranks. We showed the overlap of the top 5 genes predicted by DeepMeta and the genes with top 3 AUC rank in each cell (`Fig 2e`).
 
 ```{r eval=FALSE, include=TRUE}
 pre <- read.csv("~/DeepMeta/data/drug_preV2.csv") %>% select(-X)
@@ -512,7 +516,7 @@ gene_attr <- weight %>%
 saveRDS(gene_attr,file = "data/local_imp.rds")
 ```
 
-For each pair of gene, we computed the correlation of their DepMap dependency scores and compared them with the neighbor importance scores. In comparison to groups with low dependency correlation (R < 0.2), those with higher dependency correlation (R > 0.8) exhibited significantly elevated neighbor importance scores:
+For each pair of gene, we computed the correlation of their DepMap dependency scores and compared them with the neighbor importance scores. In comparison to groups with low dependency correlation (R \< 0.2), those with higher dependency correlation (R \> 0.8) exhibited significantly elevated neighbor importance scores:
 
 ```{r}
 ###cor
