@@ -1,0 +1,2559 @@
+ModelConditionID,ModelID,ParentModelConditionID,CellFormat,PassageNumber,GrowthMedia,FormulationID,PlateCoating
+MC-000001-ztiA,ACH-000001,,adherent,,MF-001-041,RPMI + 20% FBS + 0.01 mg/ml insulin,None
+MC-000001-ZU8p,ACH-000001,,adherent,,,,None
+MC-000002-8QnY,ACH-000002,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000002-UPDL,ACH-000002,,suspension,,,,None
+MC-000003-DWgN,ACH-000003,,adherent,,MF-015-009,EMEM + 20% FBS,None
+MC-000004-pA3k,ACH-000004,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000005-Aycs,ACH-000005,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000006-DkL3,ACH-000006,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000006-kr0r,ACH-000006,,mixed,,,,None
+MC-000007-nTml,ACH-000007,,adherent,,,,None
+MC-000007-SSIv,ACH-000007,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000008-LaE3,ACH-000008,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000008-OGcy,ACH-000008,,,,,,None
+MC-000009-Kmv4,ACH-000009,,adherent,,,,None
+MC-000009-l0XO,ACH-000009,,adherent,,MF-002-021,DMEM + 10% FBS + 0.01 mg/ml Transferrin,None
+MC-000011-bxAg,ACH-000011,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000012-7IbT,ACH-000012,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000012-qY6Z,ACH-000012,,adherent,,,,None
+MC-000013-MIEW,ACH-000013,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000014-aXo5,ACH-000014,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000015-jbp5,ACH-000015,,mixed,,,,None
+MC-000015-qgxP,ACH-000015,,mixed,,MF-007-008,DMEM:F12 + 5% FBS,None
+MC-000016-0Cgg,ACH-000016,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000017-MjyQ,ACH-000017,,mixed,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000018-WB0V,ACH-000018,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000018-Zo2z,ACH-000018,,adherent,,,,None
+MC-000019-fjAY,ACH-000019,,adherent,,,,None
+MC-000019-PiAK,ACH-000019,,adherent,,MF-015-010,EMEM + 10% FBS + 0.01 mg/ml recombinant insulin,None
+MC-000020-GnMZ,ACH-000020,,suspension,,,,None
+MC-000020-t4nI,ACH-000020,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000021-GmXg,ACH-000021,,adherent,,,,None
+MC-000021-UvGW,ACH-000021,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000022-fRaU,ACH-000022,,monolayer,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000023-eHda,ACH-000023,,adherent,,,,None
+MC-000023-zYrZ,ACH-000023,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000024-kxGf,ACH-000024,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000024-Tg2w,ACH-000024,,suspension,,,,None
+MC-000025-jryP,ACH-000025,,mixed,,MF-002-001,DMEM + 10% FBS,None
+MC-000026-oSZT,ACH-000026,,mixed,,MF-002-001,DMEM + 10% FBS,None
+MC-000027-ohxB,ACH-000027,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000028-upIc,ACH-000028,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000029-BMZc,ACH-000029,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000030-gWWM,ACH-000030,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000030-qlUo,ACH-000030,,adherent,,,,None
+MC-000031-htZU,ACH-000031,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000032-b8Um,ACH-000032,,mixed,,MF-001-020,RPMI + 20% FBS,None
+MC-000033-96oj,ACH-000033,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000034-1Ulp,ACH-000034,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000035-aT3G,ACH-000035,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000035-eNCM,ACH-000035,,adherent,,,,None
+MC-000036-CO69,ACH-000036,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000037-Q40d,ACH-000037,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000037-VPKs,ACH-000037,,monolayer,,,,None
+MC-000038-mD4i,ACH-000038,,suspension,,,,None
+MC-000038-Q9yo,ACH-000038,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000039-iKfU,ACH-000039,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000040-IUSx,ACH-000040,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000040-n11m,ACH-000040,,adherent,,,,None
+MC-000041-uPBf,ACH-000041,,mixed,,MF-001-017,RPMI + 15% FBS,None
+MC-000042-eOnX,ACH-000042,,adherent,,MF-001-043,RPMI + 10% FBS + 1mM Sodium pyruvate,None
+MC-000042-XBux,ACH-000042,,adherent,,,,None
+MC-000043-0ycN,ACH-000043,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000044-Ar1B,ACH-000044,,adherent,,MF-021-003,L-15 + 20% FBS,None
+MC-000045-lM0u,ACH-000045,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000045-yAHm,ACH-000045,,suspension,,,,None
+MC-000046-M8UB,ACH-000046,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000046-Whue,ACH-000046,,adherent,,,,None
+MC-000047-fRLW,ACH-000047,,adherent,,MF-006-012,MEM + 15% FBS,None
+MC-000047-zsdR,ACH-000047,,adherent,,,,None
+MC-000048-2B6B,ACH-000048,,adherent,,,,None
+MC-000048-ByXu,ACH-000048,,adherent,,MF-044-001,MCDB 105:Medium 199 (1:1) + 15% FBS + 1.5g/l Sodium bicarbonate,None
+MC-000049-k0Ty,ACH-000049,,,,,,None
+MC-000050-aBTf,ACH-000050,,suspension,,MF-001-006,RPMI + 10% FBS + 50uM 2-Mercaptoethanol,None
+MC-000050-olUM,ACH-000050,,suspension,,,,None
+MC-000051-Vd8P,ACH-000051,,,,MF-002-001,DMEM + 10% FBS,None
+MC-000052-HhbT,ACH-000052,,adherent,,,,None
+MC-000052-uUW6,ACH-000052,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000053-6XfB,ACH-000053,,suspension,,MF-001-021,RPMI + 20% FBS + 2mM Glutamine,None
+MC-000053-bDQJ,ACH-000053,,suspension,,,,None
+MC-000054-HY9e,ACH-000054,,adherent,,,,None
+MC-000054-JG3n,ACH-000054,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000055-M4n1,ACH-000055,,mixed,,MF-006-001,MEM + 10% FBS,None
+MC-000055-ndMA,ACH-000055,,mixed,,,,None
+MC-000056-b4Q3,ACH-000056,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000056-SNU0,ACH-000056,,suspension,,,,None
+MC-000057-XS1q,ACH-000057,,,,,,None
+MC-000058-NNVe,ACH-000058,,monolayer,,,,None
+MC-000058-Nu4f,ACH-000058,,monolayer,,MF-002-009,DMEM + 20% FBS,None
+MC-000059-DjJ1,ACH-000059,,suspension,,MF-005-008,IMDM + 20% FBS + 1.5g/L NaCO3,None
+MC-000059-DVKs,ACH-000059,,,,,,None
+MC-000060-nHy6,ACH-000060,,adherent,,,,None
+MC-000060-SiKf,ACH-000060,,adherent,,MF-001-019,RPMI + 15% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 60ug/ml Insulin + 10mM HEPES + 18mM Sodium bicarbonate + 25mM Glucose,None
+MC-000061-52tP,ACH-000061,,suspension,,,,None
+MC-000061-Jp3F,ACH-000061,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000062-eiDD,ACH-000062,,adherent,,MF-015-004,EMEM + 10% FBS + 100uM NEAA,None
+MC-000062-ii2u,ACH-000062,,adherent,,,,None
+MC-000063-VSwF,ACH-000063,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000064-BKYw,ACH-000064,,,,,,None
+MC-000065-80tJ,ACH-000065,,suspension,,MF-003-002,AlphaMEM + 20% FBS + 10ng/ml GM-CSF,None
+MC-000066-Glga,ACH-000066,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000067-Fdh5,ACH-000067,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000067-VEBD,ACH-000067,,adherent,,,,None
+MC-000068-QFYk,ACH-000068,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000069-L4Ub,ACH-000069,,suspension,,MF-002-001,DMEM + 10% FBS,None
+MC-000070-FRqI,ACH-000070,,,,,,None
+MC-000070-XibM,ACH-000070,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000071-LWFd,ACH-000071,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000072-l5Ss,ACH-000072,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000072-L6Xl,ACH-000072,,adherent,,,,None
+MC-000073-32tT,ACH-000073,,suspension,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000073-3JOs,ACH-000073,,suspension,,,,None
+MC-000074-OKtM,ACH-000074,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000074-Qybw,ACH-000074,,adherent,,,,None
+MC-000075-5KSA,ACH-000075,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000075-diaC,ACH-000075,,adherent,,,,None
+MC-000076-het0,ACH-000076,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000077-BZeg,ACH-000077,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000078-HM1w,ACH-000078,,mixed,,,,None
+MC-000078-SV5j,ACH-000078,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000079-rZyX,ACH-000079,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000080-flxZ,ACH-000080,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000081-4EMy,ACH-000081,,,,,,None
+MC-000081-pPrw,ACH-000081,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000082-5vwb,ACH-000082,,adherent,,,,None
+MC-000082-zify,ACH-000082,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000083-6AIn,ACH-000083,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000084-JWzO,ACH-000084,,,,,,None
+MC-000085-DjQm,ACH-000085,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000086-pkVs,ACH-000086,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000087-JDLx,ACH-000087,,mixed,,,,None
+MC-000087-VZnM,ACH-000087,,mixed,,MF-023-002,McCoy's 5A + 15% FBS,None
+MC-000088-gsuH,ACH-000088,,adherent,,,,None
+MC-000089-WKcu,ACH-000089,,adherent,,,,None
+MC-000090-ycrc,ACH-000090,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000091-ErqO,ACH-000091,,adherent,,MF-007-009,DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone,None
+MC-000091-gNqr,ACH-000091,,adherent,,,,None
+MC-000092-ewoj,ACH-000092,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000092-Sqr2,ACH-000092,,adherent,,,,None
+MC-000093-IB96,ACH-000093,,adherent,,MF-001-019,RPMI + 15% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 60ug/ml Insulin + 10mM HEPES + 18mM Sodium bicarbonate + 25mM Glucose,None
+MC-000094-AOIW,ACH-000094,,adherent,,,,None
+MC-000094-xXa1,ACH-000094,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000095-UcYl,ACH-000095,,mixed,,MF-015-009,EMEM + 20% FBS,None
+MC-000096-dANy,ACH-000096,,adherent,,,,None
+MC-000096-OrvI,ACH-000096,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000097-qJSn,ACH-000097,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000098-QY0Z,ACH-000098,,monolayer,,,,None
+MC-000098-U59c,ACH-000098,,monolayer,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000099-FsxW,ACH-000099,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000099-kZpG,ACH-000099,,monolayer,,,,None
+MC-000100-8Lil,ACH-000100,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000100-L6VD,ACH-000100,,monolayer,,,,None
+MC-000101-0kr1,ACH-000101,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000101-Bp61,ACH-000101,,suspension,,,,None
+MC-000102-BlKn,ACH-000102,,monolayer,,,,None
+MC-000102-cDc4,ACH-000102,,monolayer,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-000103-KfEO,ACH-000103,,adherent,,MF-021-003,L-15 + 20% FBS,None
+MC-000103-WPPc,ACH-000103,,adherent,,,,None
+MC-000104-RcHz,ACH-000104,,suspension,,,,None
+MC-000104-UvFa,ACH-000104,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000105-3CZh,ACH-000105,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000105-bK2q,ACH-000105,,suspension,,,,None
+MC-000106-5fQ2,ACH-000106,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000106-ehLj,ACH-000106,,suspension,,,,None
+MC-000107-e6AU,ACH-000107,,,,,,None
+MC-000107-zmrK,ACH-000107,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000108-dHhM,ACH-000108,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000108-qIhD,ACH-000108,,adherent,,,,None
+MC-000109-cK3a,ACH-000109,,mixed,,MF-013-001,ACL4 + 10% FBS,None
+MC-000109-EAHI,ACH-000109,,mixed,,,,None
+MC-000110-jhTc,ACH-000110,,suspension,,MF-002-001,DMEM + 10% FBS,None
+MC-000111-l0dD,ACH-000111,,mixed,,,,None
+MC-000111-S0c9,ACH-000111,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000112-7H1B,ACH-000112,,suspension,,,,None
+MC-000112-bjRJ,ACH-000112,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000113-1t5g,ACH-000113,,suspension,,MF-003-005,AlphaMEM + 20% FBS,None
+MC-000113-FfKt,ACH-000113,,suspension,,,,None
+MC-000114-6cSZ,ACH-000114,,adherent,,,,None
+MC-000114-XdzL,ACH-000114,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000115-7eZ4,ACH-000115,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000115-FtO4,ACH-000115,,adherent,,,,None
+MC-000116-Wp16,ACH-000116,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000117-n0Mf,ACH-000117,,,,,,None
+MC-000117-Onfr,ACH-000117,,adherent,,MF-001-018,RPMI + 15% FBS + 2mM Glutamine,None
+MC-000118-AMV8,ACH-000118,,adherent,,,,None
+MC-000118-EfzL,ACH-000118,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000119-biIS,ACH-000119,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000120-SeIV,ACH-000120,,adherent,,MF-027-001,EMEM:F12 + 10% FBS,None
+MC-000120-VBci,ACH-000120,,adherent,,,,None
+MC-000121-7t1B,ACH-000121,,mixed,,MF-001-014,RPMI + 5% FBS,None
+MC-000121-x0xD,ACH-000121,,mixed,,,,None
+MC-000122-PKNQ,ACH-000122,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000123-f35B,ACH-000123,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000124-5pKl,ACH-000124,,suspension,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-000124-Ol8g,ACH-000124,,suspension,,,,None
+MC-000125-tLIF,ACH-000125,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000126-1rwT,ACH-000126,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000127-8tHu,ACH-000127,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000128-Wk2O,ACH-000128,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000129-5G4s,ACH-000129,,suspension,,MF-007-014,DMEM:F12 + 20ug/ml insulin + 10ug/ml transferrin + 25nM sodium selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM ethanolamine + 10uM phosphorylethanolamine + 100pM triiodothyronine + 0.5% (w/v) BSA (final conc.) + 10mM HEPES + 500uM sodium pyruvate + 2mM Glutamine,None
+MC-000129-Xfg0,ACH-000129,,suspension,,,,None
+MC-000130-bX0R,ACH-000130,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000131-g6bE,ACH-000131,,adherent,,,,None
+MC-000132-D7jg,ACH-000132,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000132-IVJR,ACH-000132,,adherent,,,,None
+MC-000133-Kih3,ACH-000133,,adherent,,MF-002-008,DMEM + 5% FBS,None
+MC-000134-Xj1k,ACH-000134,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000135-FXuF,ACH-000135,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000135-L9Ng,ACH-000135,,,,,,None
+MC-000136-EkZe,ACH-000136,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000136-Im3x,ACH-000136,,mixed,,,,None
+MC-000137-I8Ak,ACH-000137,,adherent,,,,None
+MC-000137-Zhqt,ACH-000137,,adherent,,MF-006-014,MEM + 20% FBS,None
+MC-000138-tChl,ACH-000138,,mixed,,,,None
+MC-000138-YEvZ,ACH-000138,,mixed,,MF-002-001,DMEM + 10% FBS,None
+MC-000139-cnnh,ACH-000139,,adherent,,,,None
+MC-000139-Hnr6,ACH-000139,,adherent,,MF-001-042,RPMI + 15% FBS + 10 Units/ml recombinant insulin,None
+MC-000140-6aW4,ACH-000140,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000141-aXn7,ACH-000141,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000142-E7OD,ACH-000142,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000142-jGL9,ACH-000142,,adherent,,,,None
+MC-000143-xMKb,ACH-000143,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000144-hewW,ACH-000144,,adherent,,,,None
+MC-000144-wKtf,ACH-000144,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000145-3ydU,ACH-000145,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000145-ueOU,ACH-000145,,adherent,,,,None
+MC-000146-cqxn,ACH-000146,,suspension,,MF-001-006,RPMI + 10% FBS + 50uM 2-Mercaptoethanol,None
+MC-000146-qEga,ACH-000146,,suspension,,,,None
+MC-000147-L6rc,ACH-000147,,adherent,,,,None
+MC-000147-Uovr,ACH-000147,,adherent,,MF-001-045,RPMI + 10% FBS + 2ug/ml Insulin,None
+MC-000148-QiID,ACH-000148,,adherent,,,,None
+MC-000148-Vaxi,ACH-000148,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000149-PgwQ,ACH-000149,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000149-T5h1,ACH-000149,,,,,,None
+MC-000150-x7RT,ACH-000150,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000151-ePfA,ACH-000151,,suspension,,,,None
+MC-000151-opkL,ACH-000151,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000152-QYcw,ACH-000152,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000153-IsfJ,ACH-000153,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000153-qKFu,ACH-000153,,adherent,,,,None
+MC-000154-Ip6F,ACH-000154,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000155-08lg,ACH-000155,,,,,,None
+MC-000155-zv6Z,ACH-000155,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000156-hhaU,ACH-000156,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000156-s6DS,ACH-000156,,,,,,None
+MC-000157-92YL,ACH-000157,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000157-OdB2,ACH-000157,,suspension,,,,None
+MC-000158-KWQI,ACH-000158,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000159-MXbI,ACH-000159,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000159-y9yS,ACH-000159,,adherent,,,,None
+MC-000160-11p8,ACH-000160,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000161-IphX,ACH-000161,,adherent,,MF-001-018,RPMI + 15% FBS + 2mM Glutamine,None
+MC-000161-o3kZ,ACH-000161,,adherent,,,,None
+MC-000162-ax5K,ACH-000162,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000162-QU83,ACH-000162,,suspension,,,,None
+MC-000163-SnsT,ACH-000163,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000164-DAfq,ACH-000164,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000165-8cyy,ACH-000165,,,,,,None
+MC-000166-YiKe,ACH-000166,,suspension,,MF-001-023,RPMI + 20% FBS + 2 mM L-glutamine + 18mM sodium bicarbonate + 25mM glucose + 10 mM HEPES + 1mM sodium pyruvate + 2 ng/ml human recombinant granulocyte macrophage colony stimulating factor,None
+MC-000167-lZrU,ACH-000167,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000168-iXaz,ACH-000168,,suspension,,,,None
+MC-000168-L3Ll,ACH-000168,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000169-0day,ACH-000169,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000169-4B8F,ACH-000169,,adherent,,,,None
+MC-000170-NUvh,ACH-000170,,,,,,None
+MC-000171-D1xj,ACH-000171,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000171-zfj6,ACH-000171,,adherent,,,,None
+MC-000172-XmiC,ACH-000172,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000173-L2qF,ACH-000173,,adherent,,MF-007-018,DMEM:F12 + 10% FBS + 100uM NEAA,None
+MC-000174-7K9z,ACH-000174,,monolayer,,,,None
+MC-000174-bUpy,ACH-000174,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000175-8zy8,ACH-000175,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000176-3bk6,ACH-000176,,monolayer,,MF-001-021,RPMI + 20% FBS + 2mM Glutamine,None
+MC-000176-yxGx,ACH-000176,,monolayer,,,,None
+MC-000177-lGh6,ACH-000177,,mixed,,MF-001-015,RPMI + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM beta-estradiol,None
+MC-000177-s9Tb,ACH-000177,,mixed,,,,None
+MC-000178-Owto,ACH-000178,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000178-UinF,ACH-000178,,adherent,,,,None
+MC-000179-iX25,ACH-000179,,suspension,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000180-OMR4,ACH-000180,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000181-8p4R,ACH-000181,,,,,,None
+MC-000181-o3dt,ACH-000181,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000182-9dWr,ACH-000182,,mixed,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000183-k64I,ACH-000183,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-000183-QKEz,ACH-000183,,suspension,,,,None
+MC-000184-ymnM,ACH-000184,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000185-LdZV,ACH-000185,,suspension,,MF-002-001,DMEM + 10% FBS,None
+MC-000186-Ebzs,ACH-000186,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000186-MEuo,ACH-000186,,adherent,,,,None
+MC-000187-uKDb,ACH-000187,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000188-4IZF,ACH-000188,,adherent,,,,None
+MC-000188-qvBM,ACH-000188,,adherent,,MF-007-026,DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 0.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone,None
+MC-000189-2fOb,ACH-000189,,adherent,,,,None
+MC-000189-8xLJ,ACH-000189,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000190-IvGg,ACH-000190,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000190-X60k,ACH-000190,,adherent,,,,None
+MC-000191-En6E,ACH-000191,,monolayer,,MF-002-009,DMEM + 20% FBS,None
+MC-000191-tRLY,ACH-000191,,monolayer,,,,None
+MC-000192-cA5R,ACH-000192,,adherent,,,,None
+MC-000192-PYXk,ACH-000192,,adherent,,MF-041-002,RPMI:EMEM (1:1) + 10% FBS + 2 mM L-glutamine + 1x insulin-transferrin-sodium selenite,None
+MC-000193-a7Ej,ACH-000193,,suspension,,,,None
+MC-000193-IINp,ACH-000193,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000194-bjZY,ACH-000194,,adherent,,,,None
+MC-000195-S7vt,ACH-000195,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000196-sKap,ACH-000196,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000196-uQGJ,ACH-000196,,suspension,,,,None
+MC-000197-OUrl,ACH-000197,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-000197-qJT7,ACH-000197,,,,,,None
+MC-000198-gRtm,ACH-000198,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000198-X3W2,ACH-000198,,suspension,,,,None
+MC-000199-8FV3,ACH-000199,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000200-oWOr,ACH-000200,,adherent,,,,None
+MC-000200-pE94,ACH-000200,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000201-rUIL,ACH-000201,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000201-UFGL,ACH-000201,,adherent,,,,None
+MC-000202-FaAp,ACH-000202,,mixed,,,,None
+MC-000202-zGdK,ACH-000202,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000203-Ylfj,ACH-000203,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000204-0Tyh,ACH-000204,,mixed,,MF-005-001,IMDM + 10% FBS,None
+MC-000204-MA2G,ACH-000204,,mixed,,,,None
+MC-000205-IlC2,ACH-000205,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000206-Jmpg,ACH-000206,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000207-S7uy,ACH-000207,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000207-SgZd,ACH-000207,,,,,,None
+MC-000208-coHc,ACH-000208,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000209-gfOv,ACH-000209,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000210-6UEs,ACH-000210,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000210-dz0J,ACH-000210,,mixed,,,,None
+MC-000211-d793,ACH-000211,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000211-Kvuy,ACH-000211,,adherent,,,,None
+MC-000212-cLyi,ACH-000212,,monolayer,,,,None
+MC-000212-Rnzm,ACH-000212,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000213-7y66,ACH-000213,,mixed,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-000213-JI9c,ACH-000213,,mixed,,,,None
+MC-000214-aZvx,ACH-000214,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000215-1uuU,ACH-000215,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000216-RgzG,ACH-000216,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000217-5uKp,ACH-000217,,adherent,,,,None
+MC-000217-WAHm,ACH-000217,,adherent,,MF-022-001,William's E medium + 10% FBS,None
+MC-000218-ekDt,ACH-000218,,suspension,,,,None
+MC-000218-mAyO,ACH-000218,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000219-LE43,ACH-000219,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-000219-wkcr,ACH-000219,,adherent,,,,None
+MC-000219-yd7j,ACH-000219,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000220-UIlG,ACH-000220,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000221-AyjX,ACH-000221,,adherent,,,,None
+MC-000221-ha4a,ACH-000221,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000222-jGD1,ACH-000222,,adherent,,,,None
+MC-000222-kjMt,ACH-000222,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000223-9u5x,ACH-000223,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000223-ssxx,ACH-000223,,adherent,,,,None
+MC-000224-N3hq,ACH-000224,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000225-leBC,ACH-000225,,adherent,,,,None
+MC-000225-Px1h,ACH-000225,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000226-z9rQ,ACH-000226,,suspension,,,,None
+MC-000226-ZYgM,ACH-000226,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000227-eumb,ACH-000227,,adherent,,,,None
+MC-000227-M3Oi,ACH-000227,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000228-aDV5,ACH-000228,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000228-hcXZ,ACH-000228,,adherent,,,,None
+MC-000229-SEQc,ACH-000229,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000230-BXOo,ACH-000230,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000231-aOcA,ACH-000231,,adherent,,,,None
+MC-000231-tEoc,ACH-000231,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000232-5PKZ,ACH-000232,,adherent,,,,None
+MC-000232-q940,ACH-000232,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000233-Fszn,ACH-000233,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000233-WrhW,ACH-000233,,suspension,,,,None
+MC-000234-uzZ9,ACH-000234,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000235-3Jp1,ACH-000235,,adherent,,MF-001-043,RPMI + 10% FBS + 1mM Sodium pyruvate,None
+MC-000235-MWr0,ACH-000235,,adherent,,,,None
+MC-000236-1iU3,ACH-000236,,suspension,,MF-021-002,L-15 + 10% FBS + 2mM Glutamine,None
+MC-000236-uqKV,ACH-000236,,suspension,,,,None
+MC-000237-Fv8V,ACH-000237,,adherent,,MF-007-018,DMEM:F12 + 10% FBS + 100uM NEAA,None
+MC-000238-rNv7,ACH-000238,,adherent,,,,None
+MC-000238-YgfN,ACH-000238,,adherent,,MF-007-022,DMEM:F12 + 10% FBS + 0.4ug/ml Hydrocortisone,None
+MC-000239-Gdms,ACH-000239,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000240-8RHw,ACH-000240,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000241-I2In,ACH-000241,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000242-8hgc,ACH-000242,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000242-t9i8,ACH-000242,,adherent,,,,None
+MC-000243-pHKG,ACH-000243,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000243-YQv1,ACH-000243,,monolayer,,,,None
+MC-000244-gaMv,ACH-000244,,monolayer,,,,None
+MC-000244-nPup,ACH-000244,,monolayer,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000245-bCrH,ACH-000245,,,,,,None
+MC-000245-yISu,ACH-000245,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000246-NnuW,ACH-000246,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000247-HpLX,ACH-000247,,mixed,,,,None
+MC-000247-tciC,ACH-000247,,mixed,,MF-002-001,DMEM + 10% FBS,None
+MC-000248-pnP9,ACH-000248,,adherent,,,,None
+MC-000248-VRrA,ACH-000248,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000249-rdt1,ACH-000249,,monolayer,,,,None
+MC-000249-ZFHF,ACH-000249,,monolayer,,MF-007-019,DMEM:F12 + 20% FBS,None
+MC-000250-3qw8,ACH-000250,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000250-WNn3,ACH-000250,,adherent,,,,None
+MC-000251-RKNi,ACH-000251,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000252-phXb,ACH-000252,,adherent,,,,None
+MC-000252-s8hl,ACH-000252,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000253-eQci,ACH-000253,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000254-7Dwx,ACH-000254,,adherent,,MF-007-027,DMEM:F12 + 10% FBS + 2.5 mM Glutamine + 1.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone,None
+MC-000254-Xo1Y,ACH-000254,,adherent,,,,None
+MC-000255-PD5c,ACH-000255,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000256-WG8w,ACH-000256,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000257-cJZK,ACH-000257,,mixed,,,,None
+MC-000257-OIjN,ACH-000257,,mixed,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000258-6FD9,ACH-000258,,suspension,,,,None
+MC-000258-Sues,ACH-000258,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000259-MmGM,ACH-000259,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000259-TAoj,ACH-000259,,adherent,,,,None
+MC-000260-8I0U,ACH-000260,,adherent,,MF-002-002,DMEM + 10% FBS + 100uM NEAA,None
+MC-000260-RC2w,ACH-000260,,adherent,,,,None
+MC-000261-Fkq1,ACH-000261,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000262-Ldf3,ACH-000262,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000263-m2AS,ACH-000263,,suspension,,,,None
+MC-000263-MxQI,ACH-000263,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000264-AF5I,ACH-000264,,adherent,,,,None
+MC-000264-sUto,ACH-000264,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000265-TfNJ,ACH-000265,,adherent,,,,None
+MC-000265-xaBW,ACH-000265,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000266-Jc8S,ACH-000266,,monolayer,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000267-j62b,ACH-000267,,suspension,,,,None
+MC-000267-t8XB,ACH-000267,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000268-RcWD,ACH-000268,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000269-kDcc,ACH-000269,,adherent,,,,None
+MC-000269-LXDZ,ACH-000269,,adherent,,MF-015-009,EMEM + 20% FBS,None
+MC-000270-7BX7,ACH-000270,,adherent,,MF-007-028,DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 1.2 g/L Sodium Bicarbonate + 15 mM HEPES + 0.5 mM Sodium Pyruvate + 0.002 mg/ml insulin (Gibco cat# 12585-014) + 0.005 mg/ml transferrin + 40 ng/ml hydrocortisone + 10 ng/ml epidermal growth factor (Fisher Scientific cat# CB-40010),None
+MC-000270-eNd9,ACH-000270,,adherent,,,,None
+MC-000271-2YJJ,ACH-000271,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000271-6qzE,ACH-000271,,suspension,,,,None
+MC-000272-qQOa,ACH-000272,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000273-86rL,ACH-000273,,mixed,,,,None
+MC-000273-nfhd,ACH-000273,,mixed,,MF-001-014,RPMI + 5% FBS,None
+MC-000274-21AI,ACH-000274,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000275-IQdW,ACH-000275,,adherent,,,,None
+MC-000276-Niqg,ACH-000276,,adherent,,MF-020-001,Waymouth's MB 752_1 + 10% FBS,None
+MC-000276-Yd1k,ACH-000276,,adherent,,,,None
+MC-000277-Alx7,ACH-000277,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000277-jVkn,ACH-000277,,adherent,,,,None
+MC-000278-uC8l,ACH-000278,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000279-zY8v,ACH-000279,,adherent,,MF-001-018,RPMI + 15% FBS + 2mM Glutamine,None
+MC-000280-pNNC,ACH-000280,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000281-dV9B,ACH-000281,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000282-5g6o,ACH-000282,,,,,,None
+MC-000282-DHXr,ACH-000282,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000283-v96S,ACH-000283,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000284-Re3k,ACH-000284,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000285-SV5v,ACH-000285,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000286-7xxs,ACH-000286,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000287-D5Mr,ACH-000287,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-000287-pZ0k,ACH-000287,,suspension,,,,None
+MC-000288-duSY,ACH-000288,,adherent,,,,None
+MC-000288-UzBM,ACH-000288,,adherent,,MF-001-045,RPMI + 10% FBS + 2ug/ml Insulin,None
+MC-000289-wNga,ACH-000289,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000290-aDAR,ACH-000290,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000291-Qzgo,ACH-000291,,adherent,,,,None
+MC-000291-rMHv,ACH-000291,,adherent,,,,None
+MC-000292-LgHL,ACH-000292,,adherent,,,,None
+MC-000292-Oy94,ACH-000292,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000293-5MrH,ACH-000293,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000293-ixTK,ACH-000293,,adherent,,,,None
+MC-000294-9Msn,ACH-000294,,suspension,,,,None
+MC-000294-TVP5,ACH-000294,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000295-4ELV,ACH-000295,,suspension,,,,None
+MC-000295-wXek,ACH-000295,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000296-bgzW,ACH-000296,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000297-kYTw,ACH-000297,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000298-32qr,ACH-000298,,,,,,None
+MC-000298-MmVL,ACH-000298,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000299-oIsc,ACH-000299,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000300-Rw9l,ACH-000300,,adherent,,,,None
+MC-000301-kxnk,ACH-000301,,mixed,,,,None
+MC-000301-YjK5,ACH-000301,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000302-TT0u,ACH-000302,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000303-fcRP,ACH-000303,,suspension,,,,None
+MC-000303-r1Xf,ACH-000303,,suspension,,MF-005-004,IMDM + 20% FBS,None
+MC-000304-JiDR,ACH-000304,,adherent,,,,None
+MC-000304-yRLH,ACH-000304,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000305-Itnt,ACH-000305,,adherent,,,,None
+MC-000305-iWdg,ACH-000305,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000306-7jQ1,ACH-000306,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000307-COGw,ACH-000307,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000308-E734,ACH-000308,,adherent,,MF-001-047,RPMI + 20% FBS + 2 mM Glutamine + 1x MEM NEAA + 1 mM sodium pyruvate,None
+MC-000308-xys6,ACH-000308,,adherent,,,,None
+MC-000309-LZlq,ACH-000309,,adherent,,,,None
+MC-000310-adwH,ACH-000310,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000311-Ouc5,ACH-000311,,,,,,None
+MC-000311-Rm4m,ACH-000311,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000312-oMfE,ACH-000312,,adherent,,MF-027-001,EMEM:F12 + 10% FBS,None
+MC-000313-eJa9,ACH-000313,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000314-lK8m,ACH-000314,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000315-j80A,ACH-000315,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000315-jBeL,ACH-000315,,suspension,,,,None
+MC-000316-sylV,ACH-000316,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000317-zFR4,ACH-000317,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000318-Ha9q,ACH-000318,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000318-QzhX,ACH-000318,,adherent,,,,None
+MC-000319-0wpg,ACH-000319,,adherent,,,,None
+MC-000319-XYA6,ACH-000319,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000320-j6jJ,ACH-000320,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000320-VZim,ACH-000320,,adherent,,,,None
+MC-000321-v6tA,ACH-000321,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000322-AFjr,ACH-000322,,adherent,,,,None
+MC-000322-Mao8,ACH-000322,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000323-m8Qb,ACH-000323,,adherent,,MF-041-003,RPMI:EMEM (1:1) + 20% FBS,None
+MC-000323-TmRx,ACH-000323,,adherent,,,,None
+MC-000324-UzZP,ACH-000324,,adherent,,MF-007-018,DMEM:F12 + 10% FBS + 100uM NEAA,None
+MC-000325-SArX,ACH-000325,,suspension,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000326-DIBJ,ACH-000326,,suspension,,,,None
+MC-000326-kma2,ACH-000326,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000327-GXLy,ACH-000327,,adherent,,,,None
+MC-000327-k5I5,ACH-000327,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000328-gA4f,ACH-000328,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000329-gbtH,ACH-000329,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000329-Yx8n,ACH-000329,,adherent,,,,None
+MC-000330-Kt52,ACH-000330,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000330-YqWa,ACH-000330,,monolayer,,,,None
+MC-000331-G7HH,ACH-000331,,adherent,,MF-002-012,DMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-000332-1VT5,ACH-000332,,adherent,,,,None
+MC-000332-21ni,ACH-000332,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000333-V8cr,ACH-000333,,adherent,,MF-002-002,DMEM + 10% FBS + 100uM NEAA,None
+MC-000334-fk0Z,ACH-000334,,suspension,,,,None
+MC-000334-r0NH,ACH-000334,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000335-5q7T,ACH-000335,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000335-xH2O,ACH-000335,,adherent,,,,None
+MC-000336-S5ga,ACH-000336,,suspension,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-000336-XcLv,ACH-000336,,suspension,,,,None
+MC-000337-UoC5,ACH-000337,,adherent,,,,None
+MC-000337-VmHG,ACH-000337,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000338-pAyK,ACH-000338,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-000338-WuM6,ACH-000338,,suspension,,,,None
+MC-000339-BBAD,ACH-000339,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000340-lsm9,ACH-000340,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000341-j6JM,ACH-000341,,adherent,,,,None
+MC-000341-URnG,ACH-000341,,adherent,,MF-002-002,DMEM + 10% FBS + 100uM NEAA,None
+MC-000342-ZW9E,ACH-000342,,monolayer,,MF-007-019,DMEM:F12 + 20% FBS,None
+MC-000343-0SE9,ACH-000343,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000343-qm4k,ACH-000343,,adherent,,,,None
+MC-000344-SRpi,ACH-000344,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000345-oSi2,ACH-000345,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000345-yXks,ACH-000345,,mixed,,,,None
+MC-000346-WaFc,ACH-000346,,suspension,,,,None
+MC-000346-ZhjV,ACH-000346,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000347-EPBq,ACH-000347,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000347-JMGU,ACH-000347,,adherent,,,,None
+MC-000348-IJyL,ACH-000348,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000348-xnWP,ACH-000348,,adherent,,,,None
+MC-000349-slwO,ACH-000349,,adherent,,,,None
+MC-000349-Wfja,ACH-000349,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000350-c8yb,ACH-000350,,monolayer,,,,None
+MC-000350-K6lI,ACH-000350,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000351-Rppu,ACH-000351,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000351-SVDi,ACH-000351,,,,,,None
+MC-000352-HPEl,ACH-000352,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000352-Th8x,ACH-000352,,adherent,,,,None
+MC-000353-ilyC,ACH-000353,,adherent,,,,None
+MC-000353-NYhT,ACH-000353,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000354-6wZM,ACH-000354,,adherent,,,,None
+MC-000354-WVTo,ACH-000354,,adherent,,MF-005-004,IMDM + 20% FBS,None
+MC-000355-5WXb,ACH-000355,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000355-fX1V,ACH-000355,,mixed,,,,None
+MC-000356-gdC3,ACH-000356,,adherent,,,,None
+MC-000356-xmV6,ACH-000356,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000357-qVd4,ACH-000357,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000357-xSjt,ACH-000357,,suspension,,,,None
+MC-000358-a88i,ACH-000358,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000358-NvsB,ACH-000358,,,,,,None
+MC-000359-gx4I,ACH-000359,,adherent,,,,None
+MC-000359-Xkje,ACH-000359,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000360-1krl,ACH-000360,,mixed,,,,None
+MC-000360-cPex,ACH-000360,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000361-QZ7V,ACH-000361,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000361-yQDD,ACH-000361,,adherent,,,,None
+MC-000362-EJ9W,ACH-000362,,suspension,,,,None
+MC-000362-z9Q8,ACH-000362,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000363-oBSH,ACH-000363,,suspension,,,,None
+MC-000363-oOHD,ACH-000363,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000364-5fPi,ACH-000364,,adherent,,,,None
+MC-000364-NOKW,ACH-000364,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000365-BoXT,ACH-000365,,suspension,,,,None
+MC-000365-TMgT,ACH-000365,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000366-kCtj,ACH-000366,,adherent,,,,None
+MC-000366-wgzn,ACH-000366,,adherent,,MF-002-002,DMEM + 10% FBS + 100uM NEAA,None
+MC-000367-mihn,ACH-000367,,,,,,None
+MC-000367-z5wu,ACH-000367,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000368-5EYR,ACH-000368,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000369-EYI5,ACH-000369,,suspension,,,,None
+MC-000369-hSYj,ACH-000369,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000370-WtKV,ACH-000370,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000371-dVDN,ACH-000371,,suspension,,,,None
+MC-000371-fnbQ,ACH-000371,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000372-76mQ,ACH-000372,,suspension,,,,None
+MC-000372-lJjw,ACH-000372,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000373-jh5t,ACH-000373,,suspension,,,,None
+MC-000373-zafG,ACH-000373,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000374-7N0F,ACH-000374,,adherent,,,,None
+MC-000374-mhth,ACH-000374,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000375-3NLt,ACH-000375,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000375-myDa,ACH-000375,,adherent,,,,None
+MC-000376-a8Ey,ACH-000376,,adherent,,,,None
+MC-000376-mBf3,ACH-000376,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000377-7WCX,ACH-000377,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000378-GwDw,ACH-000378,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000379-YR4E,ACH-000379,,adherent,,,,None
+MC-000379-ZDQA,ACH-000379,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000380-5UdG,ACH-000380,,suspension,,,,None
+MC-000380-q01W,ACH-000380,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000381-B0uW,ACH-000381,,adherent,,MF-007-008,DMEM:F12 + 5% FBS,None
+MC-000381-fVoH,ACH-000381,,adherent,,,,None
+MC-000382-13CK,ACH-000382,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000383-M8Xs,ACH-000383,,adherent,,,,None
+MC-000383-RdTF,ACH-000383,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000384-jGYO,ACH-000384,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000384-mghR,ACH-000384,,adherent,,,,None
+MC-000385-ReBQ,ACH-000385,,adherent,,,,None
+MC-000386-kHRm,ACH-000386,,suspension,,MF-005-004,IMDM + 20% FBS,None
+MC-000386-Oeiy,ACH-000386,,suspension,,,,None
+MC-000387-9xMX,ACH-000387,,suspension,,MF-001-048,RPMI + 10% FBS + 2ng/ml hG-CSF,None
+MC-000388-zMD3,ACH-000388,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000389-is87,ACH-000389,,adherent,,,,None
+MC-000389-NbLV,ACH-000389,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000390-N1a0,ACH-000390,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000391-CEkf,ACH-000391,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000391-yqxu,ACH-000391,,monolayer,,,,None
+MC-000392-fh0Y,ACH-000392,,adherent,,,,None
+MC-000392-zizT,ACH-000392,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000393-lUgn,ACH-000393,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000394-POM3,ACH-000394,,,,,,None
+MC-000394-x6is,ACH-000394,,suspension,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000395-b1SS,ACH-000395,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000395-m5bO,ACH-000395,,adherent,,,,None
+MC-000396-DZtc,ACH-000396,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000396-pWDl,ACH-000396,,adherent,,,,None
+MC-000397-V3gM,ACH-000397,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000398-TSbp,ACH-000398,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000399-D5lM,ACH-000399,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000399-rPgP,ACH-000399,,adherent,,,,None
+MC-000400-fOSQ,ACH-000400,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000400-I3X8,ACH-000400,,adherent,,,,None
+MC-000401-7y9u,ACH-000401,,monolayer,,,,None
+MC-000401-PCm2,ACH-000401,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000402-iC8K,ACH-000402,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000403-3khV,ACH-000403,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000403-NqYk,ACH-000403,,adherent,,,,None
+MC-000404-GqDy,ACH-000404,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000405-OrjD,ACH-000405,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000406-va7T,ACH-000406,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000407-MQcN,ACH-000407,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000408-Ay9X,ACH-000408,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000408-kTBb,ACH-000408,,adherent,,,,None
+MC-000409-b43b,ACH-000409,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000410-gLX5,ACH-000410,,adherent,,,,None
+MC-000410-oWwG,ACH-000410,,adherent,,MF-023-002,McCoy's 5A + 15% FBS,None
+MC-000411-ANqW,ACH-000411,,adherent,,,,None
+MC-000411-stVE,ACH-000411,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000412-dhsP,ACH-000412,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000413-C356,ACH-000413,,,,,,None
+MC-000414-4WOU,ACH-000414,,adherent,,,,None
+MC-000414-MWUF,ACH-000414,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000415-LtPG,ACH-000415,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000416-AVQ6,ACH-000416,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000416-NihW,ACH-000416,,adherent,,,,None
+MC-000417-fvga,ACH-000417,,adherent,,,,None
+MC-000417-ma4b,ACH-000417,,adherent,,MF-001-019,RPMI + 15% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 60ug/ml Insulin + 10mM HEPES + 18mM Sodium bicarbonate + 25mM Glucose,None
+MC-000418-yD17,ACH-000418,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000419-jxmJ,ACH-000419,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000420-FBvj,ACH-000420,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000420-MsLc,ACH-000420,,adherent,,,,None
+MC-000421-TMOc,ACH-000421,,adherent,,,,None
+MC-000421-WmSt,ACH-000421,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000422-GXpH,ACH-000422,,adherent,,,,None
+MC-000422-HNKU,ACH-000422,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000423-ed3k,ACH-000423,,adherent,,,,None
+MC-000423-Tx7a,ACH-000423,,adherent,,MF-023-002,McCoy's 5A + 15% FBS,None
+MC-000424-VRxU,ACH-000424,,adherent,,MF-005-001,IMDM + 10% FBS,None
+MC-000424-y6EX,ACH-000424,,adherent,,,,None
+MC-000425-cqUH,ACH-000425,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000425-UYlA,ACH-000425,,adherent,,,,None
+MC-000426-vT1j,ACH-000426,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000427-cwjs,ACH-000427,,adherent,,,,None
+MC-000427-fGvH,ACH-000427,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000428-mn7k,ACH-000428,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000428-wE5x,ACH-000428,,adherent,,,,None
+MC-000429-A7Sw,ACH-000429,,,,,,None
+MC-000429-gjoP,ACH-000429,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000430-LxgI,ACH-000430,,,,,,None
+MC-000430-zl5N,ACH-000430,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000431-32KF,ACH-000431,,suspension,,,,None
+MC-000431-ATIc,ACH-000431,,suspension,,MF-004-001,F12 + 10% FBS,None
+MC-000432-msZ2,ACH-000432,,suspension,,MF-001-021,RPMI + 20% FBS + 2mM Glutamine,None
+MC-000432-tHUL,ACH-000432,,suspension,,,,None
+MC-000433-fLcb,ACH-000433,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000433-QMwK,ACH-000433,,adherent,,,,None
+MC-000434-8t7w,ACH-000434,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000434-JJXr,ACH-000434,,adherent,,,,None
+MC-000435-eQbb,ACH-000435,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000436-76Cr,ACH-000436,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000437-PETQ,ACH-000437,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000437-qpTL,ACH-000437,,adherent,,,,None
+MC-000438-97t0,ACH-000438,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000438-LSP3,ACH-000438,,suspension,,,,None
+MC-000439-NHr9,ACH-000439,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000439-sv02,ACH-000439,,suspension,,,,None
+MC-000440-788S,ACH-000440,,adherent,,,,None
+MC-000440-o2P6,ACH-000440,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000441-c3sp,ACH-000441,,mixed,,MF-002-001,DMEM + 10% FBS,None
+MC-000441-N6yZ,ACH-000441,,mixed,,,,None
+MC-000442-2s22,ACH-000442,,adherent,,,,None
+MC-000442-9XIo,ACH-000442,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000443-Vqi3,ACH-000443,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000443-VzGx,ACH-000443,,,,,,None
+MC-000444-lwIE,ACH-000444,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000444-YZXO,ACH-000444,,adherent,,,,None
+MC-000445-pJlM,ACH-000445,,adherent,,MF-002-008,DMEM + 5% FBS,None
+MC-000446-BoNJ,ACH-000446,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000447-VLSP,ACH-000447,,,,,,None
+MC-000447-Xhod,ACH-000447,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000448-6xWU,ACH-000448,,mixed,,,,None
+MC-000448-xj1z,ACH-000448,,mixed,,MF-001-014,RPMI + 5% FBS,None
+MC-000449-CzYj,ACH-000449,,adherent,,,,None
+MC-000449-iHb5,ACH-000449,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000450-UsoN,ACH-000450,,adherent,,,,None
+MC-000450-v6IX,ACH-000450,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000451-FDtA,ACH-000451,,,,,,None
+MC-000451-ikjy,ACH-000451,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000452-2Iuz,ACH-000452,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000452-y5uV,ACH-000452,,adherent,,,,None
+MC-000453-gsBl,ACH-000453,,suspension,,MF-001-021,RPMI + 20% FBS + 2mM Glutamine,None
+MC-000454-fbF7,ACH-000454,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000455-QvVM,ACH-000455,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000456-4zaf,ACH-000456,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000456-LaWY,ACH-000456,,monolayer,,,,None
+MC-000457-BEt0,ACH-000457,,monolayer,,MF-002-009,DMEM + 20% FBS,None
+MC-000457-iohc,ACH-000457,,monolayer,,,,None
+MC-000458-xKvR,ACH-000458,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000459-htGX,ACH-000459,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000460-OPZJ,ACH-000460,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000461-uDY4,ACH-000461,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000462-xIRj,ACH-000462,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000463-0z7G,ACH-000463,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000463-Z0fK,ACH-000463,,adherent,,,,None
+MC-000464-IvZC,ACH-000464,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000464-YDMd,ACH-000464,,adherent,,,,None
+MC-000465-jRsG,ACH-000465,,suspension,,,,None
+MC-000465-SoO3,ACH-000465,,suspension,,MF-015-001,EMEM + 10% FBS,None
+MC-000466-hcLR,ACH-000466,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000467-3FoK,ACH-000467,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000467-6Db0,ACH-000467,,adherent,,,,None
+MC-000468-c6hY,ACH-000468,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000469-HmTS,ACH-000469,,adherent,,,,None
+MC-000469-mQzu,ACH-000469,,adherent,,MF-015-009,EMEM + 20% FBS,None
+MC-000470-0cwL,ACH-000470,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000470-7IjR,ACH-000470,,adherent,,,,None
+MC-000471-iBae,ACH-000471,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000472-rCox,ACH-000472,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000472-TlNK,ACH-000472,,adherent,,,,None
+MC-000473-Ey6A,ACH-000473,,adherent,,,,None
+MC-000473-MpEw,ACH-000473,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000475-MOdu,ACH-000475,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000475-W7YC,ACH-000475,,adherent,,,,None
+MC-000476-aM0Z,ACH-000476,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000476-xgG1,ACH-000476,,adherent,,,,None
+MC-000477-pmML,ACH-000477,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000478-mPIr,ACH-000478,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000478-paF1,ACH-000478,,adherent,,,,None
+MC-000479-6qKr,ACH-000479,,adherent,,MF-002-008,DMEM + 5% FBS,None
+MC-000480-LnYg,ACH-000480,,adherent,,,,None
+MC-000480-TrEW,ACH-000480,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000481-45N2,ACH-000481,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000481-bFe4,ACH-000481,,mixed,,,,None
+MC-000482-VfTP,ACH-000482,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000482-yTPH,ACH-000482,,adherent,,,,None
+MC-000483-PV93,ACH-000483,,adherent,,,,None
+MC-000483-toXy,ACH-000483,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000484-3iBo,ACH-000484,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000484-thJb,ACH-000484,,adherent,,,,None
+MC-000485-p85M,ACH-000485,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000486-S058,ACH-000486,,adherent,,,,None
+MC-000486-zsD2,ACH-000486,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000487-b0zV,ACH-000487,,suspension,,MF-001-028,RPMI + 20% FBS + 10ng/ml GM-CSF,None
+MC-000488-sREU,ACH-000488,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000488-ufMX,ACH-000488,,adherent,,,,None
+MC-000489-57N4,ACH-000489,,adherent,,,,None
+MC-000489-H7Ic,ACH-000489,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000490-7cuv,ACH-000490,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000491-4Sgx,ACH-000491,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000491-W4s6,ACH-000491,,mixed,,,,None
+MC-000492-fJz7,ACH-000492,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000493-3Cne,ACH-000493,,adherent,,,,None
+MC-000493-GcWi,ACH-000493,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000494-s2Mp,ACH-000494,,,,,,None
+MC-000495-g0D3,ACH-000495,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000496-10Gs,ACH-000496,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000496-y1LD,ACH-000496,,adherent,,,,None
+MC-000498-COlJ,ACH-000498,,suspension,,,,None
+MC-000498-kxhP,ACH-000498,,suspension,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-000499-2oo9,ACH-000499,,,,,,None
+MC-000499-mIS1,ACH-000499,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000500-AuBV,ACH-000500,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000501-66hN,ACH-000501,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000501-zhHw,ACH-000501,,,,,,None
+MC-000502-yIwz,ACH-000502,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000503-KJA2,ACH-000503,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000504-2V8V,ACH-000504,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000504-aQvj,ACH-000504,,adherent,,,,None
+MC-000505-3edj,ACH-000505,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000505-RbSi,ACH-000505,,adherent,,,,None
+MC-000506-UCrK,ACH-000506,,suspension,,,,None
+MC-000506-Zcrt,ACH-000506,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000507-V957,ACH-000507,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000508-AwIO,ACH-000508,,,,,,None
+MC-000508-Bwd0,ACH-000508,,mixed,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000509-QeYM,ACH-000509,,suspension,,MF-005-004,IMDM + 20% FBS,None
+MC-000510-vWgo,ACH-000510,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000510-Z2or,ACH-000510,,adherent,,,,None
+MC-000511-GHgo,ACH-000511,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000512-BELB,ACH-000512,,suspension,,MF-001-024,RPMI + 20% FBS + 10ng/ml IL-6,None
+MC-000513-jKDw,ACH-000513,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000514-fd1i,ACH-000514,,suspension,,MF-007-025,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000514-sDLl,ACH-000514,,suspension,,,,None
+MC-000515-cc7O,ACH-000515,,suspension,,,,None
+MC-000515-ooNl,ACH-000515,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000516-kQiE,ACH-000516,,adherent,,,,None
+MC-000516-TvpK,ACH-000516,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000517-kcbL,ACH-000517,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000518-mZY2,ACH-000518,,monolayer,,,,None
+MC-000518-PzGm,ACH-000518,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000519-6MYr,ACH-000519,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000520-YIm7,ACH-000520,,adherent,,,,None
+MC-000521-EQHC,ACH-000521,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000521-rkNP,ACH-000521,,adherent,,,,None
+MC-000522-4AmM,ACH-000522,,adherent,,,,None
+MC-000522-7Rt7,ACH-000522,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000523-eCl1,ACH-000523,,mixed,,MF-001-020,RPMI + 20% FBS,None
+MC-000524-696J,ACH-000524,,adherent,,,,None
+MC-000524-7y8Z,ACH-000524,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000525-BRBs,ACH-000525,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000525-kFeN,ACH-000525,,,,,,None
+MC-000526-l5pn,ACH-000526,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000527-f2HC,ACH-000527,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000527-sDUu,ACH-000527,,adherent,,,,None
+MC-000528-86TD,ACH-000528,,adherent,,,,None
+MC-000528-BMri,ACH-000528,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000529-XJJm,ACH-000529,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000530-vUsT,ACH-000530,,adherent,,MF-020-001,Waymouth's MB 752_1 + 10% FBS,None
+MC-000530-WFVn,ACH-000530,,adherent,,,,None
+MC-000531-xOEq,ACH-000531,,monolayer,,,,None
+MC-000532-DVgv,ACH-000532,,monolayer,,,,None
+MC-000532-NN9r,ACH-000532,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000533-fYvG,ACH-000533,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000534-Qtqb,ACH-000534,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000534-wcWB,ACH-000534,,,,,,None
+MC-000535-t4WG,ACH-000535,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000535-xYQ2,ACH-000535,,adherent,,,,None
+MC-000536-0pgd,ACH-000536,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000536-FXhI,ACH-000536,,,,,,None
+MC-000537-uVHC,ACH-000537,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000538-l7Lz,ACH-000538,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000538-s70K,ACH-000538,,adherent,,,,None
+MC-000539-pCbq,ACH-000539,,adherent,,,,None
+MC-000540-xCtq,ACH-000540,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000541-nrlm,ACH-000541,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000542-5nl4,ACH-000542,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000543-WI4t,ACH-000543,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000544-CWJO,ACH-000544,,adherent,,,,None
+MC-000544-xZXk,ACH-000544,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000545-QqlV,ACH-000545,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000545-viLC,ACH-000545,,adherent,,,,None
+MC-000546-1McC,ACH-000546,,,,,,None
+MC-000546-f8TR,ACH-000546,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000547-djnC,ACH-000547,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000547-i5oW,ACH-000547,,adherent,,,,None
+MC-000548-cZvo,ACH-000548,,monolayer,,,,None
+MC-000548-fylx,ACH-000548,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000549-P7xB,ACH-000549,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000550-SVpf,ACH-000550,,adherent,,MF-002-022,DMEM + 15% FBS,None
+MC-000551-8iFg,ACH-000551,,suspension,,,,None
+MC-000551-DKoh,ACH-000551,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000552-7gEK,ACH-000552,,adherent,,,,None
+MC-000552-bdsQ,ACH-000552,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000553-uuoP,ACH-000553,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000554-CtOe,ACH-000554,,adherent,,,,None
+MC-000554-KCT9,ACH-000554,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000555-Yc4b,ACH-000555,,adherent,,,,None
+MC-000555-ZjrM,ACH-000555,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000556-MsyC,ACH-000556,,adherent,,,,None
+MC-000556-YK2Z,ACH-000556,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000557-cEXn,ACH-000557,,suspension,,MF-005-007,IMDM + 5% FBS + 10ug/ml Insulin + 5ug/ml Transferrin + 2ng/ml GM-CSF,None
+MC-000558-HsPe,ACH-000558,,adherent,,,,None
+MC-000558-q891,ACH-000558,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000559-FCy3,ACH-000559,,mixed,,,,None
+MC-000559-OXfk,ACH-000559,,mixed,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000560-gl5z,ACH-000560,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000560-YCjG,ACH-000560,,,,,,None
+MC-000561-cgOa,ACH-000561,,,,,,None
+MC-000561-m7ap,ACH-000561,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000562-mq0V,ACH-000562,,,,,,None
+MC-000562-veWb,ACH-000562,,adherent,,,,None
+MC-000563-h25t,ACH-000563,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000563-jCCJ,ACH-000563,,adherent,,,,None
+MC-000564-riBO,ACH-000564,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000565-MZf1,ACH-000565,,adherent,,,,None
+MC-000565-zttA,ACH-000565,,adherent,,,,None
+MC-000566-4Sxv,ACH-000566,,monolayer,,,,None
+MC-000566-7ICC,ACH-000566,,monolayer,,,,None
+MC-000567-1IeE,ACH-000567,,adherent,,,,None
+MC-000567-vQCv,ACH-000567,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000568-QfIB,ACH-000568,,mixed,,,,None
+MC-000568-Ulyb,ACH-000568,,mixed,,MF-001-020,RPMI + 20% FBS,None
+MC-000569-PzDl,ACH-000569,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000569-Tdr7,ACH-000569,,adherent,,,,None
+MC-000570-BVGy,ACH-000570,,adherent,,,,None
+MC-000570-eOob,ACH-000570,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000571-0MLO,ACH-000571,,adherent,,,,None
+MC-000571-l91a,ACH-000571,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000572-ugKw,ACH-000572,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000572-yFVA,ACH-000572,,adherent,,,,None
+MC-000573-ASEy,ACH-000573,,mixed,,,,None
+MC-000573-NdVR,ACH-000573,,mixed,,,,None
+MC-000574-hmfX,ACH-000574,,adherent,,,,None
+MC-000574-NENH,ACH-000574,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000575-q3Ch,ACH-000575,,adherent,,,,None
+MC-000576-XM9D,ACH-000576,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000577-J7sN,ACH-000577,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000578-0XhE,ACH-000578,,monolayer,,,,None
+MC-000579-O3LW,ACH-000579,,adherent,,,,None
+MC-000579-xadI,ACH-000579,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000580-ymtS,ACH-000580,,adherent,,,,None
+MC-000581-Tdqz,ACH-000581,,,,,,None
+MC-000581-XiH0,ACH-000581,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000582-hnXD,ACH-000582,,adherent,,,,None
+MC-000582-oMcf,ACH-000582,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000583-c03L,ACH-000583,,suspension,,,,None
+MC-000583-payY,ACH-000583,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000584-AUVi,ACH-000584,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000584-fYwY,ACH-000584,,adherent,,,,None
+MC-000585-bB5C,ACH-000585,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000585-taeO,ACH-000585,,adherent,,,,None
+MC-000586-9LVL,ACH-000586,,adherent,,,,None
+MC-000586-c00I,ACH-000586,,adherent,,,,None
+MC-000587-1IBb,ACH-000587,,adherent,,,,None
+MC-000587-Rius,ACH-000587,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000588-mIbO,ACH-000588,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000589-7aEe,ACH-000589,,adherent,,,,None
+MC-000589-DVAf,ACH-000589,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000590-jjkj,ACH-000590,,adherent,,,,None
+MC-000591-7ouP,ACH-000591,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000592-RBCT,ACH-000592,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000593-aYaS,ACH-000593,,monolayer,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000594-xFjb,ACH-000594,,mixed,,,,None
+MC-000595-Gzg4,ACH-000595,,adherent,,MF-002-008,DMEM + 5% FBS,None
+MC-000595-Ssey,ACH-000595,,adherent,,,,None
+MC-000596-MF8N,ACH-000596,,monolayer,,,,None
+MC-000596-ocip,ACH-000596,,monolayer,,MF-001-020,RPMI + 20% FBS,None
+MC-000597-RDyO,ACH-000597,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000598-DAax,ACH-000598,,suspension,,,,None
+MC-000599-AlzI,ACH-000599,,monolayer,,,,None
+MC-000599-SvzV,ACH-000599,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000600-vKRN,ACH-000600,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000601-0XfO,ACH-000601,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000601-42Mz,ACH-000601,,adherent,,,,None
+MC-000602-uVHZ,ACH-000602,,suspension,,MF-001-028,RPMI + 20% FBS + 10ng/ml GM-CSF,None
+MC-000603-6hMN,ACH-000603,,monolayer,,,,None
+MC-000603-DDB8,ACH-000603,,monolayer,,,,None
+MC-000604-3ciw,ACH-000604,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000605-kZXV,ACH-000605,,adherent,,,,None
+MC-000605-mA6N,ACH-000605,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000606-ClJi,ACH-000606,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-000607-ax0u,ACH-000607,,,,,,None
+MC-000607-tkjL,ACH-000607,,suspension,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000608-tjzi,ACH-000608,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000609-4eFz,ACH-000609,,adherent,,,,None
+MC-000609-rR5h,ACH-000609,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000610-Mmk4,ACH-000610,,mixed,,,,None
+MC-000610-VNJ6,ACH-000610,,mixed,,,,None
+MC-000611-rOIo,ACH-000611,,suspension,,,,None
+MC-000611-WhVU,ACH-000611,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000612-7B8o,ACH-000612,,suspension,,,,None
+MC-000613-BLdH,ACH-000613,,adherent,,,,None
+MC-000613-I0we,ACH-000613,,,,,,None
+MC-000614-7X1Q,ACH-000614,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000614-mVUT,ACH-000614,,adherent,,,,None
+MC-000615-4XlB,ACH-000615,,,,,,None
+MC-000615-qzpF,ACH-000615,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000616-6kI7,ACH-000616,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000616-zrFf,ACH-000616,,adherent,,,,None
+MC-000617-B40F,ACH-000617,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000617-T8bN,ACH-000617,,adherent,,,,None
+MC-000618-7qcd,ACH-000618,,monolayer,,,,None
+MC-000619-1kR8,ACH-000619,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-000619-dYai,ACH-000619,,,,,,None
+MC-000620-dj0N,ACH-000620,,adherent,,,,None
+MC-000620-sZdG,ACH-000620,,adherent,,MF-022-001,William's E medium + 10% FBS,None
+MC-000621-jers,ACH-000621,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000621-OQLl,ACH-000621,,adherent,,,,None
+MC-000622-2BQ2,ACH-000622,,adherent,,,,None
+MC-000622-BOnI,ACH-000622,,adherent,,,,None
+MC-000623-239I,ACH-000623,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000624-9TIG,ACH-000624,,adherent,,,,None
+MC-000624-eeVv,ACH-000624,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000625-ENPZ,ACH-000625,,mixed,,MF-006-001,MEM + 10% FBS,None
+MC-000626-fGl1,ACH-000626,,suspension,,,,None
+MC-000626-uoIB,ACH-000626,,suspension,,,,None
+MC-000627-Frw9,ACH-000627,,monolayer,,,,None
+MC-000627-qj3B,ACH-000627,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000628-etnt,ACH-000628,,adherent,,,,None
+MC-000628-S5WB,ACH-000628,,adherent,,,,None
+MC-000629-dbT6,ACH-000629,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000630-nlYv,ACH-000630,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000631-f4Wo,ACH-000631,,adherent,,,,None
+MC-000631-vlp5,ACH-000631,,adherent,,,,None
+MC-000632-Khm1,ACH-000632,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000633-iIki,ACH-000633,,adherent,,MF-002-010,DMEM + 10% FBS + 1ug/ml Insulin,None
+MC-000633-VnoS,ACH-000633,,adherent,,,,None
+MC-000634-KPL2,ACH-000634,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000635-yEVa,ACH-000635,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000636-NXBb,ACH-000636,,suspension,,,,None
+MC-000636-vNnG,ACH-000636,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000637-aARQ,ACH-000637,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000637-q42p,ACH-000637,,adherent,,,,None
+MC-000638-57ZX,ACH-000638,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000638-PFDi,ACH-000638,,adherent,,,,None
+MC-000639-ITlY,ACH-000639,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000639-pJGf,ACH-000639,,mixed,,,,None
+MC-000640-6tDp,ACH-000640,,adherent,,,,None
+MC-000640-tL2u,ACH-000640,,adherent,,,,None
+MC-000641-2Ca9,ACH-000641,,mixed,,MF-001-020,RPMI + 20% FBS,None
+MC-000642-PhVy,ACH-000642,,mixed,,,,None
+MC-000643-0mJe,ACH-000643,,monolayer,,,,None
+MC-000643-Lgxt,ACH-000643,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000644-IkVV,ACH-000644,,adherent,,,,None
+MC-000644-wPiH,ACH-000644,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000645-YBVU,ACH-000645,,adherent,,MF-002-009,DMEM + 20% FBS,None
+MC-000646-7oWm,ACH-000646,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000647-597q,ACH-000647,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000647-Ldet,ACH-000647,,adherent,,,,None
+MC-000648-3pbU,ACH-000648,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000648-sjTM,ACH-000648,,adherent,,,,None
+MC-000649-Hb96,ACH-000649,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000649-IvOi,ACH-000649,,adherent,,,,None
+MC-000650-hjLy,ACH-000650,,adherent,,,,None
+MC-000650-M9Ln,ACH-000650,,adherent,,,,None
+MC-000651-qG5h,ACH-000651,,mixed,,MF-021-001,L-15 + 10% FBS,None
+MC-000651-t17h,ACH-000651,,mixed,,,,None
+MC-000652-huQ6,ACH-000652,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000652-PnQ2,ACH-000652,,adherent,,,,None
+MC-000653-aEuc,ACH-000653,,suspension,,,,None
+MC-000653-q5Vl,ACH-000653,,suspension,,,,None
+MC-000654-MboE,ACH-000654,,suspension,,,,None
+MC-000654-PqYC,ACH-000654,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000655-bdkQ,ACH-000655,,mixed,,MF-001-014,RPMI + 5% FBS,None
+MC-000655-JzSn,ACH-000655,,mixed,,,,None
+MC-000656-Hh7S,ACH-000656,,suspension,,,,None
+MC-000656-VzGP,ACH-000656,,suspension,,,,None
+MC-000657-ERaD,ACH-000657,,mixed,,,,None
+MC-000657-vN70,ACH-000657,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000658-XV7I,ACH-000658,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000659-KBx4,ACH-000659,,adherent,,,,None
+MC-000660-5vbJ,ACH-000660,,suspension,,,,None
+MC-000660-y9Pf,ACH-000660,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000661-bVjm,ACH-000661,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000662-1qHS,ACH-000662,,adherent,,,,None
+MC-000662-xLOJ,ACH-000662,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000663-sVpI,ACH-000663,,adherent,,,,None
+MC-000663-zOPU,ACH-000663,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000664-6o68,ACH-000664,,suspension,,,,None
+MC-000664-F5u7,ACH-000664,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000665-FOD6,ACH-000665,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000665-WOq0,ACH-000665,,adherent,,,,None
+MC-000666-6AtF,ACH-000666,,suspension,,,,None
+MC-000666-xR3q,ACH-000666,,,,,,None
+MC-000667-NPwb,ACH-000667,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000667-RxbC,ACH-000667,,monolayer,,,,None
+MC-000668-rT7J,ACH-000668,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000668-uGDa,ACH-000668,,adherent,,,,None
+MC-000669-MVxi,ACH-000669,,adherent,,,,None
+MC-000669-Nk3g,ACH-000669,,adherent,,,,None
+MC-000670-Drkb,ACH-000670,,adherent,,,,None
+MC-000670-fvgh,ACH-000670,,adherent,,,,None
+MC-000671-Nxcr,ACH-000671,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000672-m0Ol,ACH-000672,,adherent,,,,None
+MC-000672-rQwM,ACH-000672,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000673-RSQe,ACH-000673,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000674-nmJ4,ACH-000674,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000674-UM4g,ACH-000674,,mixed,,,,None
+MC-000675-dXQQ,ACH-000675,,adherent,,,,None
+MC-000675-O6Zc,ACH-000675,,adherent,,,,None
+MC-000676-xCHT,ACH-000676,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000677-aJN8,ACH-000677,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000677-cYnn,ACH-000677,,adherent,,,,None
+MC-000678-5gY7,ACH-000678,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000678-Fhbl,ACH-000678,,,,,,None
+MC-000679-4DaG,ACH-000679,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000679-YrlL,ACH-000679,,adherent,,,,None
+MC-000680-EONb,ACH-000680,,mixed,,,,None
+MC-000680-f7dS,ACH-000680,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000681-4O7k,ACH-000681,,adherent,,,,None
+MC-000681-VvEX,ACH-000681,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000682-aHK7,ACH-000682,,monolayer,,,,None
+MC-000683-8Hes,ACH-000683,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000684-nbWG,ACH-000684,,adherent,,,,None
+MC-000684-OsUg,ACH-000684,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000685-W4mj,ACH-000685,,mixed,,,,None
+MC-000686-bnNq,ACH-000686,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000687-ggUv,ACH-000687,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000688-RWeh,ACH-000688,,adherent,,MF-007-009,DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone,None
+MC-000688-wac7,ACH-000688,,adherent,,,,None
+MC-000689-cDRv,ACH-000689,,monolayer,,,,None
+MC-000689-xez3,ACH-000689,,monolayer,,,,None
+MC-000690-QXt4,ACH-000690,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000691-5D91,ACH-000691,,suspension,,MF-001-014,RPMI + 5% FBS,None
+MC-000691-SGad,ACH-000691,,,,,,None
+MC-000692-bV06,ACH-000692,,monolayer,,,,None
+MC-000693-poeO,ACH-000693,,monolayer,,,,None
+MC-000693-vUEr,ACH-000693,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000694-gObM,ACH-000694,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000694-GUiM,ACH-000694,,adherent,,,,None
+MC-000695-Lo1r,ACH-000695,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000696-I5h5,ACH-000696,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000696-moRz,ACH-000696,,adherent,,,,None
+MC-000697-tGVo,ACH-000697,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000697-TgX7,ACH-000697,,suspension,,,,None
+MC-000698-61V3,ACH-000698,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000698-AWjg,ACH-000698,,adherent,,,,None
+MC-000699-iHwM,ACH-000699,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000699-ZRov,ACH-000699,,adherent,,,,None
+MC-000700-mndS,ACH-000700,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000701-0nb0,ACH-000701,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000702-pRTU,ACH-000702,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000702-uMGs,ACH-000702,,mixed,,,,None
+MC-000703-mnrW,ACH-000703,,suspension,,,,None
+MC-000703-U6Xp,ACH-000703,,suspension,,,,None
+MC-000704-btHg,ACH-000704,,adherent,,,,None
+MC-000704-KA9i,ACH-000704,,adherent,,,,None
+MC-000705-R5uy,ACH-000705,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000706-d8dm,ACH-000706,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000706-y1jl,ACH-000706,,adherent,,,,None
+MC-000707-Dpdu,ACH-000707,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000708-mRY8,ACH-000708,,monolayer,,,,None
+MC-000708-TDh8,ACH-000708,,monolayer,,,,None
+MC-000709-QsXL,ACH-000709,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000710-aZ7F,ACH-000710,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000711-jmma,ACH-000711,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000711-ovtV,ACH-000711,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000712-GZtg,ACH-000712,,monolayer,,,,None
+MC-000713-Mfxo,ACH-000713,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000713-MOal,ACH-000713,,adherent,,,,None
+MC-000714-6Q0c,ACH-000714,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000714-Ep4x,ACH-000714,,,,,,None
+MC-000715-nlbC,ACH-000715,,monolayer,,,,None
+MC-000716-fcc9,ACH-000716,,monolayer,,,,None
+MC-000716-J43k,ACH-000716,,monolayer,,MF-001-020,RPMI + 20% FBS,None
+MC-000717-2Fbd,ACH-000717,,monolayer,,,,None
+MC-000717-VYb0,ACH-000717,,monolayer,,,,None
+MC-000718-EHx2,ACH-000718,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000718-qi2Y,ACH-000718,,adherent,,,,None
+MC-000719-jBLZ,ACH-000719,,adherent,,,,None
+MC-000719-VWM6,ACH-000719,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000720-MgEe,ACH-000720,,adherent,,,,None
+MC-000720-nYfB,ACH-000720,,adherent,,,,None
+MC-000721-QnhE,ACH-000721,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000722-Bobx,ACH-000722,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000722-zUCP,ACH-000722,,mixed,,,,None
+MC-000723-XaoY,ACH-000723,,monolayer,,,,None
+MC-000724-d2il,ACH-000724,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000724-KN0p,ACH-000724,,adherent,,,,None
+MC-000725-fXxs,ACH-000725,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000725-O2Bv,ACH-000725,,adherent,,,,None
+MC-000726-1ofV,ACH-000726,,adherent,,,,None
+MC-000727-j7m4,ACH-000727,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000727-l8XD,ACH-000727,,,,,,None
+MC-000728-MrCh,ACH-000728,,mixed,,,,None
+MC-000729-kll9,ACH-000729,,,,,,None
+MC-000729-TQUb,ACH-000729,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000730-2O1L,ACH-000730,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000730-bqCG,ACH-000730,,adherent,,,,None
+MC-000731-hMsF,ACH-000731,,monolayer,,,,None
+MC-000732-pa69,ACH-000732,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-000733-94AG,ACH-000733,,adherent,,,,None
+MC-000733-9Hqb,ACH-000733,,adherent,,,,None
+MC-000734-gBsJ,ACH-000734,,adherent,,MF-022-001,William's E medium + 10% FBS,None
+MC-000735-pw8K,ACH-000735,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-000736-P80P,ACH-000736,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000737-ewEG,ACH-000737,,suspension,,,,None
+MC-000738-4Yli,ACH-000738,,adherent,,,,None
+MC-000738-dE9F,ACH-000738,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000739-yQWD,ACH-000739,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000740-PW6X,ACH-000740,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000740-tNVa,ACH-000740,,adherent,,,,None
+MC-000741-Gvsa,ACH-000741,,adherent,,MF-010-001,DMEM:RPMI (1:3) + 10% FBS + 2mM Glutamine,None
+MC-000742-Vkqf,ACH-000742,,adherent,,,,None
+MC-000743-5fmI,ACH-000743,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000743-kaBM,ACH-000743,,suspension,,,,None
+MC-000744-6KoF,ACH-000744,,adherent,,,,None
+MC-000744-mCbj,ACH-000744,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000745-0SAR,ACH-000745,,mixed,,,,None
+MC-000745-KWJQ,ACH-000745,,mixed,,,,None
+MC-000746-HhfN,ACH-000746,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000747-5vS8,ACH-000747,,adherent,,,,None
+MC-000747-stgN,ACH-000747,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000748-KR9M,ACH-000748,,adherent,,,,None
+MC-000748-vxNq,ACH-000748,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000749-3mRK,ACH-000749,,adherent,,,,None
+MC-000749-kHpJ,ACH-000749,,,,,,None
+MC-000750-bafP,ACH-000750,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000750-lpUw,ACH-000750,,adherent,,,,None
+MC-000751-E03J,ACH-000751,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000751-Qsiq,ACH-000751,,suspension,,,,None
+MC-000752-ipjq,ACH-000752,,adherent,,,,None
+MC-000752-RdcJ,ACH-000752,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000753-DxZw,ACH-000753,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000754-IW8e,ACH-000754,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000754-MToB,ACH-000754,,suspension,,,,None
+MC-000755-61n7,ACH-000755,,suspension,,,,None
+MC-000755-mhTL,ACH-000755,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000756-tsfC,ACH-000756,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000756-WQaB,ACH-000756,,adherent,,,,None
+MC-000757-en8T,ACH-000757,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000757-hFFN,ACH-000757,,adherent,,,,None
+MC-000758-1YGh,ACH-000758,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000759-jMff,ACH-000759,,adherent,,,,None
+MC-000759-L1aL,ACH-000759,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000760-gvbr,ACH-000760,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000761-5VXC,ACH-000761,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000762-wXHU,ACH-000762,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000763-Lfpn,ACH-000763,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000763-qyI3,ACH-000763,,mixed,,,,None
+MC-000764-6dKs,ACH-000764,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000765-PMrH,ACH-000765,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000766-25bR,ACH-000766,,mixed,,,,None
+MC-000766-RtCU,ACH-000766,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000767-6ebV,ACH-000767,,suspension,,,,None
+MC-000767-kxY9,ACH-000767,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000768-F0F5,ACH-000768,,adherent,,,,None
+MC-000768-FLBy,ACH-000768,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000769-9wUy,ACH-000769,,adherent,,,,None
+MC-000769-HyNe,ACH-000769,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000770-CUBM,ACH-000770,,suspension,,,,None
+MC-000770-fBLS,ACH-000770,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000771-lGmR,ACH-000771,,adherent,,MF-002-004,DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone,None
+MC-000772-kfM3,ACH-000772,,mixed,,,,None
+MC-000772-ox5U,ACH-000772,,mixed,,MF-002-001,DMEM + 10% FBS,None
+MC-000773-FFsq,ACH-000773,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000774-GTYc,ACH-000774,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000775-1AL8,ACH-000775,,adherent,,,,None
+MC-000775-vJB4,ACH-000775,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000776-SLwx,ACH-000776,,adherent,,,,None
+MC-000776-YERh,ACH-000776,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000777-ezmQ,ACH-000777,,adherent,,,,None
+MC-000778-Bi9Z,ACH-000778,,adherent,,,,None
+MC-000778-yyI9,ACH-000778,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000779-V0JR,ACH-000779,,adherent,,,,None
+MC-000780-3uGU,ACH-000780,,suspension,,,,None
+MC-000780-jx6G,ACH-000780,,suspension,,,,None
+MC-000781-EprM,ACH-000781,,adherent,,,,None
+MC-000781-G5rR,ACH-000781,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000782-Doeq,ACH-000782,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-000783-PITO,ACH-000783,,adherent,,,,None
+MC-000783-QiYu,ACH-000783,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000784-8ktU,ACH-000784,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000784-ayo7,ACH-000784,,monolayer,,,,None
+MC-000785-IXI3,ACH-000785,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000785-K3As,ACH-000785,,adherent,,,,None
+MC-000786-CERh,ACH-000786,,suspension,,,,None
+MC-000786-QNPT,ACH-000786,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000787-eQaU,ACH-000787,,monolayer,,,,None
+MC-000787-yzmP,ACH-000787,,monolayer,,MF-004-001,F12 + 10% FBS,None
+MC-000788-UK2d,ACH-000788,,adherent,,,,None
+MC-000788-xvTl,ACH-000788,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000789-b1IU,ACH-000789,,adherent,,,,None
+MC-000789-RFW6,ACH-000789,,,,,,None
+MC-000790-qr1i,ACH-000790,,mixed,,,,None
+MC-000790-zhzx,ACH-000790,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000791-hZfp,ACH-000791,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000792-uVJM,ACH-000792,,monolayer,,,,None
+MC-000792-V2Ue,ACH-000792,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000793-0iSa,ACH-000793,,mixed,,MF-005-004,IMDM + 20% FBS,None
+MC-000793-rJhp,ACH-000793,,mixed,,,,None
+MC-000794-a6tw,ACH-000794,,adherent,,,,None
+MC-000794-TjgT,ACH-000794,,adherent,,MF-002-004,DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone,None
+MC-000795-PEoZ,ACH-000795,,suspension,,,,None
+MC-000796-MvBN,ACH-000796,,adherent,,,,None
+MC-000796-nwaZ,ACH-000796,,,,,,None
+MC-000797-l7Rz,ACH-000797,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000798-g7mg,ACH-000798,,monolayer,,,,None
+MC-000798-O7D5,ACH-000798,,monolayer,,MF-007-019,DMEM:F12 + 20% FBS,None
+MC-000799-Fdo9,ACH-000799,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000800-GRpv,ACH-000800,,mixed,,,,None
+MC-000800-vISL,ACH-000800,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000801-OlRe,ACH-000801,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000802-q2Cm,ACH-000802,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000802-XNE7,ACH-000802,,adherent,,,,None
+MC-000803-P28d,ACH-000803,,suspension,,,,None
+MC-000803-vCJK,ACH-000803,,,,,,None
+MC-000804-cKqO,ACH-000804,,adherent,,,,None
+MC-000804-Hxgj,ACH-000804,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000805-qr8y,ACH-000805,,monolayer,,,,None
+MC-000805-uUAU,ACH-000805,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000806-fUz0,ACH-000806,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000806-pQw5,ACH-000806,,suspension,,,,None
+MC-000807-JcJt,ACH-000807,,monolayer,,,,None
+MC-000808-WFgD,ACH-000808,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000809-3ot9,ACH-000809,,monolayer,,,,None
+MC-000809-gZQY,ACH-000809,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000810-5d7Q,ACH-000810,,adherent,,,,None
+MC-000810-vJi3,ACH-000810,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000811-Gp6a,ACH-000811,,adherent,,,,None
+MC-000811-kbFV,ACH-000811,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000812-m0LT,ACH-000812,,monolayer,,,,None
+MC-000812-ogze,ACH-000812,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000813-774N,ACH-000813,,adherent,,,,None
+MC-000814-Adkx,ACH-000814,,adherent,,,,None
+MC-000814-sJb7,ACH-000814,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000815-2aJs,ACH-000815,,,,,,None
+MC-000815-VkMT,ACH-000815,,suspension,,,,None
+MC-000816-fYn1,ACH-000816,,suspension,,,,None
+MC-000816-jwfl,ACH-000816,,suspension,,,,None
+MC-000817-8WNg,ACH-000817,,mixed,,,,None
+MC-000817-xdTH,ACH-000817,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000818-Gx0J,ACH-000818,,adherent,,,,None
+MC-000818-TCKc,ACH-000818,,adherent,,,,None
+MC-000819-hAT2,ACH-000819,,adherent,,MF-002-008,DMEM + 5% FBS,None
+MC-000819-Stb8,ACH-000819,,adherent,,,,None
+MC-000820-TEES,ACH-000820,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000821-5U4q,ACH-000821,,mixed,,MF-005-001,IMDM + 10% FBS,None
+MC-000821-JAyU,ACH-000821,,mixed,,,,None
+MC-000822-5No9,ACH-000822,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000822-KyYt,ACH-000822,,adherent,,,,None
+MC-000823-gUsF,ACH-000823,,monolayer,,,,None
+MC-000823-tiwS,ACH-000823,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000824-akuc,ACH-000824,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000824-iT8M,ACH-000824,,adherent,,,,None
+MC-000825-rKGp,ACH-000825,,mixed,,,,None
+MC-000825-XqQc,ACH-000825,,mixed,,,,None
+MC-000826-IUyj,ACH-000826,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000826-oZ2o,ACH-000826,,adherent,,,,None
+MC-000827-6ReA,ACH-000827,,adherent,,,,None
+MC-000827-fiMz,ACH-000827,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000828-17AC,ACH-000828,,adherent,,,,None
+MC-000828-Zsfm,ACH-000828,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000829-Ajhg,ACH-000829,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-000830-uuPe,ACH-000830,,suspension,,,,None
+MC-000830-ZfdN,ACH-000830,,suspension,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000831-XRYC,ACH-000831,,adherent,,,,None
+MC-000832-CjpT,ACH-000832,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000832-JtON,ACH-000832,,,,,,None
+MC-000833-KaSb,ACH-000833,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000833-yj6G,ACH-000833,,monolayer,,,,None
+MC-000834-rUcv,ACH-000834,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-000835-jJ80,ACH-000835,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000835-ynSu,ACH-000835,,adherent,,,,None
+MC-000836-gosu,ACH-000836,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000837-Of3x,ACH-000837,,adherent,,,,None
+MC-000837-xXNo,ACH-000837,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000838-VbPX,ACH-000838,,suspension,,,,None
+MC-000838-Zbla,ACH-000838,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000839-d4N5,ACH-000839,,adherent,,,,None
+MC-000839-krru,ACH-000839,,adherent,,,,None
+MC-000840-lGr7,ACH-000840,,monolayer,,,,None
+MC-000840-s0Cx,ACH-000840,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000841-bBw4,ACH-000841,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000841-gQHi,ACH-000841,,adherent,,,,None
+MC-000842-yIGU,ACH-000842,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000843-58wh,ACH-000843,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000843-xvIf,ACH-000843,,adherent,,,,None
+MC-000844-KhKo,ACH-000844,,adherent,,,,None
+MC-000845-meEc,ACH-000845,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000846-2o0D,ACH-000846,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000846-WMVy,ACH-000846,,,,,,None
+MC-000847-1a8G,ACH-000847,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-000847-vO2g,ACH-000847,,adherent,,,,None
+MC-000848-koEA,ACH-000848,,adherent,,,,None
+MC-000848-TnzG,ACH-000848,,adherent,,MF-022-001,William's E medium + 10% FBS,None
+MC-000849-k9Oq,ACH-000849,,adherent,,,,None
+MC-000849-Wlea,ACH-000849,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000850-2Pc8,ACH-000850,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000851-DKZr,ACH-000851,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000852-H6cT,ACH-000852,,adherent,,,,None
+MC-000852-Hjuv,ACH-000852,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000853-HHcY,ACH-000853,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000853-HoA7,ACH-000853,,adherent,,,,None
+MC-000854-V9kf,ACH-000854,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000855-emdy,ACH-000855,,monolayer,,MF-011-002,RPMI:F12 (1:1) + 10% FBS,None
+MC-000855-P9gt,ACH-000855,,monolayer,,,,None
+MC-000856-5i0B,ACH-000856,,monolayer,,,,None
+MC-000856-lEgX,ACH-000856,,monolayer,,MF-002-009,DMEM + 20% FBS,None
+MC-000857-B9IA,ACH-000857,,,,,,None
+MC-000857-Y6lb,ACH-000857,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000858-K7hx,ACH-000858,,adherent,,,,None
+MC-000858-toxv,ACH-000858,,adherent,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-000859-2MHN,ACH-000859,,adherent,,,,None
+MC-000859-RwWg,ACH-000859,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000860-66VU,ACH-000860,,adherent,,,,None
+MC-000860-B2eq,ACH-000860,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000861-9ux2,ACH-000861,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000861-cwoA,ACH-000861,,adherent,,,,None
+MC-000862-zZCN,ACH-000862,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000863-dUqs,ACH-000863,,adherent,,,,None
+MC-000863-FWdm,ACH-000863,,adherent,,MF-001-049,RPMI + 10% FBS + 30 mg/L Proline + 35 mg/L Cystine + 3.57 g/L HEPES +15 mg/L Hypoxanthine +1 mg/L ATP +10 mg/L Adenine + 1 mg/L Thymidine,None
+MC-000864-COg6,ACH-000864,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000864-cUmG,ACH-000864,,suspension,,,,None
+MC-000865-ux6D,ACH-000865,,adherent,,,,None
+MC-000865-Y9CO,ACH-000865,,adherent,,MF-011-002,RPMI:F12 (1:1) + 10% FBS,None
+MC-000866-dtB3,ACH-000866,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000866-SgOR,ACH-000866,,adherent,,,,None
+MC-000867-fca0,ACH-000867,,adherent,,,,None
+MC-000867-HGDX,ACH-000867,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000868-jz2P,ACH-000868,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000869-2NiK,ACH-000869,,adherent,,,,None
+MC-000869-u5uo,ACH-000869,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000870-oAzK,ACH-000870,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000871-aeyP,ACH-000871,,mixed,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000871-nKzX,ACH-000871,,mixed,,,,None
+MC-000872-Vecx,ACH-000872,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000873-9K63,ACH-000873,,adherent,,,,None
+MC-000873-pFjX,ACH-000873,,adherent,,MF-011-002,RPMI:F12 (1:1) + 10% FBS,None
+MC-000874-efl6,ACH-000874,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000874-ySU0,ACH-000874,,suspension,,,,None
+MC-000875-f2AK,ACH-000875,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000875-H5VC,ACH-000875,,mixed,,,,None
+MC-000876-kFGS,ACH-000876,,adherent,,MF-024-008,L15 + 15% FBS + 2mM Glutamine + 10ug/ml Insulin + 10ug/ml Glutathione,None
+MC-000876-RsD0,ACH-000876,,adherent,,,,None
+MC-000877-xqqy,ACH-000877,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000878-vuWR,ACH-000878,,mixed,,,,None
+MC-000878-ZAqb,ACH-000878,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000879-Lcmt,ACH-000879,,adherent,,,,None
+MC-000879-ZJNE,ACH-000879,,adherent,,MF-006-008,MEM + 10% FBS + 2mM Glutamine,None
+MC-000880-8KRb,ACH-000880,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000880-Gu8X,ACH-000880,,adherent,,,,None
+MC-000881-H36w,ACH-000881,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000881-jqUI,ACH-000881,,monolayer,,,,None
+MC-000882-M9go,ACH-000882,,adherent,,,,None
+MC-000882-WA3V,ACH-000882,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000883-mbps,ACH-000883,,,,,,None
+MC-000883-Soug,ACH-000883,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000884-qtr4,ACH-000884,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000885-Emfo,ACH-000885,,adherent,,,,None
+MC-000885-jOR3,ACH-000885,,adherent,,,,None
+MC-000886-8OYy,ACH-000886,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000886-IdDp,ACH-000886,,adherent,,,,None
+MC-000887-cOSG,ACH-000887,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000888-dlP0,ACH-000888,,adherent,,,,None
+MC-000888-pj2R,ACH-000888,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000889-DCaw,ACH-000889,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000890-cbjX,ACH-000890,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000890-eNBf,ACH-000890,,adherent,,,,None
+MC-000891-c2CJ,ACH-000891,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000892-D2PY,ACH-000892,,adherent,,,,None
+MC-000892-fqZu,ACH-000892,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000893-z64z,ACH-000893,,adherent,,MF-007-020,DMEM:F12 + 10%FBS + 20ug/ml insulin + 10ug/ml transferrin + 25nM sodium selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM ethanolamine + 10uM phosphorylethanolamine + 100pM triiodothyronine + 0.5% (w/v) BSA (final conc.) + 10mM HEPES + 500uM sodium pyruvate + 2mM Glutamine,None
+MC-000893-ZlAo,ACH-000893,,adherent,,,,None
+MC-000894-7WG1,ACH-000894,,adherent,,MF-007-020,DMEM:F12 + 10%FBS + 20ug/ml insulin + 10ug/ml transferrin + 25nM sodium selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM ethanolamine + 10uM phosphorylethanolamine + 100pM triiodothyronine + 0.5% (w/v) BSA (final conc.) + 10mM HEPES + 500uM sodium pyruvate + 2mM Glutamine,None
+MC-000894-RCoa,ACH-000894,,adherent,,,,None
+MC-000895-amL5,ACH-000895,,monolayer,,,,None
+MC-000895-CSYv,ACH-000895,,monolayer,,MF-007-019,DMEM:F12 + 20% FBS,None
+MC-000896-fwiv,ACH-000896,,adherent,,,,None
+MC-000896-XqkQ,ACH-000896,,adherent,,MF-002-015,DMEM + 15% FBS + 2mM Glutamine,None
+MC-000897-E215,ACH-000897,,adherent,,MF-007-024,DMEM:F12 + 5% FBS + 2mM Glutamine,None
+MC-000898-mg3e,ACH-000898,,mixed,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000899-p6MP,ACH-000899,,,,MF-001-001,RPMI + 10% FBS,None
+MC-000900-lYab,ACH-000900,,adherent,,,,None
+MC-000900-wejh,ACH-000900,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000901-p7dg,ACH-000901,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000902-JVOX,ACH-000902,,mixed,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000902-kHls,ACH-000902,,mixed,,,,None
+MC-000903-EHaY,ACH-000903,,adherent,,MF-007-002,DMEM:F12 + 10% FBS + 2mM Glutamine,None
+MC-000903-mGhX,ACH-000903,,adherent,,,,None
+MC-000904-0w6Z,ACH-000904,,suspension,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000905-htA7,ACH-000905,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000905-IjEO,ACH-000905,,mixed,,,,None
+MC-000906-1Vg7,ACH-000906,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000906-Gjr3,ACH-000906,,adherent,,,,None
+MC-000907-PqcI,ACH-000907,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000908-MMId,ACH-000908,,suspension,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000909-LKj6,ACH-000909,,mixed,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-000910-2EDP,ACH-000910,,adherent,,,,None
+MC-000910-xyM4,ACH-000910,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-000911-0g7y,ACH-000911,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000911-cZaQ,ACH-000911,,adherent,,,,None
+MC-000912-cLYP,ACH-000912,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000913-mRWp,ACH-000913,,adherent,,,,None
+MC-000913-p0yT,ACH-000913,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000914-GsyT,ACH-000914,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000914-K7kD,ACH-000914,,,,,,None
+MC-000915-240W,ACH-000915,,adherent,,,,None
+MC-000915-mAea,ACH-000915,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000916-ibYd,ACH-000916,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000916-t1cC,ACH-000916,,adherent,,,,None
+MC-000917-kPEf,ACH-000917,,adherent,,,,None
+MC-000917-xI63,ACH-000917,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000918-j9go,ACH-000918,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000918-jpm2,ACH-000918,,suspension,,,,None
+MC-000919-5mwC,ACH-000919,,adherent,,,,None
+MC-000919-7VUL,ACH-000919,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000920-JD3R,ACH-000920,,suspension,,,,None
+MC-000920-qMIt,ACH-000920,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000921-P628,ACH-000921,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000922-l1Wf,ACH-000922,,mixed,,MF-001-020,RPMI + 20% FBS,None
+MC-000922-maXA,ACH-000922,,mixed,,,,None
+MC-000923-54Av,ACH-000923,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-000924-PCGo,ACH-000924,,adherent,,,,None
+MC-000924-TCUt,ACH-000924,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000925-XGp3,ACH-000925,,monolayer,,MF-001-054,RPMI + 10% FBS + 2mM Glutamine + 1X NEAA,None
+MC-000926-5j81,ACH-000926,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-000926-vHfn,ACH-000926,,adherent,,,,None
+MC-000927-IUpq,ACH-000927,,adherent,,,,None
+MC-000927-wG2c,ACH-000927,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000928-voLu,ACH-000928,,adherent,,MF-007-021,DMEM:F12 + 15% FBS,None
+MC-000929-dOQ9,ACH-000929,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000929-nLUe,ACH-000929,,adherent,,,,None
+MC-000930-7W2U,ACH-000930,,mixed,,,,None
+MC-000930-v0gO,ACH-000930,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000931-3a7D,ACH-000931,,adherent,,,,None
+MC-000932-AXF8,ACH-000932,,suspension,,,,None
+MC-000932-i4UI,ACH-000932,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000933-ZKQP,ACH-000933,,mixed,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000934-sl2O,ACH-000934,,mixed,,MF-021-003,L-15 + 20% FBS,None
+MC-000934-UDwU,ACH-000934,,mixed,,,,None
+MC-000935-4xuf,ACH-000935,,adherent,,,,None
+MC-000935-E55p,ACH-000935,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-000936-l70n,ACH-000936,,adherent,,,,None
+MC-000936-ljVZ,ACH-000936,,adherent,,MF-001-047,RPMI + 20% FBS + 2 mM Glutamine + 1x MEM NEAA + 1 mM sodium pyruvate,None
+MC-000937-QPMF,ACH-000937,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000937-y4mA,ACH-000937,,suspension,,,,None
+MC-000938-Ia8t,ACH-000938,,suspension,,,,None
+MC-000938-Syvo,ACH-000938,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-000939-pxY0,ACH-000939,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000939-vZCX,ACH-000939,,adherent,,,,None
+MC-000940-41v2,ACH-000940,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000940-SV1H,ACH-000940,,adherent,,,,None
+MC-000941-TQc0,ACH-000941,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000942-b3sA,ACH-000942,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000943-73mH,ACH-000943,,adherent,,,,None
+MC-000943-VfLa,ACH-000943,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-000944-cm2a,ACH-000944,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000944-LNJm,ACH-000944,,suspension,,,,None
+MC-000945-1zci,ACH-000945,,mixed,,,,None
+MC-000945-JzaO,ACH-000945,,mixed,,MF-001-014,RPMI + 5% FBS,None
+MC-000946-Imv7,ACH-000946,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-000947-2Nyc,ACH-000947,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000947-uz0w,ACH-000947,,adherent,,,,None
+MC-000948-rUs0,ACH-000948,,mixed,,,,None
+MC-000948-TWxM,ACH-000948,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000949-9FXZ,ACH-000949,,suspension,,MF-002-008,DMEM + 5% FBS,None
+MC-000949-NFXl,ACH-000949,,suspension,,,,None
+MC-000950-hnD2,ACH-000950,,adherent,,,,None
+MC-000950-Pk7o,ACH-000950,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-000951-mW9M,ACH-000951,,mixed,,,,None
+MC-000951-Um4n,ACH-000951,,mixed,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000952-7GXZ,ACH-000952,,adherent,,MF-004-007,F12 + 20% FBS,None
+MC-000953-FhWV,ACH-000953,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000953-n5cw,ACH-000953,,suspension,,,,None
+MC-000954-kX2i,ACH-000954,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000955-q7cl,ACH-000955,,monolayer,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-000955-y2v6,ACH-000955,,monolayer,,,,None
+MC-000956-tuzo,ACH-000956,,adherent,,,,None
+MC-000956-WA5g,ACH-000956,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000957-Ccbl,ACH-000957,,adherent,,,,None
+MC-000957-Yckn,ACH-000957,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000958-a8u0,ACH-000958,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000958-mNiZ,ACH-000958,,mixed,,,,None
+MC-000959-FEPL,ACH-000959,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000960-jmuJ,ACH-000960,,suspension,,,,None
+MC-000960-RI7G,ACH-000960,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000961-IqS8,ACH-000961,,,,MF-006-001,MEM + 10% FBS,None
+MC-000962-QQUt,ACH-000962,,monolayer,,,,None
+MC-000962-Uy5q,ACH-000962,,monolayer,,,,None
+MC-000963-1AeG,ACH-000963,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000963-DeC4,ACH-000963,,adherent,,,,None
+MC-000964-tTts,ACH-000964,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000965-naxM,ACH-000965,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-000965-QT4C,ACH-000965,,adherent,,,,None
+MC-000966-gj8L,ACH-000966,,adherent,,,,None
+MC-000966-POkc,ACH-000966,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000967-ncE2,ACH-000967,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000968-jPeQ,ACH-000968,,adherent,,,,None
+MC-000968-vZgr,ACH-000968,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000969-8Uk9,ACH-000969,,mixed,,,,None
+MC-000969-drm8,ACH-000969,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000970-Bx3a,ACH-000970,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000970-JX4C,ACH-000970,,monolayer,,,,None
+MC-000971-cQQl,ACH-000971,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-000971-zKHf,ACH-000971,,,,,,None
+MC-000972-WC01,ACH-000972,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-000973-akaA,ACH-000973,,monolayer,,,,None
+MC-000973-F02J,ACH-000973,,monolayer,,MF-002-001,DMEM + 10% FBS,None
+MC-000974-3BP0,ACH-000974,,adherent,,,,None
+MC-000974-UjmW,ACH-000974,,adherent,,MF-004-007,F12 + 20% FBS,None
+MC-000975-PUD5,ACH-000975,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000976-g0hr,ACH-000976,,adherent,,,,None
+MC-000976-uaCl,ACH-000976,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000977-eAUW,ACH-000977,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000977-eNOh,ACH-000977,,adherent,,,,None
+MC-000978-9oZY,ACH-000978,,monolayer,,,,None
+MC-000978-Wsx1,ACH-000978,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000979-bkVz,ACH-000979,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-000979-IP8W,ACH-000979,,adherent,,,,None
+MC-000980-6nyV,ACH-000980,,,,,,None
+MC-000980-7KD6,ACH-000980,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-000981-9U4c,ACH-000981,,suspension,,,,None
+MC-000981-VgEW,ACH-000981,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-000982-lmOa,ACH-000982,,adherent,,MF-015-003,EMEM + 10% FBS + 2mM Glutamine,None
+MC-000983-OK27,ACH-000983,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000983-un6i,ACH-000983,,suspension,,,,None
+MC-000984-epFQ,ACH-000984,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-000985-gi0a,ACH-000985,,adherent,,,,None
+MC-000985-wCMb,ACH-000985,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000986-qvRg,ACH-000986,,adherent,,,,None
+MC-000986-UTzf,ACH-000986,,adherent,,MF-015-014,EMEM + 5% FBS + 2mM Glutamine,None
+MC-000987-BQbp,ACH-000987,,adherent,,,,None
+MC-000987-YYzL,ACH-000987,,adherent,,,,None
+MC-000988-A9UM,ACH-000988,,adherent,,,,None
+MC-000988-YnfA,ACH-000988,,adherent,,MF-041-001,RPMI:EMEM (1:1) + 10% FBS,None
+MC-000989-Dydx,ACH-000989,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-000989-VMWp,ACH-000989,,mixed,,,,None
+MC-000990-B253,ACH-000990,,adherent,,MF-006-012,MEM + 15% FBS,None
+MC-000991-hFyc,ACH-000991,,monolayer,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-000991-vB9l,ACH-000991,,monolayer,,,,None
+MC-000992-m2yi,ACH-000992,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-000993-g8KR,ACH-000993,,adherent,,MF-007-018,DMEM:F12 + 10% FBS + 100uM NEAA,None
+MC-000994-NzaG,ACH-000994,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-000995-4KxL,ACH-000995,,suspension,,,,None
+MC-000995-sJXn,ACH-000995,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-000996-nXxW,ACH-000996,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-000997-5jTp,ACH-000997,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000997-xmbN,ACH-000997,,,,,,None
+MC-000998-6hVb,ACH-000998,,adherent,,,,None
+MC-000998-U8AM,ACH-000998,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-000999-JOmJ,ACH-000999,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-000999-M5nP,ACH-000999,,monolayer,,,,None
+MC-001001-SLVN,ACH-001001,,adherent,,MF-015-012,EMEM + 10% FBS + 0.015 mg/ml 5-bromo-2'-deoxyuridine,None
+MC-001002-6CvH,ACH-001002,,,,,,None
+MC-001016-G5tE,ACH-001016,,adherent,,,,None
+MC-001016-oZJO,ACH-001016,,adherent,,MF-015-006,EMEM + 5% FBS,None
+MC-001020-7mCY,ACH-001020,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001021-yAAG,ACH-001021,,,,,,None
+MC-001022-4eAr,ACH-001022,,,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001023-0rGl,ACH-001023,,monolayer,,,,None
+MC-001024-ud25,ACH-001024,,adherent,,,,None
+MC-001028-iOnL,ACH-001028,,mixed,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001029-lvBN,ACH-001029,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001030-DXsJ,ACH-001030,,mixed,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001031-oRDI,ACH-001031,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001032-G8OH,ACH-001032,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001033-pfDG,ACH-001033,,suspension,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001034-dKi9,ACH-001034,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001035-Wfke,ACH-001035,,suspension,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001036-cOfn,ACH-001036,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001038-0vXG,ACH-001038,,mixed,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001039-DJqh,ACH-001039,,,,,,None
+MC-001041-CkXW,ACH-001041,,monolayer,,MF-001-001,RPMI + 10% FBS,None
+MC-001048-JZjh,ACH-001048,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-001049-c4rX,ACH-001049,,suspension,,,,None
+MC-001050-A4lg,ACH-001050,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001053-eiEy,ACH-001053,,mixed,,MF-002-006,DMEM + 10% FBS + 2mM glutamine + 500uM pyruvate,None
+MC-001054-Azxo,ACH-001054,,mixed,,,,None
+MC-001057-AskH,ACH-001057,,suspension,,MF-001-053,RPMI + 20% FBS + 20ng/ml IL-2,None
+MC-001059-r5m0,ACH-001059,,,,MF-001-001,RPMI + 10% FBS,None
+MC-001060-vvTr,ACH-001060,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001061-78yQ,ACH-001061,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001063-t3Zw,ACH-001063,,suspension,,,,None
+MC-001063-vr23,ACH-001063,,suspension,,,,None
+MC-001064-bBvG,ACH-001064,,suspension,,,,None
+MC-001064-rtq2,ACH-001064,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001065-NuPp,ACH-001065,,,,,,None
+MC-001066-sBYG,ACH-001066,,,,,,None
+MC-001067-UmWZ,ACH-001067,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001068-pORj,ACH-001068,,,,MF-001-001,RPMI + 10% FBS,None
+MC-001075-NQke,ACH-001075,,adherent,,,,None
+MC-001075-R1R4,ACH-001075,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001081-EiKC,ACH-001081,,,,,,None
+MC-001086-cgN4,ACH-001086,,adherent,,,,None
+MC-001086-D9pA,ACH-001086,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-001089-bl64,ACH-001089,,,,,,None
+MC-001093-wzFb,ACH-001093,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001096-5RIV,ACH-001096,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001097-kxuV,ACH-001097,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001098-vhLt,ACH-001098,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001099-jclT,ACH-001099,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001100-Ekc7,ACH-001100,,,,,,None
+MC-001106-76g5,ACH-001106,,suspension,,,,None
+MC-001106-BKoT,ACH-001106,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001107-VhHM,ACH-001107,,,,,,None
+MC-001109-JbTP,ACH-001109,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001111-jbYD,ACH-001111,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001113-k2lR,ACH-001113,,adherent,,,,None
+MC-001118-xm6i,ACH-001118,,,,,,None
+MC-001119-mWDg,ACH-001119,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-001125-HZPm,ACH-001125,,,,,,None
+MC-001126-24g1,ACH-001126,,,,,,None
+MC-001127-qrKq,ACH-001127,,suspension,,,,None
+MC-001127-UPy1,ACH-001127,,suspension,,,,None
+MC-001128-V4hU,ACH-001128,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001129-nxTf,ACH-001129,,suspension,,MF-001-052,RPMI + 10% FBS + 2 mM Glutamine + 1x NEAA + 1 mM sodium pyruvate,None
+MC-001130-CgUH,ACH-001130,,suspension,,MF-001-051,RPMI + 10% FBS + 5ng/ml IL-2,None
+MC-001131-kkJv,ACH-001131,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001132-Zu52,ACH-001132,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001134-RK32,ACH-001134,,suspension,,,,None
+MC-001136-38en,ACH-001136,,suspension,,,,None
+MC-001137-IyNm,ACH-001137,,,,,,None
+MC-001138-CxqR,ACH-001138,,suspension,,,,None
+MC-001142-o8Gg,ACH-001142,,,,,,None
+MC-001143-FiMN,ACH-001143,,,,,,None
+MC-001145-0FqA,ACH-001145,,monolayer,,MF-001-014,RPMI + 5% FBS,None
+MC-001147-WkLI,ACH-001147,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001148-pMM7,ACH-001148,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001151-bcLI,ACH-001151,,adherent,,,,None
+MC-001151-dENl,ACH-001151,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-001162-8YdS,ACH-001162,,suspension,,MF-023-004,McCoy's 5A + 20% FBS + 30U/ml human IL-6,None
+MC-001163-vV3z,ACH-001163,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001164-VOSE,ACH-001164,,adherent,,,,None
+MC-001172-cKtB,ACH-001172,,adherent,,MF-015-011,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA + 1mM Sodium Pyruvate,None
+MC-001182-QeJa,ACH-001182,,,,,,None
+MC-001183-ZbQP,ACH-001183,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001184-12NX,ACH-001184,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001188-3VzX,ACH-001188,,mixed,,MF-027-001,EMEM:F12 + 10% FBS,None
+MC-001190-C7Mc,ACH-001190,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-001190-N9fR,ACH-001190,,adherent,,,,None
+MC-001192-OhhV,ACH-001192,,suspension,,,,None
+MC-001192-V0nP,ACH-001192,,suspension,,,,None
+MC-001193-ObM2,ACH-001193,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001193-PsdQ,ACH-001193,,adherent,,,,None
+MC-001194-PJUS,ACH-001194,,adherent,,,,None
+MC-001196-NGMx,ACH-001196,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001197-u3xl,ACH-001197,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001199-CY0M,ACH-001199,,,,,,None
+MC-001200-sM9G,ACH-001200,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001201-sBT2,ACH-001201,,adherent,,,,None
+MC-001203-LahK,ACH-001203,,,,,,None
+MC-001203-vJIJ,ACH-001203,,suspension,,MF-023-003,McCoy's 5A + 20% FBS,None
+MC-001205-qL1Z,ACH-001205,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001206-stHL,ACH-001206,,,,,,None
+MC-001207-Qnxo,ACH-001207,,,,,,None
+MC-001208-AXGm,ACH-001208,,adherent,,,,None
+MC-001210-DeSa,ACH-001210,,,,,,None
+MC-001211-d2zD,ACH-001211,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001212-ItHM,ACH-001212,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001227-21hV,ACH-001227,,adherent,,,,None
+MC-001228-LeaL,ACH-001228,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001229-AMZp,ACH-001229,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001232-n1C7,ACH-001232,,adherent,,,,None
+MC-001233-1DvM,ACH-001233,,mixed,,,,None
+MC-001239-Fbs2,ACH-001239,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001270-lSvh,ACH-001270,,adherent,,,,None
+MC-001274-gpFs,ACH-001274,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-001274-Kbp3,ACH-001274,,adherent,,,,None
+MC-001275-Q3Qk,ACH-001275,,adherent,,,,None
+MC-001277-fbAy,ACH-001277,,adherent,,,,None
+MC-001278-XOlL,ACH-001278,,adherent,,MF-007-019,DMEM:F12 + 20% FBS,None
+MC-001279-kkMm,ACH-001279,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001280-Z0D3,ACH-001280,,adherent,,MF-002-009,DMEM + 20% FBS,None
+MC-001282-YJUQ,ACH-001282,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001283-7e8M,ACH-001283,,adherent,,,,None
+MC-001289-BpdI,ACH-001289,,suspension,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001295-8ebG,ACH-001295,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001300-8ioY,ACH-001300,,mixed,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001301-S2FT,ACH-001301,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001302-Hq6B,ACH-001302,,mixed,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001303-7eBW,ACH-001303,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001306-5hIp,ACH-001306,,monolayer,,,,None
+MC-001306-fIUy,ACH-001306,,monolayer,,MF-001-017,RPMI + 15% FBS,None
+MC-001307-Y3bV,ACH-001307,,adherent,,,,None
+MC-001307-ZUMW,ACH-001307,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001310-xz7e,ACH-001310,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-001318-etC9,ACH-001318,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001321-4zQP,ACH-001321,,,,,,None
+MC-001321-SIx7,ACH-001321,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-001322-MG03,ACH-001322,,adherent,,,,None
+MC-001328-3LPD,ACH-001328,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001328-hRbK,ACH-001328,,adherent,,,,None
+MC-001329-4qu1,ACH-001329,,adherent,,MF-007-002,DMEM:F12 + 10% FBS + 2mM Glutamine,None
+MC-001331-esqr,ACH-001331,,adherent,,,,None
+MC-001332-2TbF,ACH-001332,,adherent,,MF-002-004,DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone,None
+MC-001332-LhC5,ACH-001332,,adherent,,,,None
+MC-001333-aE8O,ACH-001333,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001333-iALT,ACH-001333,,adherent,,,,None
+MC-001334-NKNW,ACH-001334,,adherent,,,,None
+MC-001334-Wwjp,ACH-001334,,adherent,,MF-020-001,Waymouth's MB 752_1 + 10% FBS,None
+MC-001335-yPd0,ACH-001335,,adherent,,MF-020-001,Waymouth's MB 752_1 + 10% FBS,None
+MC-001336-KEF9,ACH-001336,,adherent,,,,None
+MC-001336-Y0Qd,ACH-001336,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001338-wh8o,ACH-001338,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001338-zr7W,ACH-001338,,adherent,,,,None
+MC-001339-5nRN,ACH-001339,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001340-Rzvh,ACH-001340,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001341-gFHa,ACH-001341,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001341-PkD9,ACH-001341,,adherent,,,,None
+MC-001344-BEpV,ACH-001344,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001344-oQWg,ACH-001344,,adherent,,,,None
+MC-001345-JQah,ACH-001345,,adherent,,,,None
+MC-001345-KbHX,ACH-001345,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001346-JhaA,ACH-001346,,adherent,,MF-007-003,DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate,None
+MC-001347-gXUu,ACH-001347,,adherent,,MF-007-003,DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate,None
+MC-001350-rSNa,ACH-001350,,adherent,,,,None
+MC-001350-yZDB,ACH-001350,,adherent,,MF-002-009,DMEM + 20% FBS,None
+MC-001353-5EnB,ACH-001353,,adherent,,MF-005-004,IMDM + 20% FBS,None
+MC-001354-TZLe,ACH-001354,,adherent,,MF-038-001,60% RPMI + 40% EMEM + 20% FBS + 2 mM L-glutamine + 100uM NEAA,None
+MC-001355-MtE7,ACH-001355,,adherent,,,,None
+MC-001356-nuAU,ACH-001356,,adherent,,MF-001-021,RPMI + 20% FBS + 2mM Glutamine,None
+MC-001358-xDFe,ACH-001358,,adherent,,,,None
+MC-001359-BpGd,ACH-001359,,adherent,,,,None
+MC-001360-kFdj,ACH-001360,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001360-PH5r,ACH-001360,,adherent,,,,None
+MC-001362-bIQW,ACH-001362,,,,,,None
+MC-001363-WS4e,ACH-001363,,suspension,,,,None
+MC-001364-oBUk,ACH-001364,,suspension,,,,None
+MC-001365-52X8,ACH-001365,,suspension,,,,None
+MC-001366-orHv,ACH-001366,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001367-Tnwl,ACH-001367,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001368-TN5O,ACH-001368,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001368-uorq,ACH-001368,,suspension,,,,None
+MC-001369-jLCX,ACH-001369,,adherent,,MF-035-001,OCMI-L,None
+MC-001370-W35c,ACH-001370,,adherent,,MF-035-001,OCMI-L,None
+MC-001373-janw,ACH-001373,,adherent,,MF-007-009,DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone,None
+MC-001373-sepn,ACH-001373,,adherent,,,,None
+MC-001374-6gRC,ACH-001374,,adherent,,,,None
+MC-001374-dbTF,ACH-001374,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001375-dtVX,ACH-001375,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-001376-Gwba,ACH-001376,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001377-bNuk,ACH-001377,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-001378-93SH,ACH-001378,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-001379-q3xU,ACH-001379,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-001380-9Lr6,ACH-001380,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-001382-KLz9,ACH-001382,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-001383-teSI,ACH-001383,,adherent,,,,None
+MC-001384-mAQS,ACH-001384,,adherent,,MF-027-001,EMEM:F12 + 10% FBS,None
+MC-001384-YEvt,ACH-001384,,adherent,,,,None
+MC-001385-aPIz,ACH-001385,,adherent,,,,None
+MC-001385-Q4sY,ACH-001385,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001386-7apY,ACH-001386,,suspension,,MF-002-001,DMEM + 10% FBS,None
+MC-001388-in95,ACH-001388,,adherent,,MF-004-006,F12 + 1X ITS + 10mM HEPES + 1ug/ml Hydrocortisone + 1g/l BSA + 10ng/ml EGF + 5mM Ethanolamine + 10nM Triiodo-L-Thyronine,None
+MC-001389-JiiU,ACH-001389,,adherent,,MF-004-004,F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 10ng/ml EGF,None
+MC-001390-SOLL,ACH-001390,,adherent,,MF-004-008,F12 + 10% FBS + 1mM Glutamine + 44mM Glucose + 12mM Sodium Bicarbonate,None
+MC-001391-RTBf,ACH-001391,,adherent,,MF-004-005,F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 1ug/ml Hydrocortisone,None
+MC-001392-ka56,ACH-001392,,adherent,,MF-004-005,F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 1ug/ml Hydrocortisone,None
+MC-001393-GjYg,ACH-001393,,adherent,,MF-004-006,F12 + 1X ITS + 10mM HEPES + 1ug/ml Hydrocortisone + 1g/l BSA + 10ng/ml EGF + 5mM Ethanolamine + 10nM Triiodo-L-Thyronine,None
+MC-001394-lc2m,ACH-001394,,adherent,,MF-004-005,F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 1ug/ml Hydrocortisone,None
+MC-001395-yQwP,ACH-001395,,adherent,,MF-004-006,F12 + 1X ITS + 10mM HEPES + 1ug/ml Hydrocortisone + 1g/l BSA + 10ng/ml EGF + 5mM Ethanolamine + 10nM Triiodo-L-Thyronine,None
+MC-001396-PnEE,ACH-001396,,adherent,,MF-004-005,F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 1ug/ml Hydrocortisone,None
+MC-001398-XBHi,ACH-001398,,adherent,,MF-021-002,L-15 + 10% FBS + 2mM Glutamine,None
+MC-001399-3VUK,ACH-001399,,adherent,,,,None
+MC-001399-jcVk,ACH-001399,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-001400-f9np,ACH-001400,,adherent,,,,None
+MC-001400-xyWT,ACH-001400,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-001401-l6Fd,ACH-001401,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-001401-li0Z,ACH-001401,,adherent,,,,None
+MC-001402-CPYn,ACH-001402,,adherent,,MF-021-001,L-15 + 10% FBS,None
+MC-001402-zpCA,ACH-001402,,adherent,,,,None
+MC-001403-LSWw,ACH-001403,,adherent,,MF-001-010,RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate,None
+MC-001407-g9d6,ACH-001407,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001408-9zFI,ACH-001408,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001409-HWlo,ACH-001409,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001410-v8bP,ACH-001410,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001411-EIzh,ACH-001411,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001412-q1LP,ACH-001412,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001413-tAbm,ACH-001413,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001414-GNy8,ACH-001414,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001415-BCBQ,ACH-001415,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001416-TEmo,ACH-001416,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001417-QWc5,ACH-001417,,adherent,,,,None
+MC-001418-yATq,ACH-001418,,adherent,,MF-039-001,RPMI:MEGM (1:1) + 3% FBS,None
+MC-001418-YrAD,ACH-001418,,adherent,,,,None
+MC-001419-BDid,ACH-001419,,adherent,,MF-017-001,MEBM + 2% FBS + 2mM Glutamine + MEGM single quot + 10ng/ml EGF,None
+MC-001421-pJpX,ACH-001421,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001422-2WUe,ACH-001422,,adherent,,MF-016-001,KSFM,None
+MC-001430-Lr6c,ACH-001430,,mixed,,,,None
+MC-001431-lLsj,ACH-001431,,adherent,,,,None
+MC-001433-0iYo,ACH-001433,,adherent,10+,MF-018-001,SMGM,None
+MC-001437-kbI5,ACH-001437,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-001438-SWHw,ACH-001438,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-001441-SMif,ACH-001441,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001442-F4Lg,ACH-001442,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001443-rLAB,ACH-001443,,adherent,,,,None
+MC-001443-vVtt,ACH-001443,,adherent,,MF-009-001,DMEM:RPMI (1:1) + 10% FBS,None
+MC-001450-e2AC,ACH-001450,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001451-WMrP,ACH-001451,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-001452-vYEQ,ACH-001452,,suspension,,,,None
+MC-001453-2D76,ACH-001453,,adherent,,,,None
+MC-001453-LwRm,ACH-001453,,adherent,,MF-001-027,RPMI + 20% FBS + 20ng/ml testosterone + 5ug/ml transferrin + 5ng/ml sodium selenite + 5ug/ml insulin,None
+MC-001454-oIL3,ACH-001454,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-001456-4fjm,ACH-001456,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-001458-fAIa,ACH-001458,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-001459-5XUL,ACH-001459,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-001460-E7N6,ACH-001460,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-001461-ucEw,ACH-001461,,adherent,,MF-005-002,IMDM + 10% FBS + 2mM Glutamine,None
+MC-001481-8jhv,ACH-001481,,adherent,,MF-005-005,IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001484-dooe,ACH-001484,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001485-Qw1Y,ACH-001485,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001489-8Jel,ACH-001489,,suspension,,,,None
+MC-001489-vvbB,ACH-001489,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001490-n9xE,ACH-001490,,suspension,,,,None
+MC-001494-4tLW,ACH-001494,,adherent,,MF-006-003,MEM + 10% FBS + 4mM Glutamine + 1mM Sodium pyruvate + 2x MEM NEAA + EAA,None
+MC-001494-DsFq,ACH-001494,,adherent,,,,None
+MC-001495-sW85,ACH-001495,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001496-UeUf,ACH-001496,,adherent,,,,None
+MC-001496-yOV6,ACH-001496,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001497-Fwch,ACH-001497,,suspension,,,,None
+MC-001497-Jwk8,ACH-001497,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001498-e54Y,ACH-001498,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001498-leUb,ACH-001498,,suspension,,,,None
+MC-001500-fjpJ,ACH-001500,,adherent,,,,None
+MC-001500-IO4l,ACH-001500,,adherent,,MF-002-003,DMEM + 10% FBS + 2mM Glutamine,None
+MC-001508-tAH6,ACH-001508,,adherent,,MF-007-003,DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate,None
+MC-001509-3x7y,ACH-001509,,adherent,,MF-007-003,DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate,None
+MC-001510-9gF4,ACH-001510,,adherent,,MF-007-003,DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate,None
+MC-001511-o65N,ACH-001511,,adherent,,MF-007-003,DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate,None
+MC-001513-eaBx,ACH-001513,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001515-hQCS,ACH-001515,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-001516-bRnF,ACH-001516,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001517-JvBR,ACH-001517,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001517-TVRG,ACH-001517,,adherent,,,,None
+MC-001518-3HlU,ACH-001518,,adherent,,MF-015-007,EMEM + 15% FBS,None
+MC-001519-a7Bb,ACH-001519,,adherent,,,,None
+MC-001519-bkMC,ACH-001519,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-001520-y4jG,ACH-001520,,mixed,,MF-001-001,RPMI + 10% FBS,None
+MC-001521-otPk,ACH-001521,,adherent,,MF-002-009,DMEM + 20% FBS,None
+MC-001522-9yDR,ACH-001522,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001523-EZfZ,ACH-001523,,adherent,,MF-002-009,DMEM + 20% FBS,None
+MC-001524-0LvO,ACH-001524,,adherent,,MF-005-001,IMDM + 10% FBS,None
+MC-001525-0dht,ACH-001525,,adherent,,,,None
+MC-001525-RDCC,ACH-001525,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-001526-UhGC,ACH-001526,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001526-Y6x6,ACH-001526,,adherent,,,,None
+MC-001528-qmGv,ACH-001528,,adherent,,MF-009-001,DMEM:RPMI (1:1) + 10% FBS,None
+MC-001529-g0Ic,ACH-001529,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001529-Pkfi,ACH-001529,,adherent,,,,None
+MC-001530-i3NR,ACH-001530,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001530-VwuE,ACH-001530,,adherent,,,,None
+MC-001532-MUr8,ACH-001532,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001533-SowA,ACH-001533,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001536-hiad,ACH-001536,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001537-4GEo,ACH-001537,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001538-vm50,ACH-001538,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001539-2idY,ACH-001539,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001540-8tA1,ACH-001540,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001541-ux7W,ACH-001541,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001542-iWSd,ACH-001542,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001542-r6aC,ACH-001542,,adherent,,,,None
+MC-001543-1aK8,ACH-001543,,adherent,,,,None
+MC-001543-oWoE,ACH-001543,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001544-r8oy,ACH-001544,,adherent,,,,None
+MC-001547-7JIQ,ACH-001547,,adherent,,MF-001-016,RPMI + 5% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001548-CZI2,ACH-001548,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001549-PRW5,ACH-001549,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001549-yjYw,ACH-001549,,suspension,,,,None
+MC-001550-a6g4,ACH-001550,,adherent,,MF-001-017,RPMI + 15% FBS,None
+MC-001551-CV0Z,ACH-001551,,adherent,,MF-001-017,RPMI + 15% FBS,None
+MC-001552-J5Mf,ACH-001552,,adherent,,MF-001-017,RPMI + 15% FBS,None
+MC-001554-W5Vn,ACH-001554,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001555-ezZP,ACH-001555,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001556-noFY,ACH-001556,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001557-elcL,ACH-001557,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001558-2y5e,ACH-001558,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001559-Lyqh,ACH-001559,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001560-l8bg,ACH-001560,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001561-MKmJ,ACH-001561,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001562-lvLb,ACH-001562,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001563-W7yA,ACH-001563,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001566-JFQg,ACH-001566,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001567-Cfys,ACH-001567,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001568-F9m6,ACH-001568,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001569-3Qgz,ACH-001569,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001570-D1zt,ACH-001570,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001573-Kzh2,ACH-001573,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001574-0hwo,ACH-001574,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001577-0fJh,ACH-001577,,suspension,,MF-003-002,AlphaMEM + 20% FBS + 10ng/ml GM-CSF,None
+MC-001578-6Nny,ACH-001578,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001578-zUzM,ACH-001578,,adherent,,,,None
+MC-001591-DGWX,ACH-001591,,suspension,,,,None
+MC-001599-WbUa,ACH-001599,,suspension,,,,None
+MC-001603-5VOk,ACH-001603,,adherent,,,,None
+MC-001603-71Mw,ACH-001603,,adherent,,MF-003-001,AlphaMEM + 10% FBS,None
+MC-001605-h6eY,ACH-001605,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001605-QuPH,ACH-001605,,adherent,,,,None
+MC-001606-RQQZ,ACH-001606,,adherent,,,,None
+MC-001607-JjpA,ACH-001607,,adherent,,MF-022-001,William's E medium + 10% FBS,None
+MC-001608-UOYC,ACH-001608,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001609-ziwW,ACH-001609,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001610-dKv7,ACH-001610,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001611-y9MC,ACH-001611,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001613-audg,ACH-001613,,suspension,,MF-003-002,AlphaMEM + 20% FBS + 10ng/ml GM-CSF,None
+MC-001616-GhL4,ACH-001616,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001617-Af6D,ACH-001617,,suspension,,,,None
+MC-001617-bsKb,ACH-001617,,suspension,,MF-005-001,IMDM + 10% FBS,None
+MC-001618-oYEK,ACH-001618,,suspension,,MF-005-004,IMDM + 20% FBS,None
+MC-001619-IR6I,ACH-001619,,adherent,,MF-002-006,DMEM + 10% FBS + 2mM glutamine + 500uM pyruvate,None
+MC-001622-QSPg,ACH-001622,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001623-0Tfd,ACH-001623,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001624-OLI2,ACH-001624,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001625-p0RD,ACH-001625,,adherent,,MF-007-007,DMEM:F12,None
+MC-001625-zNO7,ACH-001625,,,,,,None
+MC-001626-p1qh,ACH-001626,,adherent,,,,None
+MC-001626-xNA2,ACH-001626,,adherent,,MF-007-007,DMEM:F12,None
+MC-001627-wPx0,ACH-001627,,adherent,,MF-019-001,Stemline Keratinocyte Medium II + 2% FBS + 2mM Glutamine + Stemline keratinocyte growth supplement,None
+MC-001628-yeFU,ACH-001628,,adherent,,MF-001-010,RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate,None
+MC-001630-hYpZ,ACH-001630,,adherent,,MF-001-010,RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate,None
+MC-001630-v6oL,ACH-001630,,adherent,,,,None
+MC-001632-238g,ACH-001632,,,,,,None
+MC-001632-c7YN,ACH-001632,,adherent,,MF-001-010,RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate,None
+MC-001634-3wQU,ACH-001634,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001636-mxpz,ACH-001636,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001638-PAnW,ACH-001638,,suspension,,,,None
+MC-001638-xwcP,ACH-001638,,suspension,,MF-001-017,RPMI + 15% FBS,None
+MC-001639-4v7O,ACH-001639,,suspension,,,,None
+MC-001641-0Q0R,ACH-001641,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001641-Fdg4,ACH-001641,,adherent,,,,None
+MC-001642-0e1Y,ACH-001642,,suspension,,,,None
+MC-001642-TZNY,ACH-001642,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001645-GbnR,ACH-001645,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001647-cFRC,ACH-001647,,suspension,,MF-005-004,IMDM + 20% FBS,None
+MC-001648-qKEf,ACH-001648,,adherent,,MF-019-001,Stemline Keratinocyte Medium II + 2% FBS + 2mM Glutamine + Stemline keratinocyte growth supplement,None
+MC-001649-aJin,ACH-001649,,adherent,,MF-019-001,Stemline Keratinocyte Medium II + 2% FBS + 2mM Glutamine + Stemline keratinocyte growth supplement,None
+MC-001650-mD8X,ACH-001650,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001650-X72x,ACH-001650,,adherent,,,,None
+MC-001651-DEK1,ACH-001651,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-001652-lAQg,ACH-001652,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-001653-lh7D,ACH-001653,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001654-bKPM,ACH-001654,,adherent,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-001654-H2uU,ACH-001654,,adherent,,,,None
+MC-001655-EedC,ACH-001655,,adherent,,,,None
+MC-001655-jaAf,ACH-001655,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-001656-cu8h,ACH-001656,,suspension,,MF-001-008,RPMI + 10% FBS + 10ng/ml of human recombinant GM-CSF,None
+MC-001664-yvtF,ACH-001664,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-001668-M8yU,ACH-001668,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-001669-PygV,ACH-001669,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001670-aw9W,ACH-001670,,adherent,,,,None
+MC-001670-lwac,ACH-001670,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001672-NHzN,ACH-001672,,adherent,,MF-023-002,McCoy's 5A + 15% FBS,None
+MC-001673-6Kys,ACH-001673,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001674-mbDI,ACH-001674,,adherent,,,,None
+MC-001674-vHBi,ACH-001674,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-001675-IXck,ACH-001675,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001677-OSee,ACH-001677,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001679-DRZr,ACH-001679,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-001680-amSC,ACH-001680,,suspension,,,,None
+MC-001685-vgiS,ACH-001685,,suspension,,MF-012-001,IMDM:RPMI (4:1) + 20% FBS + 2mM Glutamine,None
+MC-001687-KHc1,ACH-001687,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001688-EWv4,ACH-001688,,adherent,,MF-015-002,EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001690-yWll,ACH-001690,,adherent,,MF-006-005,MEM + 20% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001691-0y4G,ACH-001691,,adherent,,MF-006-005,MEM + 20% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001692-JLND,ACH-001692,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001693-1F9N,ACH-001693,,adherent,,MF-006-005,MEM + 20% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001694-EG4Q,ACH-001694,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001696-AgNq,ACH-001696,,adherent,,MF-006-005,MEM + 20% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001698-xA1G,ACH-001698,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001699-TiNC,ACH-001699,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001701-aj6n,ACH-001701,,adherent,,MF-006-005,MEM + 20% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-001702-d1DG,ACH-001702,,adherent,,MF-002-002,DMEM + 10% FBS + 100uM NEAA,None
+MC-001702-K6gv,ACH-001702,,adherent,,,,None
+MC-001703-H1dO,ACH-001703,,suspension,,,,None
+MC-001703-jAiM,ACH-001703,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001704-8ZPF,ACH-001704,,adherent,,MF-015-004,EMEM + 10% FBS + 100uM NEAA,None
+MC-001704-Jowg,ACH-001704,,adherent,,,,None
+MC-001705-4mvl,ACH-001705,,adherent,,MF-017-001,MEBM + 2% FBS + 2mM Glutamine + MEGM single quot + 10ng/ml EGF,None
+MC-001707-F2CK,ACH-001707,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001709-uqbT,ACH-001709,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001711-6tHe,ACH-001711,,adherent,,,,None
+MC-001711-Z0Qp,ACH-001711,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001712-DTo0,ACH-001712,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001715-5HwL,ACH-001715,,adherent,,,,None
+MC-001715-Jkow,ACH-001715,,adherent,,MF-002-005,DMEM + 10% FBS + 2mM Glutamine + 1X Insulin-Transferrin-Selenium,None
+MC-001716-LELA,ACH-001716,,adherent,,MF-041-001,RPMI:EMEM (1:1) + 10% FBS,None
+MC-001716-QsRU,ACH-001716,,adherent,,,,None
+MC-001719-PKkh,ACH-001719,,adherent,,MF-035-001,OCMI-L,None
+MC-001735-LzxR,ACH-001735,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001736-pJnl,ACH-001736,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-001737-6D5K,ACH-001737,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001738-GVx0,ACH-001738,,suspension,,,,None
+MC-001740-3u0E,ACH-001740,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001743-I4IW,ACH-001743,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001745-QZV4,ACH-001745,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001750-fAbS,ACH-001750,,adherent,,MF-001-017,RPMI + 15% FBS,None
+MC-001751-oEWE,ACH-001751,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001765-czdh,ACH-001765,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-001767-TReB,ACH-001767,,adherent,,,,None
+MC-001786-LoTy,ACH-001786,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-001791-uBwq,ACH-001791,,adherent,,MF-007-002,DMEM:F12 + 10% FBS + 2mM Glutamine,None
+MC-001793-v89H,ACH-001793,,adherent,,MF-007-002,DMEM:F12 + 10% FBS + 2mM Glutamine,None
+MC-001794-IAqD,ACH-001794,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001795-P5GZ,ACH-001795,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001796-JoKm,ACH-001796,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001799-AkA5,ACH-001799,,adherent,,MF-001-018,RPMI + 15% FBS + 2mM Glutamine,None
+MC-001802-IUUl,ACH-001802,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001804-JH97,ACH-001804,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001807-geak,ACH-001807,,adherent,,MF-004-003,F12 + 15% FBS + 2mM Glutamine,None
+MC-001814-L7qi,ACH-001814,,adherent,,MF-015-008,EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA,None
+MC-001818-ueZl,ACH-001818,,adherent,,MF-015-008,EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA,None
+MC-001819-imt5,ACH-001819,,adherent,,MF-006-004,MEM + 15% FBS + 2mM Glutamine + 1x Insulin-Transferrin-Selenium,None
+MC-001819-XxSH,ACH-001819,,adherent,,,,None
+MC-001820-0nlr,ACH-001820,,mixed,,,,None
+MC-001820-U3Q6,ACH-001820,,mixed,,MF-001-017,RPMI + 15% FBS,None
+MC-001834-cfYH,ACH-001834,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001835-poui,ACH-001835,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001836-jYoz,ACH-001836,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001838-4mqk,ACH-001838,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001839-5IUH,ACH-001839,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001841-Na7T,ACH-001841,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001842-XQ3q,ACH-001842,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001843-hmPS,ACH-001843,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001844-DHWT,ACH-001844,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001845-xwfS,ACH-001845,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001846-eTrK,ACH-001846,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001847-IniK,ACH-001847,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001848-gqGK,ACH-001848,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001849-Eqdi,ACH-001849,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001850-Owdr,ACH-001850,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001852-Fqz5,ACH-001852,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001853-bIA7,ACH-001853,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001854-sTtz,ACH-001854,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001855-5n8l,ACH-001855,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001856-JW3a,ACH-001856,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001857-JYg4,ACH-001857,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001858-c43i,ACH-001858,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001861-0lWH,ACH-001861,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001861-AxLA,ACH-001861,,adherent,,,,None
+MC-001862-LLaC,ACH-001862,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001863-Q69R,ACH-001863,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001864-217M,ACH-001864,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001958-4W4E,ACH-001958,,adherent,,,,None
+MC-001959-u4do,ACH-001959,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001960-V7Sv,ACH-001960,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001961-o0kg,ACH-001961,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001970-yu1Z,ACH-001970,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001971-9Qqf,ACH-001971,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001973-ILv6,ACH-001973,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001975-qLcp,ACH-001975,,adherent,,MF-001-004,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES,None
+MC-001977-722i,ACH-001977,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-001982-nWKb,ACH-001982,,adherent,,MF-003-003,AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium,None
+MC-001986-OUuR,ACH-001986,,adherent,,MF-003-003,AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium,None
+MC-001990-wnys,ACH-001990,,adherent,,MF-003-003,AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium,None
+MC-001991-zRh9,ACH-001991,,mixed,,MF-003-003,AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium,None
+MC-001992-G2Zg,ACH-001992,,adherent,,MF-001-014,RPMI + 5% FBS,None
+MC-001993-EcIk,ACH-001993,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001997-n8wz,ACH-001997,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-001999-g7LW,ACH-001999,,adherent,,MF-007-001,DMEM:F12 + 10% FBS,None
+MC-002001-n8MQ,ACH-002001,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002002-GZA1,ACH-002002,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002003-d6w9,ACH-002003,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002004-Cnnn,ACH-002004,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002005-AENg,ACH-002005,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002010-5Gjh,ACH-002010,,adherent,,MF-001-030,RPMI + 25% FBS,None
+MC-002011-gwcQ,ACH-002011,,adherent,,MF-001-030,RPMI + 25% FBS,None
+MC-002014-DPeG,ACH-002014,,adherent,,MF-001-022,RPMI + 20% FBS + 3mM Glutamine,None
+MC-002015-RTao,ACH-002015,,adherent,,MF-001-022,RPMI + 20% FBS + 3mM Glutamine,None
+MC-002016-n9sK,ACH-002016,,adherent,,MF-001-022,RPMI + 20% FBS + 3mM Glutamine,None
+MC-002017-jRLK,ACH-002017,,adherent,,MF-001-022,RPMI + 20% FBS + 3mM Glutamine,None
+MC-002018-Bkao,ACH-002018,,adherent,,MF-001-022,RPMI + 20% FBS + 3mM Glutamine,None
+MC-002019-cQYB,ACH-002019,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002020-kwLe,ACH-002020,,adherent,,,,None
+MC-002020-ZmHZ,ACH-002020,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-002021-cfQQ,ACH-002021,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-002023-a5ob,ACH-002023,,adherent,,MF-002-008,DMEM + 5% FBS,None
+MC-002024-AOt6,ACH-002024,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002025-AwXC,ACH-002025,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002026-8SXM,ACH-002026,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002027-w4Gn,ACH-002027,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002029-eTYU,ACH-002029,,adherent,,,,None
+MC-002029-jZk3,ACH-002029,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002030-mJL7,ACH-002030,,adherent,,MF-014-001,BME + 20% FBS + 2mM Glutamine,None
+MC-002035-O8Pm,ACH-002035,,adherent,,MF-001-006,RPMI + 10% FBS + 50uM 2-Mercaptoethanol,None
+MC-002038-lXCp,ACH-002038,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002039-BOZb,ACH-002039,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002040-SWJJ,ACH-002040,,adherent,,,,None
+MC-002040-Vllp,ACH-002040,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-002041-CAG2,ACH-002041,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002042-doLH,ACH-002042,,adherent,,MF-004-001,F12 + 10% FBS,None
+MC-002043-M15K,ACH-002043,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-002043-Zbg8,ACH-002043,,adherent,,,,None
+MC-002044-OqIP,ACH-002044,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002045-jM8T,ACH-002045,,,,,,None
+MC-002045-TfMB,ACH-002045,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002046-oaX8,ACH-002046,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002048-52d6,ACH-002048,,adherent,,MF-001-009,RPMI + 10% FBS + 100uM NEAA + 20mM HEPES,None
+MC-002051-2Ddi,ACH-002051,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002051-zH2Y,ACH-002051,,suspension,,,,None
+MC-002052-GfvX,ACH-002052,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002052-r8yJ,ACH-002052,,suspension,,,,None
+MC-002055-I1ST,ACH-002055,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002058-fvr5,ACH-002058,,suspension,,,,None
+MC-002059-DNM1,ACH-002059,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002059-EyUo,ACH-002059,,suspension,,,,None
+MC-002061-Ox3b,ACH-002061,,suspension,,MF-002-008,DMEM + 5% FBS,None
+MC-002062-KLCC,ACH-002062,,suspension,,,,None
+MC-002062-owy3,ACH-002062,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002065-IPMz,ACH-002065,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002066-nmqF,ACH-002066,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002067-5mbZ,ACH-002067,,adherent,,,,None
+MC-002067-S9Nv,ACH-002067,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002069-bcEP,ACH-002069,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002070-tGf5,ACH-002070,,adherent,,MF-004-002,F12 + 15% FBS,None
+MC-002077-P1VK,ACH-002077,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002077-uVx4,ACH-002077,,suspension,,,,None
+MC-002080-oLkJ,ACH-002080,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002083-ov3V,ACH-002083,,adherent,,,,None
+MC-002084-7dbu,ACH-002084,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002089-94OR,ACH-002089,,,,,,None
+MC-002090-hcKH,ACH-002090,,,,,,None
+MC-002091-xm8k,ACH-002091,,,,,,None
+MC-002092-WVuR,ACH-002092,,,,,,None
+MC-002093-u5qq,ACH-002093,,,,,,None
+MC-002094-uIOU,ACH-002094,,,,,,None
+MC-002095-uEkC,ACH-002095,,,,,,None
+MC-002096-T0Px,ACH-002096,,,,,,None
+MC-002097-jwJs,ACH-002097,,,,,,None
+MC-002098-APd8,ACH-002098,,,,,,None
+MC-002099-swA7,ACH-002099,,,,,,None
+MC-002100-EK8g,ACH-002100,,,,,,None
+MC-002101-C2FG,ACH-002101,,,,,,None
+MC-002102-DCz8,ACH-002102,,,,,,None
+MC-002103-ObTM,ACH-002103,,,,,,None
+MC-002104-mUIH,ACH-002104,,,,,,None
+MC-002105-7Q49,ACH-002105,,,,,,None
+MC-002106-PuWB,ACH-002106,,,,,,None
+MC-002107-ifu9,ACH-002107,,,,,,None
+MC-002108-sfPB,ACH-002108,,,,,,None
+MC-002109-5XNA,ACH-002109,,,,,,None
+MC-002110-cfJ6,ACH-002110,,,,,,None
+MC-002111-e5U9,ACH-002111,,,,,,None
+MC-002112-3o0n,ACH-002112,,,,,,None
+MC-002113-6C61,ACH-002113,,,,,,None
+MC-002114-70zb,ACH-002114,,,,,,None
+MC-002115-i7Zw,ACH-002115,,,,,,None
+MC-002116-7TpA,ACH-002116,,,,,,None
+MC-002117-Q42D,ACH-002117,,,,,,None
+MC-002118-m5TP,ACH-002118,,,,,,None
+MC-002119-oGle,ACH-002119,,,,,,None
+MC-002120-IDnH,ACH-002120,,,,,,None
+MC-002121-VHOd,ACH-002121,,,,,,None
+MC-002122-SlY7,ACH-002122,,,,,,None
+MC-002123-93ht,ACH-002123,,,,,,None
+MC-002124-jcBA,ACH-002124,,,,,,None
+MC-002125-ceSg,ACH-002125,,,,,,None
+MC-002126-jomy,ACH-002126,,,,,,None
+MC-002127-kfxR,ACH-002127,,,,,,None
+MC-002128-UcHm,ACH-002128,,,,,,None
+MC-002129-j4Jj,ACH-002129,,,,,,None
+MC-002130-vakC,ACH-002130,,,,,,None
+MC-002131-Wfju,ACH-002131,,,,,,None
+MC-002132-Ojjp,ACH-002132,,,,,,None
+MC-002133-WJDt,ACH-002133,,,,,,None
+MC-002134-LhcA,ACH-002134,,,,,,None
+MC-002135-kWNb,ACH-002135,,,,,,None
+MC-002136-YeHl,ACH-002136,,,,,,None
+MC-002139-gNNk,ACH-002139,,,,,,None
+MC-002140-dsn1,ACH-002140,,,,,,None
+MC-002141-tkp3,ACH-002141,,,,,,None
+MC-002142-CiZf,ACH-002142,,,,,,None
+MC-002143-KBy3,ACH-002143,,,,,,None
+MC-002144-n1TH,ACH-002144,,,,,,None
+MC-002145-gsZ1,ACH-002145,,,,,,None
+MC-002146-Mddl,ACH-002146,,,,,,None
+MC-002147-KgHM,ACH-002147,,,,,,None
+MC-002148-xZIO,ACH-002148,,,,,,None
+MC-002149-bppW,ACH-002149,,,,,,None
+MC-002150-0aMk,ACH-002150,,,,,,None
+MC-002151-ZdkB,ACH-002151,,,,,,None
+MC-002152-zH3n,ACH-002152,,,,,,None
+MC-002153-iivB,ACH-002153,,,,,,None
+MC-002154-ZXYP,ACH-002154,,,,,,None
+MC-002155-NOuO,ACH-002155,,,,,,None
+MC-002156-AxZK,ACH-002156,,,,,,None
+MC-002157-G0Nd,ACH-002157,,,,,,None
+MC-002159-nQYI,ACH-002159,,,,,,None
+MC-002160-veZF,ACH-002160,,,,,,None
+MC-002161-JZMG,ACH-002161,,,,,,None
+MC-002162-kvao,ACH-002162,,,,,,None
+MC-002163-f8Kb,ACH-002163,,,,,,None
+MC-002164-pB0r,ACH-002164,,,,,,None
+MC-002165-Ltf9,ACH-002165,,,,,,None
+MC-002166-BGjV,ACH-002166,,,,,,None
+MC-002167-1j6Y,ACH-002167,,,,,,None
+MC-002168-BdXO,ACH-002168,,,,,,None
+MC-002169-lmFy,ACH-002169,,,,,,None
+MC-002170-Lidu,ACH-002170,,adherent,,,,None
+MC-002170-S8bp,ACH-002170,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002171-Awo5,ACH-002171,,,,,,None
+MC-002173-xXAh,ACH-002173,,,,,,None
+MC-002174-8iP1,ACH-002174,,,,,,None
+MC-002175-qkip,ACH-002175,,suspension,,,,None
+MC-002177-9AAv,ACH-002177,,,,,,None
+MC-002178-wDvv,ACH-002178,,,,,,None
+MC-002179-UIJs,ACH-002179,,,,,,None
+MC-002180-7B1D,ACH-002180,,,,,,None
+MC-002181-oaSe,ACH-002181,,,,,,None
+MC-002182-mF3y,ACH-002182,,,,,,None
+MC-002183-GBc7,ACH-002183,,,,,,None
+MC-002185-MnEX,ACH-002185,,,,,,None
+MC-002186-oGvE,ACH-002186,,,,,,None
+MC-002187-kPXJ,ACH-002187,,,,,,None
+MC-002188-9EEv,ACH-002188,,,,,,None
+MC-002189-EopU,ACH-002189,,,,,,None
+MC-002190-Ww21,ACH-002190,,,,,,None
+MC-002191-1Svn,ACH-002191,,,,,,None
+MC-002192-eO1J,ACH-002192,,,,,,None
+MC-002193-O3TV,ACH-002193,,,,,,None
+MC-002195-xt3l,ACH-002195,,,,,,None
+MC-002196-0yqZ,ACH-002196,,,,,,None
+MC-002197-G2CF,ACH-002197,,,,,,None
+MC-002198-EQz7,ACH-002198,,,,,,None
+MC-002199-85iU,ACH-002199,,,,,,None
+MC-002200-77c1,ACH-002200,,,,,,None
+MC-002201-mdUU,ACH-002201,,,,,,None
+MC-002202-N6sM,ACH-002202,,,,,,None
+MC-002204-DkDy,ACH-002204,,adherent,,,,None
+MC-002204-ey3q,ACH-002204,,adherent,,MF-012-001,IMDM:RPMI (4:1) + 20% FBS + 2mM Glutamine,None
+MC-002205-i4u1,ACH-002205,,,,,,None
+MC-002206-0UHF,ACH-002206,,,,,,None
+MC-002207-Hh9y,ACH-002207,,,,,,None
+MC-002208-ZcGv,ACH-002208,,,,,,None
+MC-002209-KUxr,ACH-002209,,,,,,None
+MC-002210-rlzN,ACH-002210,,,,,,None
+MC-002211-nzJh,ACH-002211,,,,,,None
+MC-002212-nqux,ACH-002212,,,,,,None
+MC-002213-lzth,ACH-002213,,,,,,None
+MC-002214-sINb,ACH-002214,,suspension,,,,None
+MC-002214-vqKT,ACH-002214,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-002215-dhwE,ACH-002215,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-002215-EIOT,ACH-002215,,suspension,,,,None
+MC-002216-iLEq,ACH-002216,,,,,,None
+MC-002217-zwUu,ACH-002217,,,,,,None
+MC-002218-Kljb,ACH-002218,,,,,,None
+MC-002220-BeEg,ACH-002220,,,,,,None
+MC-002221-JOhC,ACH-002221,,,,,,None
+MC-002222-Uwcs,ACH-002222,,,,,,None
+MC-002223-jsgE,ACH-002223,,,,,,None
+MC-002224-fpkg,ACH-002224,,,,,,None
+MC-002225-0ukX,ACH-002225,,,,,,None
+MC-002226-5wph,ACH-002226,,,,,,None
+MC-002227-Czpx,ACH-002227,,,,,,None
+MC-002228-0cwy,ACH-002228,,,,,,None
+MC-002229-wqMR,ACH-002229,,,,,,None
+MC-002230-gr3t,ACH-002230,,,,,,None
+MC-002231-fvp3,ACH-002231,,,,,,None
+MC-002232-9hRd,ACH-002232,,,,,,None
+MC-002233-JFo7,ACH-002233,,,,,,None
+MC-002234-ydTK,ACH-002234,,,,,,None
+MC-002235-2BxB,ACH-002235,,,,,,None
+MC-002236-Cwa4,ACH-002236,,suspension,,,,None
+MC-002237-ZOVP,ACH-002237,,,,,,None
+MC-002238-iGCL,ACH-002238,,,,,,None
+MC-002239-83YG,ACH-002239,,,,,,None
+MC-002240-Wayd,ACH-002240,,,,,,None
+MC-002241-3xg5,ACH-002241,,,,,,None
+MC-002242-i0Gr,ACH-002242,,,,,,None
+MC-002243-oUjC,ACH-002243,,,,,,None
+MC-002244-axCQ,ACH-002244,,,,,,None
+MC-002245-Y87b,ACH-002245,,suspension,,,,None
+MC-002246-UzM4,ACH-002246,,,,,,None
+MC-002247-hsx5,ACH-002247,,,,,,None
+MC-002248-F0Ay,ACH-002248,,,,,,None
+MC-002249-YxB5,ACH-002249,,,,,,None
+MC-002250-Qx6r,ACH-002250,,,,,,None
+MC-002251-iNFE,ACH-002251,,,,,,None
+MC-002252-KHzG,ACH-002252,,,,,,None
+MC-002253-PoLX,ACH-002253,,,,,,None
+MC-002254-bQOD,ACH-002254,,,,,,None
+MC-002255-MQ40,ACH-002255,,,,,,None
+MC-002256-upbM,ACH-002256,,,,,,None
+MC-002257-oqx9,ACH-002257,,,,,,None
+MC-002258-ZLKs,ACH-002258,,,,,,None
+MC-002259-6MsH,ACH-002259,,,,,,None
+MC-002261-vRZW,ACH-002261,,,,,,None
+MC-002262-zqgJ,ACH-002262,,,,,,None
+MC-002263-bDr8,ACH-002263,,,,,,None
+MC-002264-dhZk,ACH-002264,,,,,,None
+MC-002265-Hq0I,ACH-002265,,,,,,None
+MC-002266-BUa2,ACH-002266,,,,,,None
+MC-002267-k388,ACH-002267,,,,,,None
+MC-002268-ZcjU,ACH-002268,,,,,,None
+MC-002269-tG4R,ACH-002269,,,,,,None
+MC-002270-yDJt,ACH-002270,,,,,,None
+MC-002271-eKqu,ACH-002271,,,,,,None
+MC-002272-4kjq,ACH-002272,,,,,,None
+MC-002273-bcCA,ACH-002273,,,,,,None
+MC-002274-07O9,ACH-002274,,,,,,None
+MC-002275-TAqY,ACH-002275,,,,,,None
+MC-002276-EEL2,ACH-002276,,,,,,None
+MC-002277-VFaX,ACH-002277,,,,,,None
+MC-002278-4i7x,ACH-002278,,,,,,None
+MC-002279-VFQf,ACH-002279,,,,,,None
+MC-002280-gqUw,ACH-002280,,,,,,None
+MC-002281-d0Dk,ACH-002281,,,,,,None
+MC-002282-9lPy,ACH-002282,,,,,,None
+MC-002283-sh7o,ACH-002283,,,,,,None
+MC-002283-sVKc,ACH-002283,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002284-RjwQ,ACH-002284,,,,,,None
+MC-002285-eXjs,ACH-002285,,,,,,None
+MC-002286-KFl8,ACH-002286,,,,,,None
+MC-002287-tUNB,ACH-002287,,,,,,None
+MC-002288-uf1g,ACH-002288,,,,,,None
+MC-002289-JPj9,ACH-002289,,,,,,None
+MC-002290-nhI3,ACH-002290,,suspension,,,,None
+MC-002291-IV3B,ACH-002291,,adherent,,,,None
+MC-002291-NqNs,ACH-002291,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002292-jDz8,ACH-002292,,,,,,None
+MC-002293-Vi6T,ACH-002293,,,,,,None
+MC-002294-TZyb,ACH-002294,,,,,,None
+MC-002295-cZjJ,ACH-002295,,,,,,None
+MC-002296-YN5v,ACH-002296,,,,,,None
+MC-002297-ZvsH,ACH-002297,,,,,,None
+MC-002298-cl1G,ACH-002298,,,,,,None
+MC-002299-8NKq,ACH-002299,,,,,,None
+MC-002300-fhXY,ACH-002300,,,,,,None
+MC-002301-pUfb,ACH-002301,,,,,,None
+MC-002302-aO7h,ACH-002302,,,,,,None
+MC-002304-T9J0,ACH-002304,,,,,,None
+MC-002305-fFb6,ACH-002305,,,,,,None
+MC-002306-bwiR,ACH-002306,,,,,,None
+MC-002307-dsBL,ACH-002307,,,,,,None
+MC-002308-EgSo,ACH-002308,,,,,,None
+MC-002309-R1fW,ACH-002309,,,,,,None
+MC-002310-7HOf,ACH-002310,,,,,,None
+MC-002311-dUjX,ACH-002311,,,,,,None
+MC-002312-oZWt,ACH-002312,,,,,,None
+MC-002313-oYGA,ACH-002313,,,,,,None
+MC-002314-4BVq,ACH-002314,,,,,,None
+MC-002316-FZTh,ACH-002316,,,,,,None
+MC-002317-biOA,ACH-002317,,,,,,None
+MC-002336-stWo,ACH-002336,,,,,,None
+MC-002337-ieSb,ACH-002337,,,,,,None
+MC-002338-LPOF,ACH-002338,,,,,,None
+MC-002339-1uvq,ACH-002339,,,,,,None
+MC-002340-Trdd,ACH-002340,,,,,,None
+MC-002342-hKWV,ACH-002342,,,,,,None
+MC-002343-6sXQ,ACH-002343,,,,,,None
+MC-002344-3uAu,ACH-002344,,,,,,None
+MC-002345-ElnP,ACH-002345,,adherent,,,,None
+MC-002345-jr89,ACH-002345,,adherent,,MF-015-001,EMEM + 10% FBS,None
+MC-002346-Negh,ACH-002346,,,,,,None
+MC-002347-yP60,ACH-002347,,,,,,None
+MC-002348-19se,ACH-002348,,adherent,,MF-032-002,Tumor Stem Media + 10ng/mL PDGFAA and 10ng/mL PDGFBB,None
+MC-002349-GG31,ACH-002349,,,,,,None
+MC-002350-0tII,ACH-002350,,,,,,None
+MC-002351-ZOdO,ACH-002351,,,,,,None
+MC-002352-1NJy,ACH-002352,,,,,,None
+MC-002353-3zgy,ACH-002353,,,,,,None
+MC-002354-hYwW,ACH-002354,,,,,,None
+MC-002355-l4GO,ACH-002355,,,,,,None
+MC-002356-6Mia,ACH-002356,,,,,,None
+MC-002357-FxXn,ACH-002357,,,,,,None
+MC-002358-jwRm,ACH-002358,,,,,,None
+MC-002360-z23N,ACH-002360,,,,,,None
+MC-002361-cRhp,ACH-002361,,,,,,None
+MC-002362-glTc,ACH-002362,,,,,,None
+MC-002363-PF84,ACH-002363,,,,,,None
+MC-002364-MRqD,ACH-002364,,,,,,None
+MC-002365-OetP,ACH-002365,,,,,,None
+MC-002366-76z8,ACH-002366,,,,,,None
+MC-002367-Tc94,ACH-002367,,,,,,None
+MC-002368-1MMJ,ACH-002368,,,,,,None
+MC-002369-ihXy,ACH-002369,,,,,,None
+MC-002370-cRqL,ACH-002370,,,,,,None
+MC-002371-bZXL,ACH-002371,,,,,,None
+MC-002372-cfh6,ACH-002372,,,,,,None
+MC-002373-0tXm,ACH-002373,,,,,,None
+MC-002374-ODco,ACH-002374,,,,,,None
+MC-002375-pAFR,ACH-002375,,,,,,None
+MC-002376-rLQ4,ACH-002376,,,,,,None
+MC-002377-swQW,ACH-002377,,,,,,None
+MC-002379-gwTy,ACH-002379,,,,,,None
+MC-002380-ahQm,ACH-002380,,,,,,None
+MC-002381-Z0iX,ACH-002381,,,,,,None
+MC-002382-GNoh,ACH-002382,,,,,,None
+MC-002383-xnuW,ACH-002383,,,,,,None
+MC-002384-wbCc,ACH-002384,,,,,,None
+MC-002386-gTUk,ACH-002386,,,,,,None
+MC-002387-TKKh,ACH-002387,,,,,,None
+MC-002388-AQwa,ACH-002388,,,,,,None
+MC-002389-vfTk,ACH-002389,,,,,,None
+MC-002392-bUiY,ACH-002392,,,,,,None
+MC-002397-bgFR,ACH-002397,,,,,,None
+MC-002399-dpf9,ACH-002399,,adherent,,MF-007-008,DMEM:F12 + 5% FBS,None
+MC-002446-isJ2,ACH-002446,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002458-LNX9,ACH-002458,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002459-cRI0,ACH-002459,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002460-Rx9X,ACH-002460,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002461-8Uwl,ACH-002461,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002462-9MWA,ACH-002462,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002463-lGXh,ACH-002463,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002464-Ywbh,ACH-002464,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002465-1j4t,ACH-002465,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002466-lZtp,ACH-002466,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002467-V3Px,ACH-002467,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002471-uRkn,ACH-002471,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002475-EBcN,ACH-002475,,adherent,,MF-005-001,IMDM + 10% FBS,None
+MC-002478-H0Y9,ACH-002478,,suspension,,MF-001-020,RPMI + 20% FBS,None
+MC-002485-tGTc,ACH-002485,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-002486-s7Hs,ACH-002486,,adherent,,MF-023-001,McCoy's 5A + 10% FBS,None
+MC-002490-4KoT,ACH-002490,,adherent,,MF-007-010,DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM Beta estradiol,None
+MC-002497-wBYX,ACH-002497,,suspension,,MF-007-014,DMEM:F12 + 20ug/ml insulin + 10ug/ml transferrin + 25nM sodium selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM ethanolamine + 10uM phosphorylethanolamine + 100pM triiodothyronine + 0.5% (w/v) BSA (final conc.) + 10mM HEPES + 500uM sodium pyruvate + 2mM Glutamine,None
+MC-002508-1EaB,ACH-002508,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002509-QORQ,ACH-002509,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002510-huzv,ACH-002510,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002511-mxVh,ACH-002511,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002512-OR6R,ACH-002512,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002522-BP3K,ACH-002522,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002523-IXGJ,ACH-002523,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002524-ZbQT,ACH-002524,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002526-gP5V,ACH-002526,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002531-OoyZ,ACH-002531,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002533-pOlV,ACH-002533,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002535-QYxv,ACH-002535,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002539-pFSt,ACH-002539,,adherent,,MF-001-005,RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate,None
+MC-002647-v8x6,ACH-002647,,adherent,,MF-008-001,DMEM:KSFM (2:1) + 20% FBS,None
+MC-002650-KUc6,ACH-002650,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002654-HZBL,ACH-002654,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002659-6thC,ACH-002659,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002664-cIbD,ACH-002664,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002669-Ivra,ACH-002669,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002672-Fu2o,ACH-002672,,adherent,,MF-007-011,DMEM:F12 + 20% horse serum,None
+MC-002680-Kgog,ACH-002680,,adherent,,MF-006-002,MEM + 10% FBS + 2mM Glutamine + 100uM NEAA,None
+MC-002687-ZGER,ACH-002687,,adherent,,MF-001-020,RPMI + 20% FBS,None
+MC-002693-Sw2e,ACH-002693,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002709-26zN,ACH-002709,,suspension,,MF-001-003,RPMI + 10% FBS + 2mM Glutamine,None
+MC-002710-s7hG,ACH-002710,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002780-ddZi,ACH-002780,,suspension,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002781-ot8s,ACH-002781,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002784-wakk,ACH-002784,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002785-qo9e,ACH-002785,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002787-1SfB,ACH-002787,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002799-dBEe,ACH-002799,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002800-SZpV,ACH-002800,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002801-Dhlv,ACH-002801,,adherent,,MF-007-006,DMEM:F12 + GlutaMAX media (cat no. 10565042 500mL Thermo Fisher) + 10% FBS,None
+MC-002806-K1rH,ACH-002806,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002834-mbYE,ACH-002834,,adherent,,MF-002-001,DMEM + 10% FBS,None
+MC-002847-b2Oj,ACH-002847,,adherent,,MF-036-001,Opti-MEM + 5% FBS,None
+MC-002875-AKge,ACH-000614,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002921-KMac,ACH-002921,,adherent,,MF-006-001,MEM + 10% FBS,None
+MC-002922-66Xg,ACH-002922,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002925-yAya,ACH-002925,,adherent,,MF-001-001,RPMI + 10% FBS,None
+MC-002926-BDYS,ACH-002926,,,,MF-001-001,RPMI + 10% FBS,None
+MC-003019-6LhD,ACH-003019,,adherent,,,,None
+MC-003071-5csX,ACH-003071,,suspension,,MF-001-001,RPMI + 10% FBS,None
+MC-003071-aP2w,ACH-003071,,,,,,None
+MC-003132-hubO,ACH-003132,,adherent,,,,None
+MC-003133-Rrea,ACH-003133,,adherent,,,,None
+MC-003134-TppJ,ACH-003134,,adherent,,,,None
+MC-003135-1WCs,ACH-003135,,adherent,,,,None
+MC-003136-IUCb,ACH-003136,,adherent,,,,None
+MC-003138-vCcU,ACH-003138,,adherent,,,,None
+MC-003139-gVw7,ACH-003139,,adherent,,,,None
+MC-003141-MG04,ACH-003141,,adherent,,,,None
+MC-003142-F3nh,ACH-003142,,adherent,,,,None
+MC-003143-qeT1,ACH-003143,,adherent,,,,None
+MC-003145-gyCX,ACH-003145,,adherent,,,,None
+MC-003147-pQPF,ACH-003147,,adherent,,,,None
+MC-003148-47GP,ACH-003148,,adherent,,,,None
+MC-003149-Z3Wl,ACH-003149,,adherent,,,,None
+MC-003150-qtLh,ACH-003150,,adherent,,,,None
+MC-003152-uk4p,ACH-003152,,adherent,,,,None
+MC-003153-z9pk,ACH-003153,,adherent,,,,None
+MC-003154-ImPN,ACH-003154,,adherent,,,,None
+MC-003155-7AMI,ACH-003155,,adherent,,,,None
+MC-003156-78Ny,ACH-003156,,adherent,,,,None
+MC-003157-n8EJ,ACH-003157,,adherent,,,,None
+MC-003158-RZnx,ACH-003158,,adherent,,,,None
+MC-003159-x7Hm,ACH-003159,,adherent,,,,None
+MC-003160-Q82e,ACH-003160,,adherent,,,,None
+MC-003161-GUUY,ACH-003161,,adherent,,,,None

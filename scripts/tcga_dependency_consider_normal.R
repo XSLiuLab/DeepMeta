@@ -259,6 +259,7 @@ ggboxplot(data = dt, x="pathway", y= "log2ratio", fill= "Type",
   rotate_x_text(45)
 ggsave("figs/pathway_or_cancer_vs_normal.pdf",width = 10, height = 8)
 ggsave("figs/pathway_or_cancer_vs_normal.pdf",width = 14, height = 8)
+saveRDS(dt,file = "data/TCGA_normal_dep_diff.rds")
 ##分癌症类型 tumor or 减去 normal or 的中位数
 ###分癌症类型
 both_summ <- both %>% 

@@ -106,7 +106,7 @@ library(doParallel)
 library(foreach)
 #create the cluster
 my.cluster <- parallel::makeCluster(
-  40, 
+  80, 
   type = "PSOCK"
 )
 #register it to be used by %dopar%
@@ -150,11 +150,11 @@ res <- foreach(
       select(1:2,is_dep,everything())
     
     write.table(tissue_net,
-                file = paste0("/home/data/sdc/wt/model_data/enzyme_net/",
+                file = paste0("/home/data/sdb/wt/model_data/enzyme_train/",
                               cell,".txt"),sep = "\t",
                 row.names = F)
     write.table(cell_net_dep,
-                file = paste0("/home/data/sdc/wt/model_data/enzyme_net/",
+                file = paste0("/home/data/sdb/wt/model_data/enzyme_train/",
                               cell,"_feat.txt"),
                 sep = "\t",row.names = F)
   }
