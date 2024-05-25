@@ -273,7 +273,7 @@ pdf(file="report/cor_heatmap.pdf",width = 10,height = 5)
 draw(p3)
 dev.off()
 
-###回归分析
+###回归分析考虑细胞比例
 dt <- readRDS("~/DeepMeta/data/TCGA_normal_dep_diff.rds")
 pur <- dt %>% filter(pathway=="Pyrimidine metabolism")
 pro <- data.table::fread("data/tcga_LM_propotion.csv",data.table = F)
@@ -353,7 +353,453 @@ for (i in seq_along(res)){
 }
 res <- res[which(lengths(res) > 1)]
 res <- bind_rows(res)
+saveRDS(res,file = "data/geo_chemo_meta.rds")
 
+res <- readRDS("data/geo_chemo_meta.rds")
 need_files <- unique(res$dataset)
-dt_exp <- data.table::fread(paste0(all_files[2],"/matrix_.csv"),data.table = F)
+exp_res <- vector("list",length(need_files))
+for (i in seq_along(exp_res)){
+  dt_exp <- data.table::fread(paste0("/home/data/sdb/wt/model_data/chemo/",
+                                     need_files[i],"/matrix_.csv"),data.table = F)
+  exp_res[[i]] <- dt_exp
+}
+all_exp <- Reduce(function(x,y){
+  merge(x, y, by='V1', all.x=TRUE, all.y=TRUE)
+}, exp_res)
+rownames(all_exp) <- all_exp$V1
+##用最低来填补缺失的基因
+for(i in 2:ncol(all_exp)){
+  # all_exp[is.na(all_exp[,i]), i] <- mean(all_exp[,i], na.rm = TRUE)
+  all_exp[is.na(all_exp[,i]), i] <- min(all_exp[,i], na.rm = TRUE)
+}
+saveRDS(all_exp,file = "/home/data/sdb/wt/model_data/geo_chemo_exp.rds")
 
+library(PreDeepMeta)
+data("model_gene_order")
+all_exp <- all_exp %>% filter(V1 %in% model_gene_order)
+all_exp2 <- all_exp[model_gene_order,]
+rownames(all_exp2) <- model_gene_order
+all_exp2$V1 <- NULL
+for(i in 1:ncol(all_exp2)){
+  all_exp2[is.na(all_exp2[,i]), i] <- min(all_exp2[,i], na.rm = TRUE)
+}
+########准备输入文件
+##正常样本的中位数表达
+##BC ：GSE15852
+gemma <- readRDS("~/Immune_state/data/gemma_samples.rds")
+bc <- gemma %>% filter(ids == "GSE15852" & grepl("Normal",samples))
+dt <- readRDS("/home/data/sdb/wt/GEO_GEMMA/GSE15852.rds")
+dt <- dt %>% 
+  select(-c(1:3)) %>% 
+  filter(nchar(NCBIid) > 0) %>% 
+  tidyr::separate_longer_delim(cols = NCBIid, delim = "|")
+dt <- dt %>% select_if(~ !any(is.na(.))) ##去掉 NA 的列
+esm_id <- genekitr::transId(unique(dt$NCBIid), transTo = "symbol")
+esm_id <- esm_id[!duplicated(esm_id$input_id),]
+esm_id <- esm_id[!duplicated(esm_id$symbol),]
+dt <- inner_join(
+  dt,
+  esm_id %>% rename(NCBIid = input_id)
+) %>% select(symbol,everything()) %>% select(-NCBIid) %>% as.data.frame()
+###相同基因取均值
+dt <- dt %>% 
+  group_by(symbol) %>% 
+  summarise(across(2:(ncol(dt)-1),~mean(.x,na.rm = T))) %>%
+  ungroup() %>% as.data.frame()
+library(PreDeepMeta)
+data("model_gene_order")
+rownames(dt) <- dt$symbol
+dt$symbol <- NULL
+dt2 <- dt[model_gene_order,]
+rownames(dt2) <- model_gene_order
+for(i in 1:ncol(dt2)){
+  dt2[is.na(dt2[,i]), i] <- min(dt2[,i], na.rm = TRUE)
+}
+bc_median <- apply(dt2,1,median) %>% as.data.frame()
+colnames(bc_median) <- "Breast"
+bc_median$Description <- rownames(bc_median)
+
+###coad
+dt <- data.table::fread("/home/data/sdb/wt/model_data/CLX_Expression_PC1_2014Nov24.txt",
+                        data.table = F)
+dt <- dt %>% select(V1,grep("_N",colnames(dt)))
+rownames(dt) <- dt$V1
+dt$V1 <- NULL
+dt2 <- dt[model_gene_order,]
+rownames(dt2) <- model_gene_order
+for(i in 1:ncol(dt2)){
+  dt2[is.na(dt2[,i]), i] <- min(dt2[,i], na.rm = TRUE)
+}
+crc_median <- apply(dt2,1,median) %>% as.data.frame()
+colnames(crc_median) <- "Colon"
+crc_median$Description <- rownames(crc_median)
+
+normal_exp <- left_join(
+  bc_median %>% select(Description,everything()),
+  crc_median
+)
+saveRDS(normal_exp,file = "data/array_bc_crc_normal.rds")
+##
+sample_info <- readRDS("data/geo_chemo_meta.rds")
+normal_exp <- readRDS("data/array_bc_crc_normal.rds")
+sample_info <- sample_info %>% select(Sample_id,Cancer_type_level1) %>% 
+  rename(ModelID=Sample_id) %>% 
+  mutate(normal=ifelse(Cancer_type_level1 == "Breast cancer",
+                       "Breast",
+                       "Colon"))
+library(PreDeepMeta)
+data("model_gene_order")
+diff_exp <- PreDiffExp(tumor_exp = all_exp2, normal_exp = normal_exp,
+                  tumor_normal_mapping = sample_info,
+                  gene_order = model_gene_order,
+                  save_file = FALSE)
+write.csv(diff_exp,
+          file = "/home/data/sdb/wt/model_data/geo_chemo_diff_exp.csv",
+          quote = F,row.names = F)
+###
+data("enz_gene_mapping")
+data("cpg_gene")
+brca <- read.table("data/meta_net/EnzGraphs/iBreastCancer1746_enzymes_based_graph.tsv")
+coad <- read.table("data/meta_net/EnzGraphs/iColorectalCancer1750_enzymes_based_graph.tsv")
+sample_exp <- readRDS("/home/data/sdb/wt/model_data/geo_chemo_exp.rds")
+
+# low_exp <- apply(sample_exp[,2:ncol(sample_exp)],2,
+#                  function(x){mean(x<3)}) %>% as.data.frame() %>%
+#   rename(per=1)
+# median(low_exp$per)
+
+library(foreach)
+library(parallel)
+my.cluster <- parallel::makeCluster(
+  80,
+  type = "PSOCK"
+)
+doParallel::registerDoParallel(cl = my.cluster)
+res <- foreach(
+  i = 1:nrow(sample_info),
+  .export = c("sample_exp","brca","cpg_gene","coad",
+              "enz_gene_mapping","sample_info"),
+  .packages = c("dplyr","PreDeepMeta")
+) %dopar% {
+  if (sample_info$Cancer_type_level1[i] == "Breast cancer"){
+    PreEnzymeNet(sample_exp, 
+                 network = brca,
+                 gene_mapping = enz_gene_mapping, 
+                 gene_feature = cpg_gene,
+                 cell_name = sample_info$ModelID[i], 
+                 exp_cutoff = 1,
+                 save_path = "/home/data/sdb/wt/model_data/geo_chemo_net/")
+  }else{
+    PreEnzymeNet(sample_exp, 
+                 network = coad,
+                 gene_mapping = enz_gene_mapping, 
+                 gene_feature = cpg_gene,
+                 cell_name = sample_info$ModelID[i], 
+                 exp_cutoff = 1,
+                 save_path = "/home/data/sdb/wt/model_data/geo_chemo_net/")
+  }
+}
+parallel::stopCluster(cl = my.cluster)
+
+dt <- sample_info %>% 
+  select(ModelID) %>% rename(cell = ModelID) %>% 
+  mutate(cell_index = row_number() - 1)
+write.csv(dt,file = "data/geo_chemo_cells.csv",row.names = F,quote = F)
+
+####预测结果
+pre <- data.table::fread("data/geo_chemo_pre.csv",data.table = F)
+sample_info <- readRDS("data/geo_chemo_meta.rds")
+pre_gene <-  data.frame(id = unique(c(pre$gene_name))) %>% 
+  rowwise() %>% 
+  mutate(gene=ensg2name(id,enz_gene_mapping,NULL,cpg_gene)[[1]]) %>% ungroup()
+pre <- pre %>% 
+  left_join(.,pre_gene %>% rename(gene_name=id))
+saveRDS(pre,file = "data/geo_chemo_pre.rds")
+
+###计算通路富集 OR
+pre <- readRDS("data/geo_chemo_pre.rds")
+kegg <- readRDS("~/meta_target/data/kegg_all_pathway.rds")
+kegg <- kegg %>% 
+  filter(grepl("Metabolism",class) | grepl("metabolism",pathway)) %>% 
+  mutate(pathway = gsub(" \\- Homo sapiens \\(human\\)","",pathway)) %>% 
+  filter(!grepl("Drug",pathway))
+kegg <- kegg %>% 
+  mutate(pathway = case_when(
+    pathway == "Citrate cycle (TCA cycle)" ~ "Citrate cycle",
+    pathway == "Glycosylphosphatidylinositol (GPI)-anchor biosynthesis" ~ "Glycosylphosphatidylinositol",
+    TRUE ~ pathway
+  ))
+
+get_pathway <- function(gene,pathway){
+  gene <- strsplit(gene,split = ",")[[1]]
+  pathway <- pathway %>% filter(genes %in% gene)
+  return(c(paste(unique(pathway$pathway),collapse = ";"),
+           paste(unique(pathway$class),collapse = ";")))
+}
+pre_pathway <- data.frame(gene = unique(c(pre$gene))) %>% 
+  rowwise() %>% 
+  mutate(pathway = get_pathway(gene,kegg)[1],
+         class = get_pathway(gene,kegg)[2]) %>% 
+  ungroup() %>% 
+  filter(nchar(pathway)>1)
+pre_pathway <- pre %>% 
+  left_join(.,pre_pathway) %>% na.omit()
+
+get_pathway_p <- function(pathway_dt,pathway_name,sample_name){
+  pdt <- pathway_dt %>% 
+    filter(grepl(pathway_name,pathway) & cell == sample_name)
+  npdt <- pathway_dt %>% 
+    filter(!grepl(pathway_name,pathway) & cell == sample_name)
+  res <- fisher.test(cbind(
+    c(sum(pdt$preds == 1),sum(pdt$preds != 1)),
+    c(sum(npdt$preds == 1),sum(npdt$preds != 1))
+  ),alternative = "greater")
+  return(c(res$p.value,res$estimate[[1]]))
+}
+
+all_samples <- unique(pre_pathway$cell)
+
+library(doParallel)
+library(foreach)
+
+all_split <- pre_pathway %>% 
+  tidyr::separate_longer_delim(cols = "pathway",delim = ";")
+
+my.cluster <- parallel::makeCluster(
+  60, 
+  type = "PSOCK"
+)
+doParallel::registerDoParallel(cl = my.cluster)
+res <- foreach(
+  i = all_samples,
+  .export = c("pre_pathway","get_pathway_p"),
+  .packages = c("dplyr")
+) %dopar% {
+  p_o <- get_pathway_p(pre_pathway,"Pyrimidine metabolism",i)
+  dt <- data.frame(p_value = p_o[1],
+                   ratio = p_o[2],
+                   sample = i,
+                   pathway = "Pyrimidine metabolism")
+  return(dt)
+}
+parallel::stopCluster(cl = my.cluster)
+res <- bind_rows(res)
+saveRDS(res,file = "data/geo_chemo_meta_dep_pyri.rds")
+
+####和药物反应的关联
+sample_info <- readRDS("data/geo_chemo_meta.rds")
+py <- readRDS("~/DeepMeta/data/geo_chemo_meta_dep_pyri.rds")
+py <- left_join(py,sample_info %>% 
+                  select(Sample_id,Response,Cancer_type_level1) %>%
+                  rename(sample = Sample_id))
+py <- py %>% 
+  mutate(OR_type = case_when(
+    ratio >= 4.075275 ~ "high",
+    ratio <= 3.576558 ~ "low",
+    TRUE ~ "others"
+  )) %>% filter(OR_type != "others")
+df <- py %>% 
+  group_by(OR_type,Response) %>% 
+  summarise(sample_counts = length(unique(sample))) %>% 
+  ungroup() 
+
+library(ggplot2)
+library(ggprism)
+ggplot(data=df,aes(x=OR_type,y=sample_counts,fill=Response))+
+  geom_bar(stat = "identity",position="fill")+
+  theme_prism()+
+  labs(y="Percent of cases (%)",title = "Chi-squared test, P < 2.2e-16")+
+  scale_fill_manual(values=c("#00FDFE","#FE0000"))+
+  theme(axis.title.x = element_blank())
+
+dt <- py %>% 
+  mutate(truth = ifelse(Response == "Response", "Class1","Class2")) %>% 
+  mutate(score = -log10(p_value) * ratio)
+dt$truth <- factor(dt$truth)
+
+library(yardstick)
+pr <- pr_auc(dt, truth, ratio)[".estimate"][[1]]
+roc <- roc_auc(dt, truth, ratio)[".estimate"][[1]]
+
+###按照嘧啶代谢的 GSVA 来将样本分层
+tpm <- data.table::fread("/home/data/sdc/wt/TCGA/tcga_RSEM_gene_tpm.gz",data.table = F)
+tpm <- tpm %>% 
+  select(sample,which(as.numeric(substr(colnames(tpm),14,15)) < 10)) %>% 
+  rename(id = sample)
+###mapping
+mapping <- data.table::fread("/home/data/sdc/wt/TCGA/probeMap_gencode.v23.annotation.gene.probemap",
+                             data.table = F)
+tpm <- left_join(tpm,mapping %>% select(id,gene)) %>% 
+  select(-id) %>% 
+  select(gene,everything())
+
+tcga_surv_nm <- readRDS("~/DeepMeta/data/tcga_surv_nm.rds")
+tpm <- tpm %>% select(gene,which(substr(colnames(tpm),1,12) %in% tcga_surv_nm$sample))
+tpm <- tpm[!duplicated(tpm$gene),]
+rownames(tpm) <- tpm$gene
+tpm <- tpm %>% select(-gene)
+
+kegg <- readRDS("~/meta_target/data/kegg_all_pathway.rds")
+kegg <- kegg %>% 
+  filter(grepl("Metabolism",class) | grepl("metabolism",pathway)) %>% 
+  mutate(pathway = gsub(" \\- Homo sapiens \\(human\\)","",pathway)) %>% 
+  filter(!grepl("Drug",pathway))
+py <- list(`Pyrimidine metabolism`=kegg$genes[which(kegg$pathway == "Pyrimidine metabolism")])
+library(GSVA)
+gsvaPar <- gsvaParam(as.matrix(tpm), py)
+py_score <- gsva(gsvaPar)
+py_score <- t(py_score) %>% as.data.frame()
+colnames(py_score) <- "NES"
+py_score$sample <- rownames(py_score)
+saveRDS(py_score,file = "data/tcga_py_gsva.rds")
+
+###
+tcga_py_gsva <- readRDS("~/DeepMeta/data/tcga_py_gsva.rds")
+surv <- readRDS("data/pancancer_survial.rds")
+surv_nm <- inner_join(surv,
+                      tcga_py_gsva %>% mutate(sample = substr(sample,1,12))) %>% 
+  distinct_all(.keep_all = TRUE)
+surv_nm <- surv_nm %>% 
+  mutate(NES_type = ifelse(NES > median(surv_nm$NES), "high","low")) 
+surv_nm$NES_type <- factor(surv_nm$NES_type, levels = c("low","high"))
+
+p <- EasyBioinfo::show_km(surv_nm ,"NES_type")
+pdf("report/py_survial_by_gsva.pdf",height = 6,width = 7)
+print(p)
+dev.off()
+
+fit0 <- survminer::surv_fit(survival::Surv(OS.time, OS)~NES_type, data = surv_nm)
+survminer::ggsurvplot(fit0, pval = T, risk.table = T,risk.table.pos = "in", 
+                      data = surv_nm)
+
+###
+dt <- data.table::fread("/home/data/sdb/wt/model_data/PRISM/primary-screen-replicate-collapsed-logfold-change.csv",
+                        data.table = F)
+drug_info <- data.table::fread("/home/data/sdb/wt/model_data/PRISM/primary-screen-replicate-collapsed-treatment-info.csv",
+                               data.table = F)
+
+train_genes <- data.table::fread("/home/wt/meta_target/data/train_genes.csv",
+                                 data.table = F,sep = ",")
+enz_gene_mapping <- readRDS("~/meta_target/data/enz_gene_mapping.rds")
+ensg2name <- function(ensg,mapping){
+  tt <- strsplit(ensg," and ")[[1]]
+  tt_gene <- mapping$symbol[which(mapping$ensembl_id %in% tt)] %>% 
+    unique() 
+  return(tt_gene)
+}
+train_genes <- train_genes %>% 
+  rowwise() %>% 
+  mutate(gene = paste0(ensg2name(id,enz_gene_mapping),collapse = ",")) %>% 
+  ungroup()
+all_genes <- paste0(train_genes$gene,collapse = ",") %>% 
+  strsplit(.,",")
+all_genes <- all_genes[[1]]
+
+drug_info <- drug_info %>% 
+  rowwise() %>% 
+  mutate(is_train = any(strsplit(target,",")[[1]] %in% all_genes)) %>% 
+  ungroup()
+drug_info <- drug_info %>% filter(is_train)
+
+test_pre <- data.table::fread("data/test_preV2.csv",data.table = F)
+dt <- dt %>% 
+  filter(V1 %in% test_pre$cell) %>% 
+  select(V1,drug_info$column_name)
+test_pre <- test_pre %>% 
+  filter(cell %in% dt$V1) %>% 
+  rowwise() %>% 
+  mutate(gene = paste0(ensg2name(gene_name,enz_gene_mapping),collapse = ",")) %>% 
+  ungroup()
+
+get_drug_score<- function(cell_name,gene_name,drug_dt,score_dt){
+  gene_drug <- drug_dt %>% 
+    filter(target == gene_name)
+  if (nrow(gene_drug) != 0){
+    ids <- unique(gene_drug$column_name)
+    gene_score <- score_dt %>% 
+      filter(V1 == cell_name) %>% 
+      select(ids) %>% t() %>% as.data.frame() %>% rename(score = V1)
+    gene_score$ids <- rownames(gene_score)
+    gene_score <- left_join(gene_score,
+                            gene_drug %>% 
+                              select(column_name,name) %>% rename(ids = 1),
+                            by="ids")
+    if (all(is.na(gene_score$score))){
+      return(list(
+        drug_name = NA,
+        score = NA
+      ))
+    }else{
+      return(list(
+        drug_name = gene_score$name[which.min(gene_score$score)],
+        score = gene_score$score[which.min(gene_score$score)]
+      ))
+    }
+  }else{
+    return(list(
+      drug_name = NA,
+      score = NA
+    ))
+  }
+}
+drug_info_split <- drug_info %>% 
+  tidyr::separate_longer_delim(cols = target, delim = ", ")
+test_pre <- test_pre %>% 
+  tidyr::separate_longer_delim(cols = gene, delim = ",") %>% 
+  rowwise() %>% 
+  mutate(min_score = get_drug_score(cell,gene,drug_info_split,dt)$score,
+         min_drug = get_drug_score(cell,gene,drug_info_split,dt)$drug_name) %>% 
+  ungroup()
+saveRDS(test_pre,file = "data/cell_test_PRISM.rds")
+
+test_pre <- test_pre %>% 
+  filter(!is.na(min_score))
+
+library(ggpubr)
+ggboxplot(data=test_pre,x="preds",y="min_score",
+          xlab = "Prediction Label",ylab = "Drug Score")+
+  stat_compare_means()
+ggsave("report/PRISM_test_pre.pdf",width = 4,height = 5)
+
+###
+test_pre <- data.table::fread("data/test_preV2.csv",data.table = F)
+test_pre <- test_pre %>% 
+  filter(cell %in% dt$V1) %>% 
+  rowwise() %>% 
+  mutate(gene = paste0(ensg2name(gene_name,enz_gene_mapping),collapse = ",")) %>% 
+  ungroup() %>% 
+  tidyr::separate_longer_delim(cols = gene, delim = ",")
+
+test_pre <- inner_join(test_pre,
+                       drug_info_split %>% 
+                         select(target,name,moa,column_name) %>% 
+                         rename(gene = target))
+rownames(dt) <- dt$V1
+dt$V1 <- NULL
+test_pre <- test_pre %>% 
+  rowwise() %>% 
+  mutate(score = dt[cell,column_name]) %>% ungroup()
+test_pre <- test_pre %>% na.omit()
+
+table(test_pre$column_name,test_pre$preds) %>% as.data.frame() -> drug_summ
+drug_summ1 <- drug_summ %>% 
+  group_by(Var1) %>% summarise(diff = ((Freq[1] - Freq[2]) < (Freq[1] - 1))) %>% 
+  ungroup() %>% 
+  filter(diff)
+drug_summ2 <- drug_summ %>% 
+  group_by(Var1) %>% summarise(diff = ((Freq[2] - Freq[1]) < (Freq[2] - 1))) %>% 
+  ungroup() %>% 
+  filter(diff)
+need_drug <- intersect(drug_summ1$Var1,drug_summ2$Var1)
+
+res <- vector("list",length(need_drug))
+for (i in seq_along(res)){
+  df <- test_pre %>% filter(column_name == need_drug[i])
+  df_res <- data.frame(
+    p = wilcox.test(score ~ preds, data = df)$p.value,
+    diff = mean(df$score[df$preds==1]) - mean(df$score[df$preds==0]),
+    drug = need_drug[i]
+  )
+  res[[i]] <- df_res
+}
+res <- bind_rows(res)

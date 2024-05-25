@@ -69,6 +69,10 @@ rownames(gene_exp) <- gene_exp$V1
 gene_exp <- gene_exp %>% select(-V1)
 colnames(gene_exp) <- gsub(" [(].+","",colnames(gene_exp))
 
+low_exp <- apply(gene_exp,1,
+                 function(x){mean(x<1)}) %>% as.data.frame() %>% 
+  rename(per=1)
+median(low_exp$per)
 ##dependency data
 dep_dt <- readRDS("/home/data/sdb/wt/model_data/dep_dt.rds")
 dep_dt <- dep_dt %>%

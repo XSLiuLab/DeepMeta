@@ -67,6 +67,7 @@ surv_nm_filter <- surv_nm_filter %>%
   mutate(OR_type = ifelse(ratio > median(surv_nm_filter$ratio), "high","low")) 
 
 surv_nm_filter$OR_type <- factor(surv_nm_filter$OR_type, levels = c("low","high"))
+saveRDS(surv_nm_filter,file = "data/tcga_surv_nm.rds")
 
 p1 <- show_forest(surv_nm_filter,covariates = "OR_type",time = "OS.time",
                   status = "OS",controls = "cancers",vars_to_show = "OR_type"
