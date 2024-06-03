@@ -76,12 +76,16 @@ p2 <- EasyBioinfo::show_km(surv_nm_filter ,"OR_type",title="All Cancer Type")
 p1
 p2
 
-dt <- surv_nm_filter %>% filter(!is.na(Tumor_stage))
 surv_nm_filter <- surv_nm_filter %>% 
   rename(Dependency=OR_type)
 p1 <- show_forest(surv_nm_filter,covariates = "Dependency",time = "OS.time",
+                  status = "OS",controls = c("cancers","age","gender"),
+                  vars_to_show = "Dependency")
+dt <- surv_nm_filter %>% filter(!is.na(Tumor_stage))
+p2 <- show_forest(dt,covariates = "Dependency",time = "OS.time",
                   status = "OS",controls = c("cancers","age","gender","Tumor_stage"),
                   vars_to_show = "Dependency")
+p3 <- p1 + p2
 ##所有癌症类型
 surv_list <- vector("list",7)
 for (i in 1:7){
@@ -174,12 +178,19 @@ pdf("figs/py_survial_with_control2.pdf",height = 6,width = 14)
 print(p7)
 dev.off()
 
-dt <- surv_all_filter %>% filter(!is.na(Tumor_stage))
 surv_all_filter <- surv_all_filter %>% 
   rename(Dependency=OR_type)
-p2 <- show_forest(dt,covariates = "Dependency",time = "OS.time",
-            status = "OS",controls = c("cancers","age","gender","Tumor_stage"),
+p4 <- show_forest(surv_all_filter,covariates = "Dependency",time = "OS.time",
+            status = "OS",controls = c("cancers","age","gender"),
             vars_to_show = "Dependency")
+dt <- surv_all_filter %>% filter(!is.na(Tumor_stage))
+p5 <- show_forest(dt,covariates = "Dependency",time = "OS.time",
+                  status = "OS",controls = c("cancers","age","gender","Tumor_stage"),
+                  vars_to_show = "Dependency")
+p6 <- p4 + p5
+
+p3 / p6
+ggsave(filename = "report/drug_tcga_controled_combine.pdf",width = 14,height = 8)
 
 ggsave(p1,filename = "report/drug_tcga_controled_stage.pdf",width = 7,height = 4)
 ggsave(p2,filename = "report/no_drug_tcga_controled_stage.pdf",width = 7,height = 4)

@@ -47,7 +47,8 @@ deg_res$genes <- rownames(deg_res)
 EnhancedVolcano::EnhancedVolcano(deg_res,x="log2FoldChange",
                                  lab = rownames(deg_res),
                                  y="pvalue",pCutoffCol="padj",
-                                 pCutoff = 0.1)
+                                 pCutoff = 0.1,
+                                 title = "RPMI VS DMEM",subtitle = NULL)
 
 ###建模去预测培养基类型
 gene_exp <- data.table::fread("/home/data/sdb/wt/model_data/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
@@ -129,7 +130,7 @@ for (i in 1:5){
 }
 roc_res <- bind_rows(roc_res)
 
-ggplot(roc_res,aes(x = 1 - specificity, y = sensitivity, color = fold_auroc)) +
+p1 <- ggplot(roc_res,aes(x = 1 - specificity, y = sensitivity, color = fold_auroc)) +
   geom_path() +
   coord_fixed(xlim = 0:1, ylim = 0:1)+
   theme_prism()+
@@ -144,12 +145,15 @@ for (i in 1:5){
 }
 pr_res <- bind_rows(pr_res)
 
-ggplot(pr_res,aes(x = recall, y = precision, color = fold_auprc)) +
+p2 <- ggplot(pr_res,aes(x = recall, y = precision, color = fold_auprc)) +
   geom_path() +
   coord_fixed(xlim = 0:1, ylim = 0:1)+
   theme_prism()+
   theme(legend.position = c(0.7, 0.3))
 
+library(patchwork)
+p1+p2
+ggsave("report/auc_cell_media.pdf",width = 10,height = 5)
 ################### TCGA 预测的依赖性值和细胞系预测的值的相关性分析
 cell_pre <- data.table::fread("data/train_preV2.csv",data.table = F)
 tcga_pre <- readRDS("data/tcga_pre_V2.rds") %>% as.data.frame()
@@ -254,80 +258,105 @@ for(i in 1:nrow(dt)){
 }
 dt <- na.omit(dt)
 library(ggpubr)
-gghistogram(dt,x="cor",add = "median",fill = "#00AFBB",
+p1 <- gghistogram(dt,x="cor",add = "median",fill = "#00AFBB",
             xlab = "Correlation between TCGA and Cell", ylab = "Counts",
             rug = TRUE,add.params = list(color = "red",size=1,linetype="dashed"))
 ggsave("report/cor_bet_TCGA_cell.pdf",height = 5,width = 7)
 
 library(ComplexHeatmap)
-p1 <- Heatmap(cell_pre_cor,cluster_rows = F,cluster_columns = F,
+
+p2 <- Heatmap(cell_pre_cor,cluster_rows = F,cluster_columns = F,
         show_row_names = F,show_column_names = F,
         column_title  = "Correlation of predicted dependency in Cells",
         name = "Cells")
-p2 <- Heatmap(tcga_pre_cor,cluster_rows = F,cluster_columns = F,
+p3 <- Heatmap(tcga_pre_cor,cluster_rows = F,cluster_columns = F,
         show_row_names = F,show_column_names = F,
         column_title  = "Correlation of predicted dependency in TCGA",
         name = "TCGA")
-p3 <- p1 + p2
+p3 <- p2 + p3
 pdf(file="report/cor_heatmap.pdf",width = 10,height = 5)
 draw(p3)
 dev.off()
 
+p3 <- grid.grabExpr(draw(p3)) 
+p1 + p3
+
 ###回归分析考虑细胞比例
-dt <- readRDS("~/DeepMeta/data/TCGA_normal_dep_diff.rds")
-pur <- dt %>% filter(pathway=="Pyrimidine metabolism")
-pro <- data.table::fread("data/tcga_LM_propotion.csv",data.table = F)
-all_cells <- colnames(pro)[2:23]
-res <- vector("list",length(all_cells))
-for (i in seq_along(res)){
-  cell_pro <- pro %>% select(V1,all_cells[i]) %>% 
+get_controled_p <- function(pathway_name){
+  dt <- readRDS("~/DeepMeta/data/TCGA_normal_dep_diff.rds")
+  pur <- dt %>% filter(pathway==pathway_name)
+  pro <- data.table::fread("data/tcga_LM_propotion.csv",data.table = F)
+  all_cells <- colnames(pro)[2:23]
+  res <- vector("list",length(all_cells))
+  for (i in seq_along(res)){
+    cell_pro <- pro %>% select(V1,all_cells[i]) %>% 
+      rename(sample = V1) %>% 
+      mutate(sample = gsub("[.]","-",sample))
+    pur_cell <- left_join(pur,cell_pro)
+    colnames(pur_cell)[8] <- "cell"
+    fit <- lm(log2ratio ~ Type + cell, data = pur_cell)
+    fit_res <- broom::tidy(fit,conf.int=TRUE)
+    cell_res <- data.frame(
+      cell_type = gsub("[.]","_",all_cells[i]),
+      estimate = fit_res$estimate[2],
+      low = fit_res$conf.low[2],
+      high = fit_res$conf.high[2],
+      stat = fit_res$statistic[2],
+      p_value = fit_res$p.value[2]
+    )
+    res[[i]] <- cell_res
+  }
+  res <- bind_rows(res)
+  
+  cell_pro <- pro %>% select(V1,2:23) %>% 
     rename(sample = V1) %>% 
     mutate(sample = gsub("[.]","-",sample))
   pur_cell <- left_join(pur,cell_pro)
-  colnames(pur_cell)[8] <- "cell"
-  fit <- lm(log2ratio ~ Type + cell, data = pur_cell)
+  pur_cell <- pur_cell %>% select(5:29) %>% select(-cancer_type)
+  fit <- lm(log2ratio ~ . ,data = pur_cell)
   fit_res <- broom::tidy(fit,conf.int=TRUE)
   cell_res <- data.frame(
-    cell_type = gsub("[.]","_",all_cells[i]),
+    cell_type = "All",
     estimate = fit_res$estimate[2],
     low = fit_res$conf.low[2],
     high = fit_res$conf.high[2],
     stat = fit_res$statistic[2],
     p_value = fit_res$p.value[2]
   )
-  res[[i]] <- cell_res
+  res <- bind_rows(res,cell_res)
+  res$` ` <- paste(rep(" ", 25), collapse = " ")
+  res$p_value <- format(res$p_value,digits = 3)
+  res <- res %>% rename(`Controled Cell Type`=cell_type,
+                        `P value`=p_value)
+  colnames(res)[6] <- paste0(pathway_name," P value")
+  return(res)
 }
-res <- bind_rows(res)
 
-cell_pro <- pro %>% select(V1,2:23) %>% 
-  rename(sample = V1) %>% 
-  mutate(sample = gsub("[.]","-",sample))
-pur_cell <- left_join(pur,cell_pro)
-pur_cell <- pur_cell %>% select(5:29) %>% select(-cancer_type)
-fit <- lm(log2ratio ~ . ,data = pur_cell)
-fit_res <- broom::tidy(fit,conf.int=TRUE)
-cell_res <- data.frame(
-  cell_type = "All",
-  estimate = fit_res$estimate[2],
-  low = fit_res$conf.low[2],
-  high = fit_res$conf.high[2],
-  stat = fit_res$statistic[2],
-  p_value = fit_res$p.value[2]
-)
-res <- bind_rows(res,cell_res)
-res$` ` <- paste(rep(" ", 20), collapse = " ")
-res$p_value <- format(res$p_value,digits = 3)
-res <- res %>% rename(`Controled Cell Type`=cell_type,
-                      `P value`=p_value)
+res_py <- get_controled_p("Pyrimidine metabolism")
+res_glu <- get_controled_p("Glutathione metabolism")
+res_pu <- get_controled_p("Purine metabolism")
 library(forestploter)
-p <- forest(data = res[,c(1,7,6)],
-            est = res$estimate,
-            lower = res$low,
-            upper = res$high,
+p1 <- forest(data = res_py[,c(1,7,6)],
+            est = res_py$estimate,
+            lower = res_py$low,
+            upper = res_py$high,
             ref_line = 0,
             ci_column = 2)
-ggsave("report/Pyri_controled_cell.pdf",p,width = 8,height = 10)
-
+p2 <- forest(data = res_glu[,c(1,7,6)],
+             est = res_glu$estimate,
+             lower = res_glu$low,
+             upper = res_glu$high,
+             ref_line = 0,
+             ci_column = 2)
+p3 <- forest(data = res_pu[,c(1,7,6)],
+             est = res_pu$estimate,
+             lower = res_pu$low,
+             upper = res_pu$high,
+             ref_line = 0,
+             ci_column = 2)
+ggsave("report/Pyri_controled_cell.pdf",p1,width = 8,height = 10)
+ggsave("report/Pu_controled_cell.pdf",p3,width = 8,height = 10)
+ggsave("report/Glu_controled_cell.pdf",p2,width = 8,height = 10)
 ####更多临床数据的验证
 dt <- lapply(1:23,
              function(x){
@@ -608,10 +637,10 @@ library(ggprism)
 ggplot(data=df,aes(x=OR_type,y=sample_counts,fill=Response))+
   geom_bar(stat = "identity",position="fill")+
   theme_prism()+
-  labs(y="Percent of cases (%)",title = "Chi-squared test, P < 2.2e-16")+
+  labs(y="Percent of cases (%)",title = "Fisher's Exact Test, P = 0.004756")+
   scale_fill_manual(values=c("#00FDFE","#FE0000"))+
   theme(axis.title.x = element_blank())
-
+ggsave("report/geo_chemo_fisher.pdf",width = 6,height = 6)
 dt <- py %>% 
   mutate(truth = ifelse(Response == "Response", "Class1","Class2")) %>% 
   mutate(score = -log10(p_value) * ratio)
@@ -672,7 +701,7 @@ fit0 <- survminer::surv_fit(survival::Surv(OS.time, OS)~NES_type, data = surv_nm
 survminer::ggsurvplot(fit0, pval = T, risk.table = T,risk.table.pos = "in", 
                       data = surv_nm)
 
-###
+###PRISM repurposing
 dt <- data.table::fread("/home/data/sdb/wt/model_data/PRISM/primary-screen-replicate-collapsed-logfold-change.csv",
                         data.table = F)
 drug_info <- data.table::fread("/home/data/sdb/wt/model_data/PRISM/primary-screen-replicate-collapsed-treatment-info.csv",
@@ -761,45 +790,144 @@ ggboxplot(data=test_pre,x="preds",y="min_score",
   stat_compare_means()
 ggsave("report/PRISM_test_pre.pdf",width = 4,height = 5)
 
-###
-test_pre <- data.table::fread("data/test_preV2.csv",data.table = F)
-test_pre <- test_pre %>% 
-  filter(cell %in% dt$V1) %>% 
-  rowwise() %>% 
-  mutate(gene = paste0(ensg2name(gene_name,enz_gene_mapping),collapse = ",")) %>% 
+###基因分布
+pre <- read.csv("data/test_preV2.csv") %>% select(-X)
+pre_summ <- pre %>% 
+  group_by(gene_name) %>% 
+  summarise(count1 = sum(preds == 1),counts0=sum(preds==0),
+            true0=sum(label == 0),true1 = sum(label == 1)) %>% 
   ungroup() %>% 
-  tidyr::separate_longer_delim(cols = gene, delim = ",")
+  filter(true0 != 0 & true1 != 0)
 
-test_pre <- inner_join(test_pre,
-                       drug_info_split %>% 
-                         select(target,name,moa,column_name) %>% 
-                         rename(gene = target))
-rownames(dt) <- dt$V1
-dt$V1 <- NULL
-test_pre <- test_pre %>% 
-  rowwise() %>% 
-  mutate(score = dt[cell,column_name]) %>% ungroup()
-test_pre <- test_pre %>% na.omit()
-
-table(test_pre$column_name,test_pre$preds) %>% as.data.frame() -> drug_summ
-drug_summ1 <- drug_summ %>% 
-  group_by(Var1) %>% summarise(diff = ((Freq[1] - Freq[2]) < (Freq[1] - 1))) %>% 
-  ungroup() %>% 
-  filter(diff)
-drug_summ2 <- drug_summ %>% 
-  group_by(Var1) %>% summarise(diff = ((Freq[2] - Freq[1]) < (Freq[2] - 1))) %>% 
-  ungroup() %>% 
-  filter(diff)
-need_drug <- intersect(drug_summ1$Var1,drug_summ2$Var1)
-
-res <- vector("list",length(need_drug))
-for (i in seq_along(res)){
-  df <- test_pre %>% filter(column_name == need_drug[i])
-  df_res <- data.frame(
-    p = wilcox.test(score ~ preds, data = df)$p.value,
-    diff = mean(df$score[df$preds==1]) - mean(df$score[df$preds==0]),
-    drug = need_drug[i]
-  )
-  res[[i]] <- df_res
+get_conf <- function(gene){
+  tt <- pre %>% filter(gene_name == gene)
+  return(c(sum(tt$label == 0 & tt$preds == 0),
+           sum(tt$label == 0 & tt$preds == 1),
+           sum(tt$label == 1 & tt$preds == 0),
+           sum(tt$label == 1 & tt$preds == 1)))
 }
-res <- bind_rows(res)
+
+dt <- matrix(rep(1,(556*2)^2),nrow = 556 * 2)
+for (i in 1:nrow(pre_summ)){
+  tmp_m <- get_conf(pre_summ$gene_name[i])
+  dt[((2*i)-1):(((2*i)-1)+1),((2*i)-1)] <- tmp_m[1:2]
+  dt[((2*i)-1):(((2*i)-1)+1),((2*i)-1)+1] <- tmp_m[3:4]
+}
+ 
+###多组学
+train_cell_info <- read.csv("/home/data/sdc/wt/model_data/new_model/cell_net_filter_exp/raw/train_cell_info.csv")
+
+mut <- data.table::fread("/home/data/sdb/wt/model_data/OmicsSomaticMutations.csv",
+                         data.table = F)
+mut <- mut %>% 
+  select(DepMap_ID,HugoSymbol,VariantInfo,Chrom,Pos,Ref,Alt) %>% 
+  filter(VariantInfo != "SILENT") %>% 
+  filter(DepMap_ID %in% c(train_cell_info$cell))
+train_cell_info <- train_cell_info %>% filter(cell %in% mut$DepMap_ID)
+mut_summ <- mut %>% 
+  group_by(HugoSymbol) %>% 
+  summarise(cell_c=length(unique(DepMap_ID))) %>% 
+  ungroup() %>% 
+  filter(cell_c > 20)
+mut <- mut %>% 
+  filter(HugoSymbol %in% mut_summ$HugoSymbol) %>% 
+  select(DepMap_ID,HugoSymbol) %>% 
+  distinct_all() %>% 
+  rename(cell=DepMap_ID,gene=HugoSymbol) %>% 
+  mutate(value = 1) %>% 
+  tidyr::pivot_wider(names_from = gene, values_from = value, values_fill = 0)
+write.csv(mut,file = "/home/data/sdb/wt/model_data/mut_dt.csv",
+          quote = F, row.names = F)
+
+cnv <- data.table::fread("/home/data/sdb/wt/model_data/OmicsCNGene.csv",
+                         data.table = F)
+colnames(cnv)[2:ncol(cnv)] <- gsub("\\s*\\([^\\)]+\\)","",colnames(cnv)[2:ncol(cnv)])
+colnames(cnv)[1] <- "cell"
+gene_cnv_sd <- apply(cnv[,2:ncol(cnv)],2,sd)
+gene_cnv_sd <- gene_cnv_sd[which(gene_cnv_sd > 0.2)]
+cnv <- cnv %>% select(cell, names(gene_cnv_sd))
+cnv <- cnv %>% filter(cell %in% train_cell_info$cell)
+write.csv(cnv,file = "/home/data/sdb/wt/model_data/cnv_dt.csv",
+          quote = F, row.names = F)
+
+train_cell_info <- train_cell_info %>% mutate(cell_index = row_number()-1)
+write.csv(train_cell_info,file = "/home/data/sdb/wt/model_data/train_cell_info_omics.csv",
+          quote = F, row.names = F)
+
+###res
+library(dplyr)
+library(yardstick)
+library(ggprism)
+library(ggplot2)
+library(ggpubr)
+
+get_roc <- function(dt,need="all"){
+  dt <- dt %>% 
+    mutate(truth = ifelse(label == 1, "Class1","Class2"),
+           pred_label = ifelse(preds == 1, "Class1","Class2"))
+  dt$truth <- factor(dt$truth)
+  dt$pred_label <- factor(dt$pred_label)
+  
+  f1 <- try(f_meas(dt,truth,pred_label)[".estimate"] %>%
+              unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  kappa <- try(kap(dt,truth,pred_label)[".estimate"] %>%
+                 unlist() %>% unname() %>% round(.,2),silent = TRUE)
+  f1 <- ifelse('try-error' %in% class(f1),NA,f1)
+  kappa <- ifelse('try-error' %in% class(kappa),NA,kappa)
+  if (need == "all"){
+    roc <-  roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+      unlist() %>% unname() %>% round(.,2)
+    pr <-  pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+      unlist() %>% unname() %>% round(.,2)
+    return(c(roc,pr,f1,kappa))
+  }else{
+    res <- switch(
+      need,
+      "roc" = roc_auc(dt, truth, preds_raw)[".estimate"] %>% 
+        unlist() %>% unname() %>% round(.,2),
+      "pr" = pr_auc(dt, truth, preds_raw)[".estimate"] %>%
+        unlist() %>% unname() %>% round(.,2),
+      "f1" = f1,
+      "kappa" = kappa
+    )
+    return(res)
+  }
+  
+}
+
+all_cv <- c("own_model","multi_omics")
+cv_res <- vector("list",2)
+for (i in 1:2){
+  sub_res <- vector("list",10)
+  for (j in 1:10){
+    pre <- read.csv(paste0("data/cv/",all_cv[i],"/fold_",j-1,".csv")) %>% select(-X)
+    pre_roc <- ifelse(i %in% c(1:7),get_roc(pre,need = "roc"),NA)
+    pre_pr <- ifelse(i %in% c(1:7),get_roc(pre,need = "pr"),NA)
+    pre_f1 <- get_roc(pre,need = "f1")
+    pre_kap <- get_roc(pre,need = "kappa")
+    
+    sub_res[[j]] <- data.frame(
+      fold = paste0("Fold-",j),
+      ROC = pre_roc,
+      PR = pre_pr,
+      F1 = pre_f1,
+      Kappa = pre_kap
+    ) 
+  }
+  sub_res <- bind_rows(sub_res)
+  sub_res$type <- all_cv[i]
+  cv_res[[i]] <- sub_res
+}
+cv_res <- bind_rows(cv_res)
+cv_res <- cv_res %>% 
+  tidyr::pivot_longer(cols = c("ROC","PR","F1","Kappa"),
+                      names_to = "Metric",values_to = "Value")
+ggbarplot(cv_res, x = "type", y = "Value",fill="Metric",
+          add = "mean_se", label = TRUE, 
+          lab.vjust = -0.5,position = position_dodge(0.9))+
+  scale_x_discrete(labels=c("DeepMeta","Multi-Omics (EXP+CNV+MUT)"))+
+  labs(x="",y='Value')
+ggsave("report/multi_omics_compare.pdf",width = 8,height = 5)
+
+
+
