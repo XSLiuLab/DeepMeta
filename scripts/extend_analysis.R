@@ -929,5 +929,204 @@ ggbarplot(cv_res, x = "type", y = "Value",fill="Metric",
   labs(x="",y='Value')
 ggsave("report/multi_omics_compare.pdf",width = 8,height = 5)
 
+###oncogene and tsg
+all_cancer_genes <- data.table::fread("data/cancerGeneList.tsv")
+all_cancer_genes <- all_cancer_genes %>% 
+  filter(`Is Oncogene` == "Yes" | `Is Tumor Suppressor Gene` == "Yes")
+all_url <- data.frame(
+  urls = paste0("https://www.oncokb.org/gene/",unique(all_cancer_genes$`Hugo Symbol`),
+                "#tab=Biological")
+)
+write.table(all_url,"data/all_cancer_gene_url.txt",sep = "\t",
+            row.names = F,col.names = F,
+            quote = F)
+oncokb <- readxl::read_xlsx("data/all_genes_OncoKB.xlsx")
+oncokb <- oncokb %>% 
+  mutate(gene = gsub("https://www.oncokb.org/gene/","",Title_URL) %>% 
+           gsub("/.+","",.))
+oncokb <- inner_join(
+  oncokb,
+  all_cancer_genes %>% select(`Hugo Symbol`,`Is Tumor Suppressor Gene`,`Is Oncogene`) %>% 
+    rename(gene = 1, TSG=2, Onco=3)
+)
+oncokb <- oncokb %>% 
+  filter(!(TSG == "Yes" & Onco == "Yes")) %>% 
+  filter((grepl("Loss-of-function",rttd1) & TSG == "Yes") | (grepl("Gain-of-function",rttd1) & Onco == "Yes"))
+saveRDS(oncokb,file = "data/oncokb_cancer_gene_anno.rds")
+
+##########把所有的 driver 都跑一下
+library(dplyr)
+library(caret)
+
+kegg <- readRDS("data/kegg_all_pathway.rds")
+kegg <- kegg %>% 
+  filter(grepl("Metabolism",class) | grepl("metabolism",pathway)) %>% 
+  mutate(pathway = gsub(" \\- Homo sapiens \\(human\\)","",pathway))
+
+get_pathway <- function(gene,pathway){
+  gene <- strsplit(gene,split = ",")[[1]]
+  pathway <- pathway %>% filter(genes %in% gene)
+  return(c(paste(unique(pathway$pathway),collapse = ";"),
+           paste(unique(pathway$class),collapse = ";")))
+}
+
+pre <- readRDS("data/tcga_pre_V2.rds") %>% as.data.frame()
+pre_pathway <- data.frame(gene = unique(c(pre$gene))) %>% 
+  rowwise() %>% 
+  mutate(pathway = get_pathway(gene,kegg)[1],
+         class = get_pathway(gene,kegg)[2]) %>% 
+  ungroup() %>% 
+  filter(nchar(pathway)>1)
+pre_pathway <- pre %>% 
+  left_join(.,pre_pathway) %>% na.omit()
+
+gene_screen <- function(pre_dt){
+  gene_summ <- pre_dt %>% 
+    group_by(gene) %>% 
+    summarise(counts=mean(preds == 1)) %>%
+    ungroup() %>% 
+    filter(counts > 0 & counts < 1) 
+  gene_summ2 <- pre_dt %>% 
+    group_by(gene) %>% 
+    summarise(counts=mean(type == "mut"))  %>% 
+    ungroup() %>% 
+    filter(counts > 0 & counts < 1) 
+  all_genes <- intersect(gene_summ$gene,gene_summ2$gene)
+  
+  pre_dt <- pre_dt %>% filter(gene %in% all_genes)
+  
+  res <- vector("list",length = length(all_genes))
+  for (i in 1:length(all_genes)){
+    dt <- pre_dt %>% filter(gene == all_genes[i])
+    dt$type <- factor(dt$type,levels = c("non-mut","mut"))
+    dt_cancer <- dt %>% select(cancer)
+    dummy <- caret::dummyVars(" ~ .", data=dt_cancer)
+    dt_cancer <- data.frame(predict(dummy, newdata=dt_cancer))
+    
+    dt <- bind_cols(dt,dt_cancer)
+    all_caners <- colnames(dt_cancer)
+    dt_model <- glm(data = dt, 
+                    as.formula(paste0("preds ~ type + ",
+                                      paste(all_caners,collapse = "+"))), 
+                    family =binomial(link = "logit"))
+    model_summ <- jtools::summ(dt_model,exp=TRUE)$coeftable %>% as.data.frame()
+    model_summ$var <- rownames(model_summ)
+    model_summ <- model_summ %>% filter(var == "typemut")
+    model_summ$gene <- all_genes[i]
+    res[[i]] <- model_summ
+  }
+  res <- bind_rows(res)
+  colnames(res)[1:3] <- c("OR","lower","upper")
+  colnames(res)[5] <- c("P")
+  colnames(res)[7] <- c("Gene")
+  res <- res %>% filter(P<0.05 & OR>1)
+  res$mean <- res$OR
+  res$OR <- round(res$OR,3)
+  #res$P <- round(res$P,3)
+  res <- res %>% 
+    arrange(P,desc(OR))
+  return(res)
+}
+
+mut <- readRDS("/home/data/sdc/wt/TCGA/tcga_mut.rds")
+cancer_genes <- readRDS("~/DeepMeta/data/oncokb_cancer_gene_anno.rds")
+
+###run
+all_genes <- unique(cancer_genes$gene)
+res <- vector("list",length = length(all_genes))
+for (i in 1:length(res)){
+  need_gene <- all_genes[i]
+  dt_mut <- mut %>% 
+    filter(gene == need_gene)
+  dt_oncokb <- cancer_genes %>% 
+    filter(gene == need_gene)
+  mut_aa <- paste0("p.",dt_oncokb$Title) %>% unique()
+  mut_gene <- dt_mut %>% 
+    filter(Amino_Acid_Change %in% mut_aa)
+  dt_gene_pre <- pre_pathway %>% 
+    mutate(type = case_when(
+      cell %in% mut_gene$sample ~ "mut",
+      !(cell %in% dt_mut$sample) ~ "non-mut",
+      TRUE ~ "other"
+    )) %>% filter(type != "other") 
+  dt_res <- tryCatch({
+    gene_screen(pre_dt = dt_gene_pre)
+  }, error = function(e){
+    NA
+  })
+  if (length(dt_res) > 1){
+    if (nrow(dt_res) != 0){
+      dt_res$target_gene <- all_genes[i]
+    }else{
+      dt_res <- NA
+    }
+  }
+  res[[i]] <- dt_res
+  message("Complete ",i)
+}
+res <- res[which(lengths(res)==9)]
+res <- bind_rows(res)
+res <- res %>% filter(!is.infinite(OR))
+
+cancer_genes <- cancer_genes %>% 
+  mutate(ids = paste0(gene,"-","p.",Title) )
+mut <- mut %>% mutate(ids = paste0(gene,"-",Amino_Acid_Change))
+all_gene_mut <- mut %>% filter(ids %in% cancer_genes$ids)
+all_gene_mut_summ <- all_gene_mut %>% 
+  group_by(gene) %>% 
+  summarise(counts = length(unique(sample))) %>% ungroup() %>% 
+  filter(counts > 10)
+
+res <- res %>% filter(target_gene %in% all_gene_mut_summ$gene)
+res <- res %>% filter(!(target_gene %in% c("TP53","CTNNB1")))
+saveRDS(res, file = "data/all_cancer_gene_dep.rds")
+
+####
+all_cancer_gene_dep <- readRDS("~/DeepMeta/data/all_cancer_gene_dep.rds")
+other_genes <- readRDS("data/merge_driver_dep.rds")
+all_cancer_gene_dep <- bind_rows(
+  all_cancer_gene_dep,
+  other_genes %>% rename(target_gene = target)
+) %>% filter(!is.infinite(OR))
+
+###
+gene_exp <- data.table::fread("/home/data/sdb/wt/model_data/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+                              data.table = F)
+rownames(gene_exp) <- gene_exp$V1
+gene_exp <- gene_exp %>% select(-V1)
+colnames(gene_exp) <- gsub(" [(].+","",colnames(gene_exp))
+gene_exp <- t(gene_exp) %>% as.data.frame()
+gene_exp$gene <- rownames(gene_exp)
+gene_exp <- gene_exp %>% select(gene,everything())
+###convert gene to ensg
+enz_gene_mapping <- readRDS("~/meta_target/data/enz_gene_mapping.rds")
+gene_exp <- inner_join(
+  gene_exp,
+  enz_gene_mapping %>% 
+    dplyr::select(symbol,ensembl_id) %>% 
+    dplyr::rename(gene=symbol)
+) %>% select(gene,ensembl_id,everything())
+gene_exp <- gene_exp[!duplicated(gene_exp$ensembl_id),]
+gene_exp <- gene_exp %>% select(-gene) %>% as.data.frame() %>% 
+  dplyr::rename(gene=ensembl_id)
+
+write.table(gene_exp, 
+            file = "/home/data/sdb/wt/model_data/tINIT_data/Human1_Publication_Data_Scripts/tINIT_GEMs/depmap_cell_exp.txt",
+            sep = "\t",quote = F,row.names = F,col.names = T)
+
+tt <- data.table::fread("/home/data/sdb/wt/model_data/tINIT_data/Human1_Publication_Data_Scripts/tINIT_GEMs/depmap_cell_exp.txt",
+                        data.table = F)
+all_samples <- data.frame(
+  samples = colnames(tt)[2:ncol(tt)]
+)
+all_samples$samples <- gsub("-","_",all_samples$samples)
+write.table(all_samples,
+            file = "/home/data/sdb/wt/model_data/Depmap_tINIT/all_samples",
+            sep = "\t",quote = F,row.names = F,col.names = F)
+
+done_sample <- list.files("/home/data/sdb/wt/model_data/tINIT_data/Human1_Publication_Data_Scripts/tINIT_GEMs/",
+                          pattern = "xml") %>% gsub(".xml","",.)
+all_samples <- all_samples %>% filter(!(samples %in% done_sample))
+
 
 
