@@ -65,8 +65,8 @@ gene_screen <- function(pre_dt){
   colnames(res)[7] <- c("Gene")
   res <- res %>% filter(P<0.05 & OR>1)
   res$mean <- res$OR
-  res$OR <- round(res$OR,3)
-  res$P <- round(res$P,3)
+  #res$OR <- round(res$OR,3)
+  #res$P <- round(res$P,3)
   res <- res %>% 
     arrange(P,desc(OR))
   return(res)
@@ -74,26 +74,6 @@ gene_screen <- function(pre_dt){
 
 ##
 mut <- readRDS("/home/data/sdc/wt/TCGA/tcga_mut.rds")
-###KRAS
-kras_mut <- mut %>% 
-  filter(gene == "KRAS") %>% 
-  filter(grepl("deleterious|damaging",SIFT) | grepl("damaging",PolyPhen))
-need_gene <- "KRAS"
-mut_pos <- kras_mut$Amino_Acid_Change %>% unique()
-
-mut_gene <- mut %>% 
-  filter(gene == need_gene & Amino_Acid_Change %in% mut_pos)
-all_mut_gene <- mut %>% 
-  filter(gene == need_gene)
-
-kras_gene_pre <- pre_pathway %>% 
-  mutate(type = case_when(
-    cell %in% mut_gene$sample ~ "mut",##kRAS dirver mutation
-    !(cell %in% all_mut_gene$sample) ~ "non-mut",###no any KRAS mutation,
-    TRUE ~ "other"
-  )) %>% filter(type != "other") 
-
-kras_res <- gene_screen(pre_dt = kras_gene_pre)
 
 ####ctnnb
 need_gene <- "CTNNB1"
@@ -145,7 +125,6 @@ myc_gene_pre <- pre_pathway %>%
     !(cell %in% all_mut_sample) ~ "non-mut",
     TRUE ~ "other"
   )) %>% filter(type != "other") 
-
 myc_res <- gene_screen(pre_dt = myc_gene_pre)
 
 ###tp53
@@ -173,72 +152,16 @@ tp53_gene_pre <- pre_pathway %>%
   )) %>% filter(type != "other") 
 tp53_res <- gene_screen(pre_dt = tp53_gene_pre)
 
-###NF-kB
-nfkb <- mut %>% 
-  filter(gene %in% c("REL","NFKB2")) %>% 
-  filter(grepl("deleterious|damaging",SIFT) | grepl("damaging",PolyPhen))
-rel_aa <- nfkb$Amino_Acid_Change[which(nfkb$gene == "REL")] %>% unique()
-nfkb2_aa <- nfkb$Amino_Acid_Change[which(nfkb$gene == "NFKB2")] %>% unique()
-
-need_gene <- c("REL","NFKB2")
-mut_gene <- mut %>% 
-  filter((gene == "REL" & Amino_Acid_Change %in% rel_aa) | 
-           (gene == "NFKB2" & Amino_Acid_Change %in% nfkb2_aa))
-all_mut_gene <- mut %>% 
-  filter(gene %in% need_gene)
-nfkb_gene_pre <- pre_pathway %>% 
-  mutate(type = case_when(
-    cell %in% mut_gene$sample ~ "mut",
-    !(cell %in% all_mut_gene$sample) ~ "non-mut",
-    TRUE ~ "other"
-  )) %>% filter(type != "other") 
-nfkb_res <- gene_screen(pre_dt = nfkb_gene_pre)
-
-###mdm2
-gistic_mdm2 <- gistic %>% 
-  filter(`Gene Symbol` %in% c("MDM2")) %>% 
-  select(-c(2,3)) %>% as.data.frame()
-rownames(gistic_mdm2) <- gistic_mdm2$`Gene Symbol`
-gistic_mdm2 <- gistic_mdm2 %>% 
-  select(-`Gene Symbol`) %>% 
-  t() %>% 
-  as.data.frame()
-gistic_mdm2$sample <- rownames(gistic_mdm2)
-gistic_mdm2 <- gistic_mdm2 %>% 
-  rowwise() %>% 
-  mutate(type = ifelse(any(MDM2>0),"amp","non-amp")) %>% 
-  ungroup()
-
-gistic_mdm2 <- gistic_mdm2 %>% 
-  mutate(sample = substr(sample,1,15))
-
-all_mut_gene <- mut %>% 
-  filter(gene %in% c("MDM2"))
-mdm2_amp <- gistic_mdm2 %>% filter(type == "amp")
-all_mut_sample <- unique(c(all_mut_gene$sample,mdm2_amp$sample))
-
-mdm2_gene_pre <- pre_pathway %>% 
-  mutate(type = case_when(
-    cell %in% mdm2_amp$sample ~ "mut",
-    !(cell %in% all_mut_sample) ~ "non-mut",
-    TRUE ~ "other"
-  )) %>% filter(type != "other") 
-mdm2_res <- gene_screen(pre_dt = mdm2_gene_pre)
-
 ###汇总
 library(forestplot)
 all_res <- bind_rows(
-  kras_res %>% mutate(target = "KRAS"),
   myc_res %>% mutate(target = "MYC"),
   tp53_res %>% mutate(target = "TP53"),
-  mdm2_res %>% mutate(target = "MDM2"),
-  nfkb_res %>% mutate(target = "NFKB"),
-  ctnnb_res %>% mutate(target = "CTNNB")
+  ctnnb_res %>% mutate(target = "CTNNB1")
 )
-saveRDS(all_res,file = "data/merge_driver_dep.rds")
+saveRDS(all_res,file = "data/merge_driver_dep2.rds")
 
 gene_pre_res <- list(
-  KRAS = kras_gene_pre,
   MYC = myc_gene_pre,
   TP53 = tp53_gene_pre,
   CTNNB = ctnnb_gene_pre

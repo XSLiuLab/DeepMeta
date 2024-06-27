@@ -1083,12 +1083,58 @@ saveRDS(res, file = "data/all_cancer_gene_dep.rds")
 
 ####
 all_cancer_gene_dep <- readRDS("~/DeepMeta/data/all_cancer_gene_dep.rds")
-other_genes <- readRDS("data/merge_driver_dep.rds")
+other_genes <- readRDS("data/merge_driver_dep2.rds")
 all_cancer_gene_dep <- bind_rows(
   all_cancer_gene_dep,
   other_genes %>% rename(target_gene = target)
 ) %>% filter(!is.infinite(OR))
 
+##
+mut <- readRDS("/home/data/sdc/wt/TCGA/tcga_mut.rds")
+targets <- readxl::read_xlsx("data/TARGET_DRUG.xlsx",sheet = 3)
+
+mut_filter <- mut %>% 
+  filter(gene %in% all_cancer_gene_dep$target_gene) %>% 
+  filter(effect != "Silent")
+mut_summ <- mut_filter %>% group_by(gene) %>% 
+  summarise(sample_counts = length(unique(sample))) %>% ungroup()
+
+dt <- all_cancer_gene_dep %>% 
+  mutate(have_drug = ifelse(target_gene %in% targets$`Target Gene Symbol`,"Y","N")) %>% 
+  left_join(.,mut_summ %>% rename(target_gene = gene)) %>% 
+  mutate(sample_counts = ifelse(target_gene == "MYC",2879,sample_counts)) %>% 
+  arrange(have_drug,desc(sample_counts),P,desc(OR)) %>% 
+  mutate(freq = sample_counts / 9104) %>% 
+  filter(have_drug == "N") %>% 
+  filter(freq > 0.02) %>% 
+  filter(P < 0.01)
+
+library(forestplot)
+dt <- dt %>% 
+  mutate(`Target-Gene` = paste(target_gene,Gene,sep = "-")) %>% 
+  mutate(`Mutation Frequency` = format(freq * 100,digits =3)) %>% 
+  mutate(`P Value` = format(P,digits =3)) %>% 
+  mutate(OR = round(OR,2)) 
+
+p <- dt |>
+  forestplot(labeltext = c(`Target-Gene`, `Mutation Frequency`, `P Value`, OR),
+             xlog = TRUE,
+             xlab = "OR",boxsize = 0.25,) |>
+  fp_set_style(box = "royalblue",
+               line = "darkblue",
+               summary = "royalblue") |> 
+  fp_add_header(`Target-Gene` = c("Target-Gene"),
+                `Mutation Frequency` = c("Mutation Frequency"),
+                `P Value` = c("P Value"),
+                OR = c("OR")) |>
+  fp_set_zebra_style("#EFEFEF")
+
+p
+library(gridExtra)
+pdf(file = "report/merge_OR_all_genes.pdf", onefile=TRUE, width = 12,height = 10)
+grid.newpage()
+print(p)
+dev.off()
 ###
 gene_exp <- data.table::fread("/home/data/sdb/wt/model_data/OmicsExpressionProteinCodingGenesTPMLogp1.csv",
                               data.table = F)
@@ -1124,9 +1170,43 @@ write.table(all_samples,
             file = "/home/data/sdb/wt/model_data/Depmap_tINIT/all_samples",
             sep = "\t",quote = F,row.names = F,col.names = F)
 
-done_sample <- list.files("/home/data/sdb/wt/model_data/tINIT_data/Human1_Publication_Data_Scripts/tINIT_GEMs/",
+all_samples <- read.table("/home/data/sdb/wt/model_data/Depmap_tINIT/all_samples")
+done_sample <- list.files("/home/data/sdb/wt/model_data/Depmap_tINIT/res/",
                           pattern = "xml") %>% gsub(".xml","",.)
-all_samples <- all_samples %>% filter(!(samples %in% done_sample))
+all_samples <- all_samples %>% filter(!(V1 %in% done_sample))
+write.table(all_samples,
+            file = "/home/data/sdb/wt/model_data/Depmap_tINIT/all_samples",
+            sep = "\t",quote = F,row.names = F,col.names = F)
 
+###生成样本特异的酶网络
+library(Met2Graph)
+infiles <- list.files("/home/data/sdb/wt/model_data/Depmap_tINIT/res",full.names = F)
+done <- list.files("/home/data/sdb/wt/model_data/Depmap_tINIT/enz_net/EnzGraphs/",
+                   pattern = "tsv") %>% gsub("_enzymes_based_graph.tsv","",.)
+all_files <- gsub(".xml","",infiles)
+infiles <- infiles[which(!(all_files %in% done))]
+
+library(doParallel)
+library(foreach)
+my.cluster <- parallel::makeCluster(
+  20, 
+  type = "PSOCK"
+)
+doParallel::registerDoParallel(cl = my.cluster)
+res <- foreach(
+  i = infiles,
+  .packages = c("dplyr","Met2Graph")
+) %dopar% {
+  tryCatch({
+    Met2EnzGraph(paste0("/home/data/sdb/wt/model_data/Depmap_tINIT/res/",i),
+                 rmMets=TRUE, 
+                 outDir="/home/data/sdb/wt/model_data/Depmap_tINIT/enz_net/", 
+                 outFormat="edgelist")
+    0
+  },error=function(e){
+    NA
+  })
+}
+parallel::stopCluster(cl = my.cluster)
 
 
