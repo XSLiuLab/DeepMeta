@@ -215,9 +215,9 @@ tt <- cv_res %>%
             range_f1 = max(F1)-min(F1)
             ) %>%
   ungroup() %>%
-  mutate(roc_pr_f1 = mean_roc + mean_f1,
+  mutate(roc_f1 = mean_roc + mean_f1,
          range_score = range_roc + range_f1) %>%
-  arrange(-roc_pr_f1,range_score)
+  arrange(-roc_f1,range_score)
 
 xlsx::write.xlsx(cv_res,file = "data/grid_search_res.xlsx",sheetName = "all_res",append=TRUE)
 xlsx::write.xlsx(tt,file = "data/grid_search_res.xlsx",sheetName = "summ_res",append=TRUE)
