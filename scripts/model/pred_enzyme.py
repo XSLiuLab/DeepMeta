@@ -47,7 +47,8 @@ if not os.path.exists(pyg_dir_raw):
 if not os.path.exists(pyg_dir_processed):
     os.makedirs(pyg_dir_processed)
 
-train_genes = pd.read_csv("/home/wt/meta_target/data/train_genes.csv")
+cur_dir = os.path.dirname(os.path.abspath(__file__))
+train_genes = pd.read_csv(f"{cur_dir}/../../data/train_genes.csv")
 ###mv pre_file to raw dir
 if not os.path.exists(pyg_dir_raw + os.path.basename(pre_file)):
     shutil.copy(pre_file, pyg_dir_raw)

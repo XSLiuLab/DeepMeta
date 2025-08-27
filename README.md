@@ -15,16 +15,27 @@ Here, we present the **DeepMeta** framework to predict the metabolic gene depend
 
 Two functions `PreEnzymeNet`​ and `PreDiffExp`​ can be used for preparing DeepMeta inputs.
 
+```shell
+git clone git@github.com:XSLiuLab/DeepMeta.git
+##download OmicsExpressionProteinCodingGenesTPMLogp1.csv from DeepMap and place in current dir.
+mkdir pre_test
+mkdir example_test
+```
+
+Then set working path to DeepMeta in R:
+
 ```R
+setwd("path/to/DeepMeta")
 ###cell gene expression
-gene_exp <- data.table::fread("/home/data/sdb/wt/model_data/OmicsExpressionProteinCodingGenesTPMLogp1.csv",data.table = F)
+gene_exp <- data.table::fread("../OmicsExpressionProteinCodingGenesTPMLogp1.csv",
+                              data.table = F)
 rownames(gene_exp) <- gene_exp$V1
 gene_exp <- gene_exp %>% select(-V1)
 colnames(gene_exp) <- gsub(" [(].+","",colnames(gene_exp))
 gene_exp <- as.data.frame(t(gene_exp))
 
 ###cell info 
-cell_mapping <- read.csv("/home/data/sdc/wt/update/data/Model.csv")
+cell_mapping <- read.csv("data/Model.csv")
 cell_mapping <- cell_mapping %>%
   filter((OncotreeLineage != "Normal") & (OncotreePrimaryDisease != "Non-Cancerous"))
 net_cell_mapping <- data.frame(origin_net=NA,
@@ -55,8 +66,8 @@ cell_mapping <- cell_mapping %>%
   mutate(net = paste0(gsub(".xml","",origin_net),"_enzymes_based_graph.tsv"))
 
 ####gene mapping and CPG features, The code that generates this data is in `scripts/help_data.R`
-enz_gene_mapping <- readRDS("~/DeepMeta/data/enz_gene_mapping.rds")
-cpg_gene <- readRDS("~/DeepMeta/data/cpg_gene.rds")
+enz_gene_mapping <- readRDS("data/enz_gene_mapping.rds")
+cpg_gene <- readRDS("data/cpg_gene.rds")
 ```
 
 We used 76 test cell lines as the example:
@@ -83,7 +94,8 @@ foreach(
   cell_net <- read.table(paste0("data/meta_net/EnzGraphs/",cell_net))
   PreDeepMeta::PreEnzymeNet(gene_exp, network = cell_net,
                             gene_mapping = enz_gene_mapping, gene_feature = cpg_gene,
-                            cell_name = i, save_path = "/home/data/sdb/wt/model_data/enzyme_net_test/")
+                            cell_name = i, 
+                            save_path = "../pre_test/")
 }
 parallel::stopCluster(cl = my.cluster)
 
@@ -94,28 +106,22 @@ gtex <- data.table::fread("data/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_m
   select(-Name)
 data("model_gene_order")
 
+gtex[,2:ncol(gtex)] <- apply(gtex[,2:ncol(gtex)],2,function(x){log2(x+1.01)})
 cell_mapping <- cell_mapping %>% filter(ModelID %in% test_cell$cell)
 gene_exp <- gene_exp %>% select(all_of(cell_mapping$ModelID))
 PreDiffExp(tumor_exp = gene_exp, normal_exp = gtex,
            tumor_normal_mapping = cell_mapping,
            gene_order = model_gene_order,
            save_file = TRUE, 
-           save_path = "/home/data/sdb/wt/model_data/test_diff_exp.csv")
-
+           save_path = "../test_diff_exp.csv")
+###save cell info
+write.csv(test_cell,"../test_cell_info.csv",quote = F,row.names = F)
 ```
 
 Then we can use python script `pred_enzyme.py`​ (which in `scripts/model`​ fold) to predict metabolic dependency:
 
 ```R
-python ~/DeepMeta/scripts/model/pred_enzyme.py 
-  -e /home/data/sdb/wt/model_data/test_diff_exp.csv 
-  -g /home/data/sdb/wt/model_data/tmp/example_test/ 
-  -c /home/wt/DeepMeta/data/test_cell_info.csv 
-  -n /home/data/sdb/wt/model_data/enzyme_net_test/ 
-  -t 30 
-  -m /home/data/sdc/wt/model_data/new_model/enzyme_model_filterV2.pt 
-  -o /home/wt/DeepMeta/data/example_test.csv 
-  -d val -b 1
+python DeepMeta/scripts/model/pred_enzyme.py -e ./test_diff_exp.csv -g ./example_test -c ./test_cell_info.csv -n ./pre_test/ -t 10 -m ./DeepMeta.pt -o ./res.csv -d val -b 1
 ```
 
 The arguments are :
@@ -133,7 +139,7 @@ The arguments are :
 The output is the csv file with predicted dependency probability (`preds_raw`​ column) and lable (using cutoff probability 0.5, `preds`​ column):
 
 ```R
-dt <- read.csv("data/example_test.csv") %>% select(-X)
+dt <- read.csv("../res.csv") %>% select(-X)
 View(dt)
 ```
 
