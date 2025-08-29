@@ -120,7 +120,20 @@ write.csv(test_cell,"../test_cell_info.csv",quote = F,row.names = F)
 
 Then we can use python script `pred_enzyme.py`​ (which in `scripts/model`​ fold) to predict metabolic dependency:
 
-```R
+```shell
+###conda env
+conda create -n DeepMeta python=3.10 cudatoolkit=11.3.1
+conda activate DeepMeta
+conda install pytorch==1.11.0 cudatoolkit=11.3 -c pytorch -y
+wget https://data.pyg.org/whl/torch-1.11.0%2Bcu113/torch_cluster-1.6.0-cp310-cp310-linux_x86_64.whl
+wget https://data.pyg.org/whl/torch-1.11.0%2Bcu113/torch_scatter-2.0.9-cp310-cp310-linux_x86_64.whl
+wget https://data.pyg.org/whl/torch-1.11.0%2Bcu113/torch_sparse-0.6.13-cp310-cp310-linux_x86_64.whl
+pip install torch_scatter-2.0.9-cp310-cp310-linux_x86_64.whl 
+pip install torch_sparse-0.6.13-cp310-cp310-linux_x86_64.whl 
+pip install torch_cluster-1.6.0-cp310-cp310-linux_x86_64.whl 
+pip install torch-geometric==2.1.0 pandas tqdm networkx==3.1 conda-forge::mkl==2024.0 numpy==1.24.4
+
+##run
 python DeepMeta/scripts/model/pred_enzyme.py -e ./test_diff_exp.csv -g ./example_test -c ./test_cell_info.csv -n ./pre_test/ -t 10 -m ./DeepMeta.pt -o ./res.csv -d val -b 1
 ```
 
