@@ -168,4 +168,4 @@ We thank ShanghaiTech University High Performance Computing Public Service Platf
 
 ### Citation
 
-Wu, Tao; Zhao, Xiangyu and Zhang, Yu. Precise metabolic dependencies of cancer through deep learning and validations (Submitted)
+Wu T, Zhao X, Zhang Y, et al. Precise metabolic dependencies of cancer through deep learning and validations. Cell Rep. 2025;44(7):115945. doi:10.1016/j.celrep.2025.115945
